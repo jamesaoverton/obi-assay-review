@@ -1,0 +1,20 @@
+http://purl.obolibrary.org/obo/OBI_0000438
+label: DNA sequence variation detection
+definition: DNA sequence variation detection is a process which aims at finding changes (expansion, amplification, deletion, mutation) in sequence of DNA molecule.
+definition source: OBI Biomaterial
+example of usage: Capturing genomic signatures of DNA sequence variation using a standard anonymous microarray platform. Nucleic Acids Res. 2006;34(18):e121. PMID: 17000641
+term editor: Philippe Rocca-Serra
+
+DIFFERENT LOGIC
+
+BEFORE
+subclass of: achieves_planned_objective some 'assay objective'
+subclass of: achieves_planned_objective some 'sequence feature identification objective'
+subclass of: has_specified_input some 'deoxyribonucleic acid'
+subclass of: has_specified_output some 'measurement datum'
+subclass of: process
+
+AFTER
+subclass of: assay
+subclass of: has_specified_input some 'deoxyribonucleic acid'
+subclass of: has_specified_output some 'measurement datum'

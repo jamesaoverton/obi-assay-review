@@ -1,0 +1,20 @@
+http://purl.obolibrary.org/obo/OBI_0000366
+label: metabolite profiling
+alternative term: metabolite assay
+definition: metabolite profiling is a process which aims at detecting and identifying chemical entities resulting from biochemical and cellular metabolism
+definition source: OBI
+example of usage: Metabolite profiling of human colon carcinoma - deregulation of TCA cycle and amino acid turnover. Mol Cancer. 2008 Sep 18;7(1):72. PMID: 18799019
+term editor: Philippe Rocca-Serra
+
+DIFFERENT LOGIC
+
+BEFORE
+subclass of: achieves_planned_objective some 'assay objective'
+subclass of: has_specified_input some specimen
+subclass of: has_specified_output some 'measurement datum'
+subclass of: process
+
+AFTER
+subclass of: assay
+subclass of: has_specified_input some specimen
+subclass of: has_specified_output some 'measurement datum'

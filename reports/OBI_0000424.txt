@@ -1,0 +1,27 @@
+http://purl.obolibrary.org/obo/OBI_0000424
+label: transcription profiling assay
+alternative term: gene expression profiling
+definition: An assay which aims to provide information about gene expression and transcription activity using ribonucleic acids collected from a material entity using a range of techniques and instrument such as DNA sequencers, DNA microarrays, Northern Blot
+definition source: OBI
+example of usage: Whole genome transcription profiling of Anaplasma phagocytophilum in human and tick host cells by tiling array analysis. BMC Genomics. 2008 Jul 31;9:364. PMID: 18671858
+term editor: Philippe Rocca-Serra
+
+DIFFERENT LOGIC
+
+BEFORE
+equivalent to: assay and (achieves_planned_objective some 'transcription profiling identification objective')
+subclass of: has_specified_input some 
+      (specimen
+       and ('has part' some 'ribonucleic acid'))
+subclass of: has_specified_output some 
+      ('measurement datum'
+       and ('is about' some 'gene expression'))
+subclass of: realizes some 
+      ('analyte role'
+       and ('role of' some 'ribonucleic acid'))
+
+AFTER
+subclass of: (has_specified_input some 'ribonucleic acid') and (realizes some ('analyte role' and ('inheres in' some 'ribonucleic acid')))
+subclass of: 'analyte assay'
+subclass of: has_specified_input some 'specimen and ('has part' some 'ribonucleic acid')'
+subclass of: has_specified_output some 'measurement datum'
