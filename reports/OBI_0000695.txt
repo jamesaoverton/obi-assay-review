@@ -1,0 +1,18 @@
+http://purl.obolibrary.org/obo/OBI_0000695
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: chain termination sequencing
+  alternative term: Sanger sequencing
+  alternative term: dye terminator sequencing
+  definition: is a DNA sequencing which rely on the use of dideoxynucleotides used in 4 distinct sequencing reaction on the same DNA sample. The dideoxynucleotides, once incorporated in the complementary DNA strand being synthesized by the DNA polymerase prevent any further chain elongation. The newly generated sequences are resolved on a polyacrylamide gel using electrophoresis and labels (either fluorochrome or radioactivity) are used to determine the nucleotide present at a given position
+  definition source: adapted from wikipedia
+  example of usage: PMID: 271968. DNA sequencing with chain-terminating inhibitors.
+    Sanger F, Nicklen S, Coulson AR. Proc Natl Acad Sci U S A. 1977 Dec;74(12):5463-7.
+  term editor: Philippe Rocca-Serra
+
+  subclass of: 'DNA sequencing by synthesis'
+  subclass of: has_specified_input some 'PCR product'
++ subclass of: (has_specified_input some 'ABI 377 automated sequencer or Li-Cor 4300 DNA Analysis System') and (realizes some (function and ('inheres in' some 'ABI 377 automated sequencer or Li-Cor 4300 DNA Analysis System')))
+- subclass of: 'has participant' some 
+          ('ABI 377 automated sequencer' or 'Li-Cor 4300 DNA Analysis System')

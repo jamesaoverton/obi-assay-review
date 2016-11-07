@@ -1,0 +1,20 @@
+http://purl.obolibrary.org/obo/OBI_0000820
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: activated partial thromboplastin time (aPTT) assay
+  definition: An activated partial thromboplastin time (aPTT) assay is a an assay measuring the efficacy of both the 'intrinsic' (now referred to as the contact activation pathway) and the common coagulation pathways. In order to activate the intrinsic pathway, phospholipid, an activator (such as silica, celite, kaolin, ellagic acid), and calcium (to reverse the anticoagulant effect of the oxalate) are mixed into the plasma sample . The time is measured until a thrombus (clot) forms.
+  definition source: WEB:http://en.wikipedia.org/wiki/Partial_thromboplastin_time@2008/10/06
+  example of usage: PMID:19696660#The activated partial thromboplastin time (aPTT) was determined using Dade Actin FSL activated PTT reagent.
+  editor note: 2009/10/18 Alan Ruttenberg. This assay was added during the fucoidan use case exercise but still needs to be fleshed out. Only the AT-III assay has more carefully specified inputs and outputs
+  curator note: 2009/09/28 Alan Ruttenberg. Fucoidan-use-case
+  term editor: Person:Alan Ruttenberg
+
+  subclass of: assay
++ subclass of: has_specified_input some 'blood serum specimen'
++ subclass of: has_specified_output some 'blood coagulation'
++ subclass of: has_specified_output some 'scalar measurement datum'
+- subclass of: (has_specified_input some 'blood serum specimen')
+       and (has_specified_output some 
+          ('scalar measurement datum'
+           and ('is about' some 'blood coagulation')))

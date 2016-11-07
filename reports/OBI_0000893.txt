@@ -1,0 +1,23 @@
+http://purl.obolibrary.org/obo/OBI_0000893
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: real time polymerase chain reaction assay
+  alternative term: Q-PCR
+  alternative term: kinetic polymerase chain reaction
+  alternative term: qPCR
+  alternative term: quantitative real time polymerase chain reaction
+  ISA alternative term: real time PCR
+  definition: A laboratory technique based on the PCR, which is used to
+    amplify and simultaneously quantify a specific DNA
+    molecule based on the use of complementary probes/primers. It enables
+    both detection and quantification (as absolute number of copies or relative
+    amount when normalized to DNA input or additional normalizing genes) of one
+    or more specific sequences in a DNA sample.
+  definition source: WEB: http://en.wikipedia.org/wiki/Real-time_polymerase_chain_reaction
+  term editor: person: Bjoern Peters
+  term editor: person: Melanie Courtot
+
+  subclass of: assay
++ subclass of: has_part some 'polymerase chain reaction'
+- subclass of: 'has part' some 'polymerase chain reaction'

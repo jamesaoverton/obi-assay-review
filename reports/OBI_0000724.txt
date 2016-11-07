@@ -1,0 +1,22 @@
+http://purl.obolibrary.org/obo/OBI_0000724
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: Solexa sequencing
+  alternative term: reversible terminator sequencing
+  definition: is a DNA sequencing which allows sequence identification by relying on use of DNA polymerase and reversible terminator. The methods requires immobilization of genomic DNA fragment onto a surface and a specific clonal amplification step known as bridge PCR. Reliance on reversible terminator allow cycles of DNA chain extension by DNA polymerase and imaging without the need of electrophoretic separation of newly synthesized DNA fragment as with Sanger sequencing.
+  definition source: adapted from Wikipedia and Illumina / Solexa web site (SS_DNAsequencing.pdf document available on july 2009)
+  example of usage: PMID: 18987734
+    Accurate whole human genome sequencing using reversible terminator chemistry. Bentley DR, Balasubramanian S, Swerdlow HP, Smith GP, Milton J, Brown CG, Hall KP, Evers DJ, Barnes CL, Bignell HR, Boutell JM, Bryant J, Carter RJ, Keira Cheetham R, Cox AJ, Ellis DJ, Flatbush MR, Gormley NA, Humphray SJ, Irving LJ, Karbelashvili MS, Kirk SM, Li H, Liu X, Maisinger KS, Murray LJ, Obradovic B, Ost T, Parkinson ML, Pratt MR, Rasolonjatovo IM, Reed MT, Rigatti R, Rodighiero C, Ross MT, Sabot A, Sankar SV, Scally A, Schroth GP, Smith ME, Smith VP, Spiridou A, Torrance PE, Tzonev SS, Vermaas EH, Walter K, Wu X, Zhang L, Alam MD, Anastasi C, Aniebo IC, Bailey DM, Bancarz IR, Banerjee S, Barbour SG, Baybayan PA, Benoit VA, Benson KF, Bevis C, Black PJ, Boodhun A, Brennan JS, Bridgham JA, Brown RC, Brown AA, Buermann DH, Bundu AA, Burrows JC, Carter NP, Castillo N, Chiara E Catenazzi M, Chang S, Neil Cooley R, Crake NR, Dada OO, Diakoumakos KD, Dominguez-Fernandez B, Earnshaw DJ, Egbujor UC, Elmore DW, Etchin SS, Ewan MR, Fedurco M, Fraser LJ, Fuentes Fajardo KV, Scott Furey W, George D, Gietzen KJ, Goddard CP, Golda GS, Granieri PA, Green DE, Gustafson DL, Hansen NF, Harnish K, Haudenschild CD, Heyer NI, Hims MM, Ho JT, Horgan AM, Hoschler K, Hurwitz S, Ivanov DV, Johnson MQ, James T, Huw Jones TA, Kang GD, Kerelska TH, Kersey AD, Khrebtukova I, Kindwall AP, Kingsbury Z, Kokko-Gonzales PI, Kumar A, Laurent MA, Lawley CT, Lee SE, Lee X, Liao AK, Loch JA, Lok M, Luo S, Mammen RM, Martin JW, McCauley PG, McNitt P, Mehta P, Moon KW, Mullens JW, Newington T, Ning Z, Ling Ng B, Novo SM, O'Neill MJ, Osborne MA, Osnowski A, Ostadan O, Paraschos LL, Pickering L, Pike AC, Pike AC, Chris Pinkard D, Pliskin DP, Podhasky J, Quijano VJ, Raczy C, Rae VH, Rawlings SR, Chiva Rodriguez A, Roe PM, Rogers J, Rogert Bacigalupo MC, Romanov N, Romieu A, Roth RK, Rourke NJ, Ruediger ST, Rusman E, Sanches-Kuiper RM, Schenker MR, Seoane JM, Shaw RJ, Shiver MK, Short SW, Sizto NL, Sluis JP, Smith MA, Ernest Sohna Sohna J, Spence EJ, Stevens K, Sutton N, Szajkowski L, Tregidgo CL, Turcatti G, Vandevondele S, Verhovsky Y, Virk SM, Wakelin S, Walcott GC, Wang J, Worsley GJ, Yan J, Yau L, Zuerlein M, Rogers J, Mullikin JC, Hurles ME, McCooke NJ, West JS, Oaks FL, Lundberg PL, Klenerman D, Durbin R, Smith AJ. Nature. 2008 Nov 6;456(7218):53-9.
+  term editor: Philippe Rocca-Serra
+
+  subclass of: 'DNA sequencing by synthesis'
++ subclass of: (has_specified_input some 'Illumina Genome Analyzer II') and (realizes some (function and ('inheres in' some 'Illumina Genome Analyzer II')))
++ subclass of: has_specified_input some 'paired-end library or single fragment library'
++ subclass of: has_specified_input some reagent
+- subclass of: 'has participant' some 'Illumina Genome Analyzer II'
+- subclass of: 'immediately preceded by' some 
+          (immobilization
+           and ('immediately preceded by' some 'vector mediated amplification'))
+- subclass of: has_specified_input some 
+          ('paired-end library' or 'single fragment library')

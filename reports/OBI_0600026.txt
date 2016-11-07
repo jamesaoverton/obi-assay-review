@@ -1,0 +1,14 @@
+http://purl.obolibrary.org/obo/OBI_0600026
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: longitudinal mass measurement assay
+  definition: A process in which the mass of a material is measured at two or more time points
+  definition source: OBI branch derived
+  example of usage: The comparison of the weight of vaccinated and non-vaccinated mice after infection with influenza A over 6 weeks post-infection
+  term editor: Helen Parkinson
+
+  subclass of: assay
+  subclass of: has_specified_input some organism
+  subclass of: has_specified_output some 'measurement datum'
+- subclass of: achieves_planned_objective some 'assay objective'

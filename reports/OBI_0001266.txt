@@ -1,0 +1,12 @@
+http://purl.obolibrary.org/obo/OBI_0001266
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: DNA methylation profiling by high throughput sequencing assay
+  definition: An assay in which the methylation state of DNA is determined and is compared between samples using sequencing based technology
+  definition source: EFO_0002761 methylation profiling by high throughput sequencing
+  term editor: Group: ArrayExpress production team, James Malone, Helen Parkinson
+
++ subclass of: 'DNA methylation profiling assay'
++ subclass of: (has_specified_input some 'DNA sequencer') and (realizes some (function and ('inheres in' some 'DNA sequencer')))
+- equivalent to: 'DNA methylation profiling assay' and ('has participant' some 'DNA sequencer')

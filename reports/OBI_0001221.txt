@@ -1,0 +1,12 @@
+http://purl.obolibrary.org/obo/OBI_0001221
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: ChIP-chip by SNP array assay
+  definition: An assay where chromatin immunoprecipitation (ChIP) is used in combination with SNP microarray technology
+  definition source: EFO_0002764 ChIP-chip by SNP array
+  term editor: Group: ArrayExpress production team
+
+  subclass of: 'ChIP-chip assay'
++ subclass of: (has_specified_input some 'SNP microarray') and (realizes some (function and ('inheres in' some 'SNP microarray')))
+- subclass of: 'has participant' some 'SNP microarray'

@@ -1,0 +1,29 @@
+http://purl.obolibrary.org/obo/OBI_0001864
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: RNA Annotation and Mapping of Promoters for the Analysis of Gene Expression assay
+  alternative term: RAMPAGE
+  definition: An assay that identifies transcription start sites (TSS), the quantification of their expression and the characterization
+    of their transcripts using high throughput sequencing.
+  definition source: Batut et al. High-fidelity promoter profiling reveals widespread alternative promoter usage and transposon-driven developmental gene expression. Genome Research. 2013 Jan;23(1):169-80. [PMID:22936248]
+  example of usage: Batut et al. High-fidelity promoter profiling reveals widespread alternative promoter usage and transposon-driven developmental gene expression. Genome Research. 2013 Jan;23(1):169-80. [PMID:22936248]
+  term editor: Person: Venkat Malladi, Chris Stoeckert, Jie Zheng
+
+  subclass of: has_specified_output some 'DNA sequence data'
++ subclass of: 'transcription profiling assay, sequencing assay'
++ subclass of: (has_specified_input some 'DNA sequencer') and (realizes some (function and ('inheres in' some 'DNA sequencer')))
++ subclass of: (has_specified_input some 'ribonucleic acid') and (realizes some ('evaluant role' and ('inheres in' some 'ribonucleic acid')))
++ subclass of: achieves_planned_objective some 'transcription start site identificaton objective'
++ subclass of: has_part some 'library preparation, RNA sequencing, non specific enzymatic cleavage'
++ subclass of: has_specified_input some 'ribonucleic acid'
++ subclass of: has_specified_input some RNA
+- subclass of: 'has part' some 'RNA sequencing'
+- subclass of: 'has part' some 'library preparation'
+- subclass of: 'has part' some 'non specific enzymatic cleavage'
+- subclass of: 'has participant' some 'DNA sequencer'
+- subclass of: achieves_planned_objective some 'transcription start site identification objective'
+- subclass of: assay
+- subclass of: has_specified_input some 
+          ('ribonucleic acid'
+           and ('has role' some 'evaluant role'))

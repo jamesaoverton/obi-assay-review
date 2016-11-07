@@ -1,0 +1,11 @@
+http://purl.obolibrary.org/obo/OBI_0002037
+Reviewed: FALSE
+Curation Status: 
+
+  label: micrococcal nuclease digestion followed by tiling array assay
+  definition: An array based nucleic acid structure mapping assay to identify nucleosome positions, genome wide, by detection of regions protected by nucleosomes from digestion by micrococal nuclease using tiling arrays.
+  example of usage: pmid:17873876
+  editor note: Details see tracker: https://sourceforge.net/p/obi/obi-terms/725/
+  term editor: Janos Demeter, Chris Stoeckert
+
+  subclass of: 'array based nucleic acid structure mapping assay'

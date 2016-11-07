@@ -1,0 +1,12 @@
+http://purl.obolibrary.org/obo/OBI_0002036
+Reviewed: FALSE
+Curation Status: 
+
+  label: array based nucleic acid structure mapping assay
+  definition: An assay which aims to provide information about the in vivo organization/structure of nucleic acids using chemical or enzymatic probes using a microarray.
+  definition source: OBI:0000870
+  example of usage: pmid:23580730
+  editor note: Details see tracker: https://sourceforge.net/p/obi/obi-terms/725/
+  term editor: Janos Demeter, Chris Stoeckert
+
+  subclass of: assay

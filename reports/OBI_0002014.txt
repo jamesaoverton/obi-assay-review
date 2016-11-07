@@ -1,0 +1,18 @@
+http://purl.obolibrary.org/obo/OBI_0002014
+Reviewed: FALSE
+Curation Status: 
+
+  label: DNA methylation profiling by ChIP-chip assay
+  alternative term: DNA methylation ChIP-chip
+  definition: A ChIP-chip assay that identifies sites of DNA methylation.
+  definition source: Penn group
+  term editor: Person: Chris Stoeckert, Jie Zheng
+
+  subclass of: achieves_planned_objective some 'epigenetic modification identification objective'
++ subclass of: 'ChIP-chip assay, epigenetic modification assay'
++ subclass of: has_specified_output some 'DNA methylation'
++ subclass of: has_specified_output some 'information content entity'
+- subclass of: 'ChIP-chip assay'
+- subclass of: has_specified_output some 
+          ('information content entity'
+           and ('is about' some 'DNA methylation'))

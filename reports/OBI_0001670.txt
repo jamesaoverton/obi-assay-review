@@ -1,0 +1,25 @@
+http://purl.obolibrary.org/obo/OBI_0001670
+Reviewed: FALSE
+Curation Status: ready for release
+
+  label: RNA protection assay
+  alternative term: RPA; RNAse protection assay
+  definition: RPA is a technique to assess the presence and estimate abundance of transcript species by first creating an homo or heteroduplex by adding a specific, complementary sequence to the sequence of interest and then exposing the mixture of ribonuclease, which will degrade only single stranded molecules. A detection step will reveal if the sample contained a sequence of interest.
+  definition source: adapted from wikipedia + PMID:16491611
+  example of usage: Absolute concentrations of mRNA for type I and type VI collagen in the canine meniscus in normal and ACL-deficient knee joints obtained by RNase protection assay.
+    Wildey GM, Billetz AC, Matyas JR, Adams ME, McDevitt CA.
+    J Orthop Res. 2001 Jul;19(4):650-8.
+    PMID: 11518275
+  term editor: PERSON:Philippe Rocca-Serra; Marcus Chibucos
+
++ subclass of: assay
++ subclass of: has_specified_input some 'RNA extract'
++ subclass of: has_specified_input some RNA
++ subclass of: has_specified_output some 'data item'
++ subclass of: has_specified_output some 'gene expression'
+- subclass of: (assay
+       and (has_specified_input some 'RNA extract')
+       and (has_specified_output some 
+          ('data item'
+           and ('is about' some 'gene expression'))))
+       and (achieves_planned_objective some 'assay objective')

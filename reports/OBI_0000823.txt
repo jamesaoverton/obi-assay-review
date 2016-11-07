@@ -1,0 +1,20 @@
+http://purl.obolibrary.org/obo/OBI_0000823
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: thrombin time assay
+  definition: A  thrombin time assay is on in which after liberating the plasma from whole blood by centrifugation, bovine Thrombin is added to the sample of plasma. The clot is formed and is detected optically or mechanically by a coagulation instrument. The time between the addition of the thrombin and the clot formation is recorded as the thrombin clotting time
+  definition source: WEB:http://en.wikipedia.org/wiki/Thrombin_time@2009/10/06
+  example of usage: PMID:19696660#The thrombin time was determined using thromboclotin assay kit.
+  editor note: 2009/10/18 Alan Ruttenberg. This assay was added during the fucoidan use case exercise but still needs to be fleshed out. Only the AT-III assay has more carefully specified inputs and outputs
+  curator note: 2009/09/28 Alan Ruttenberg. Fucoidan-use-case
+  term editor: Person:Alan Ruttenberg
+
+  subclass of: assay
++ subclass of: has_specified_input some 'blood serum specimen'
++ subclass of: has_specified_output some 'blood coagulation'
++ subclass of: has_specified_output some 'scalar measurement datum'
+- subclass of: (has_specified_input some 'blood serum specimen')
+       and (has_specified_output some 
+          ('scalar measurement datum'
+           and ('is about' some 'blood coagulation')))

@@ -1,0 +1,24 @@
+http://purl.obolibrary.org/obo/OBI_0001682
+Reviewed: FALSE
+Curation Status: ready for release
+
++ label: bacterial one-hybrid
+- label: bacterial one-hybrid 
+  alternative term: B1H
+  definition:  is a method for identifying the sequence-specific target site of a DNA-binding domain. In this system, a given transcription factor (TF) is expressed as a fusion to a subunit of RNA polymerase. In parallel, a library of randomized oligonucleotides representing potential TF target sequences, is cloned into a separate vector containing the selectable genes HIS3 and URA3. If the DNA-binding domain (bait) binds a potential DNA target site (prey) in vivo, it will recruit RNA polymerase to the promoter and activate transcription of the reporter genes in that clone. The two reporter genes, HIS3 and URA3, allow for positive and negative selections, respectively. At the end of the process, positive clones are sequenced and examined with motif-finding tools in order to resolve the favoured DNA target sequence
+  definition source: http://en.wikipedia.org/wiki/Bacterial_one-hybrid_system
+  example of usage: A systematic characterization of factors that regulate Drosophila segmentation via a bacterial one-hybrid system.
+    Noyes MB, Meng X, Wakabayashi A, Sinha S, Brodsky MH, Wolfe SA.
+    Nucleic Acids Res. 2008 May;36(8):2547-60. Epub 2008 Mar 10.
+    PMID: 18332042
+  curator note: add regulatory region DNA binding;obo:GO:0000975;
+  term editor: PERSON:Philippe Rocca-Serra; Marcus Chibucos
+
++ subclass of: '(assay and (has_specified_input some 'genetically modified material') and (has_specified_output some ('data item' and ('is about' some 'sequence-specific DNA binding')))) and (achieves_planned_objective some 'protein and DNA interaction identification objective')'
++ subclass of: 'yeast one-hybrid'
++ subclass of: achieves_planned_objective some 'protein and DNA interaction identification objective'
++ subclass of: has_specified_input some 'genetically modified material'
++ subclass of: has_specified_output some 'data item'
++ subclass of: has_specified_output some 'sequence-specific DNA binding'
+- equivalent to: (assay and (has_specified_input some 'genetically modified material') and (has_specified_output some 
+      ('data item' and ('is about' some 'sequence-specific DNA binding')))) and (achieves_planned_objective some 'protein and DNA interaction identification objective')

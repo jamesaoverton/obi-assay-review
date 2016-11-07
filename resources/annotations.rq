@@ -1,0 +1,259 @@
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX obo:  <http://purl.obolibrary.org/obo/>
+PREFIX OBI:  <http://purl.obolibrary.org/obo/OBI_>
+PREFIX IAO:  <http://purl.obolibrary.org/obo/IAO_>
+
+SELECT ?subject
+  (GROUP_CONCAT(DISTINCT ?label; separator="|") as ?labels)
+  (GROUP_CONCAT(DISTINCT ?alternative_term; separator="|") as ?alternative_terms)
+  (GROUP_CONCAT(DISTINCT ?fged_alternative_term; separator="|") as ?fged_alternative_terms)
+  (GROUP_CONCAT(DISTINCT ?iedb_alternative_term; separator="|") as ?iedb_alternative_terms)
+  (GROUP_CONCAT(DISTINCT ?isa_alternative_term; separator="|") as ?isa_alternative_terms)
+  (GROUP_CONCAT(DISTINCT ?niaid_alternative_term; separator="|") as ?niaid_alternative_terms)
+  (GROUP_CONCAT(DISTINCT ?definition; separator="|") as ?definitions)
+  (GROUP_CONCAT(DISTINCT ?definition_source; separator="|") as ?definition_sources)
+  (GROUP_CONCAT(DISTINCT ?example_of_usage; separator="|") as ?examples_of_usage)
+  (GROUP_CONCAT(DISTINCT ?editor_note; separator="|") as ?editor_notes)
+  (GROUP_CONCAT(DISTINCT ?curator_note; separator="|") as ?curator_notes)
+  (GROUP_CONCAT(DISTINCT ?term_editor; separator="|") as ?term_editors)
+  ?curation_status
+
+WHERE {
+  # All the assays we're interested in.
+  VALUES ?subject {
+    OBI:0000117 # Bernoulli trial
+    OBI:0000185 # imaging assay
+    OBI:0000288 # protein-protein interaction detection
+    OBI:0000291 # transcription factor binding site assay
+    OBI:0000366 # metabolite profiling
+    OBI:0000418 # measuring glucose concentration in blood serum
+    OBI:0000424 # transcription profiling assay
+    OBI:0000433 # DNA sequence feature detection
+    OBI:0000435 # genotyping assay
+    OBI:0000438 # DNA sequence variation detection
+    OBI:0000443 # analyte assay
+    OBI:0000445 # mass measurement assay
+    OBI:0000447 # intra cellular electrophysiology recording
+    OBI:0000454 # extracellular electrophysiology recording
+    OBI:0000470 # mass spectrometry assay
+    OBI:0000520 # clinical chemistry assay
+    OBI:0000537 # copy number variation profiling
+    OBI:0000615 # protein expression profiling
+    OBI:0000623 # NMR spectroscopy
+    OBI:0000626 # DNA sequencing
+    OBI:0000630 # hematology
+    OBI:0000634 # DNA methylation profiling assay
+    OBI:0000693 # MeDIP-seq assay
+    OBI:0000695 # chain termination sequencing
+    OBI:0000697 # Helicos sequencing
+    OBI:0000699 # survival assessment
+    OBI:0000706 # SOLiD sequencing
+    OBI:0000716 # ChIP-seq assay
+    OBI:0000721 # glucose tolerance test
+    OBI:0000723 # DNA sequencing by ligation
+    OBI:0000724 # Solexa sequencing
+    OBI:0000730 # pyrosequencing
+    OBI:0000734 # DNA sequencing by synthesis
+    OBI:0000743 # immune response assay
+    OBI:0000748 # bisulfite sequencing
+    OBI:0000787 # human antithrombin-III (AT-III) in blood assay
+    OBI:0000802 # prothrombin time assay
+    OBI:0000805 # antithrombin-III (AT-III) berichrome assay
+    OBI:0000808 # spectrolyse heparin antifactor-Xa assay
+    OBI:0000812 # measuring neural activity in the caudate nucleus
+    OBI:0000820 # activated partial thromboplastin time (aPTT) assay
+    OBI:0000823 # thrombin time assay
+    OBI:0000860 # northern blot analysis
+    OBI:0000865 # 96-well neutralization assay
+    OBI:0000870 # single-nucleotide-resolution nucleic acid structure mapping assay
+    OBI:0000871 # viral hemagglutination assay
+    OBI:0000872 # serum neutralization of viral infectivity assay
+    OBI:0000875 # viral hemagglutination inhibition assay
+    OBI:0000892 # Southern blot analysis
+    OBI:0000893 # real time polymerase chain reaction assay
+    OBI:0000897 # DEPC structure mapping assay
+    OBI:0000911 # real time reverse-transcription polymerase chain reaction assay
+    OBI:0000944 # handedness assay
+    OBI:0000957 # self reported handedness assessment
+    OBI:0000964 # in live cell assay
+    OBI:0000966 # in live organism assay
+    OBI:0000978 # in container assay
+    OBI:0001001 # Edinburgh handedness assay
+    OBI:0001005 # RNASE CL3 structure mapping assay
+    OBI:0001006 # CMCT structure mapping assay
+    OBI:0001008 # MPE-Fe(II) structure mapping assay
+    OBI:0001011 # ENU structure mapping assay
+    OBI:0001012 # RNASE V1 structure mapping assay
+    OBI:0001013 # kethoxal structure mapping assay
+    OBI:0001014 # single-nucleotide-resolution nucleic acid structure mapping assay using enzymatic probing
+    OBI:0001015 # DMS structure mapping assay
+    OBI:0001016 # DNASE 1 structure mapping assay
+    OBI:0001017 # single-nucleotide-resolution nucleic acid structure mapping assay using chemical probing
+    OBI:0001018 # Rhodium DNA structure mapping assay
+    OBI:0001019 # RNA ADA I RNA structure mapping assay
+    OBI:0001020 # Lead structure mapping assay
+    OBI:0001021 # RNASE T2 structure mapping assay
+    OBI:0001022 # gene dosage assay
+    OBI:0001023 # Fe-BABE RNA structure mapping assay
+    OBI:0001024 # RNASE U2 structure mapping assay
+    OBI:0001025 # binding constant determination assay
+    OBI:0001026 # NMIA RNA structure mapping assay
+    OBI:0001027 # Terbium RNA structure mapping assay
+    OBI:0001029 # OH-radical structure mapping assay
+    OBI:0001030 # RNASE T1 structure mapping assay
+    OBI:0001035 # Nuclease S1 structure mapping assay
+    OBI:0001038 # Ruthenium structure mapping assay
+    OBI:0001039 # inline probing RNA structure mapping
+    OBI:0001146 # binding assay
+    OBI:0001158 # age measurement assay
+    OBI:0001170 # reverse transcription polymerase chain reaction assay
+    OBI:0001177 # RNA sequencing
+    OBI:0001187 # infectious agent detection assay
+    OBI:0001221 # ChIP-chip by SNP array assay
+    OBI:0001235 # transcription profiling by tiling array assay
+    OBI:0001247 # genotyping by high throughput sequencing assay
+    OBI:0001248 # ChIP-chip assay
+    OBI:0001266 # DNA methylation profiling by high throughput sequencing assay
+    OBI:0001271 # RNA-seq assay
+    OBI:0001274 # genotyping by array assay
+    OBI:0001282 # translation profiling assay
+    OBI:0001304 # RNAi profiling by array assay
+    OBI:0001318 # proteomic profiling by array assay
+    OBI:0001332 # DNA methylation profiling by array assay
+    OBI:0001335 # microRNA profiling by array assay
+    OBI:0001361 # transcription profiling by RT-PCR assay
+    OBI:0001393 # comparative genomic hybridization by array assay
+    OBI:0001419 # ChIP-chip by tiling array assay
+    OBI:0001463 # transcription profiling by array assay
+    OBI:0001491 # radioactivity detection binding assay
+    OBI:0001499 # fluorescence detection binding assay
+    OBI:0001591 # direct binding assay
+    OBI:0001624 # organism identification assay
+    OBI:0001668 # split-ubiquitin assay
+    OBI:0001669 # far-Western blot
+    OBI:0001670 # RNA protection assay
+    OBI:0001671 # electrophoretic mobility shift assay
+    OBI:0001672 # gene knock-down assay
+    OBI:0001673 # nano-cap analysis of gene expression
+    OBI:0001674 # cap analysis of gene expression
+    OBI:0001679 # yeast 2-hybrid
+    OBI:0001680 # Sos-recruitment assay
+    OBI:0001681 # yeast one-hybrid
+    OBI:0001682 # bacterial one-hybrid
+    OBI:0001683 # chromosome organization assay by fluorescence in-situ hybridization
+    OBI:0001684 # methylation-specific polymerase chain reaction
+    OBI:0001685 # amplification of intermethylated sites (AIMS) assay
+    OBI:0001686 # in-situ hybridization
+    OBI:0001689 # cytochalasin-induced inhibition of actin polymerization assay
+    OBI:0001848 # chromatin interaction analysis by paired-end tag sequencing
+    OBI:0001849 # structural analysis by paired-end tag sequencing
+    OBI:0001850 # transcript analysis by paired-end tag sequencing
+    OBI:0001853 # DNase I hypersensitive sites sequencing assay
+    OBI:0001857 # RNP (ribonuclear particle) immunoprecipitation high- throughput sequencing assay
+    OBI:0001858 # cross-linking immunoprecipitation high-throughput sequencing assay
+    OBI:0001859 # formaldehyde-assisted isolation of regulatory elements assay
+    OBI:0001861 # methylation-sensitive restriction enzyme sequencing assay
+    OBI:0001862 # reduced representation bisulfite sequencing assay
+    OBI:0001863 # shotgun bisulfite-seq assay
+    OBI:0001864 # RNA Annotation and Mapping of Promoters for the Analysis of Gene Expression assay
+    OBI:0001915 # DNA replication timing by array assay
+    OBI:0001918 # RNA-binding protein immunoprecipitation array profiling assay
+    OBI:0001919 # Carbon-copy chromosome conformation capture assay
+    OBI:0001920 # DNA replication timing by sequencing assay
+    OBI:0001921 # RNA-binding protein immunoprecipitation tiling array profiling
+    OBI:0001922 # microRNA profiling by high throughput sequencing assay
+    OBI:0001923 # protein sequencing by tandem mass spectrometry assay
+    OBI:0001924 # micrococcal nuclease digestion followed by high throughput sequencing assay
+    OBI:0001925 # chromatin immunoprecipitation with exonuclease sequencing assay
+    OBI:0001926 # microRNA profiling assay
+    OBI:0001954 # ChIP assay
+    OBI:0001956 # assay using chromatin immunoprecipitation
+    OBI:0001960 # taxonomic diversity assessment by targeted gene survey
+    OBI:0002014 # DNA methylation profiling by ChIP-chip assay
+    OBI:0002015 # transcription profiling by MPSS assay
+    OBI:0002016 # histone modification identification by ChIP-chip assay
+    OBI:0002017 # histone modification identification by ChIP-Seq assay
+    OBI:0002018 # transcription factor binding site identification by ChIP-chip assay
+    OBI:0002019 # transcription factor binding site identification by ChIP-Seq assay
+    OBI:0002020 # epigenetic modification assay
+    OBI:0002029 # serial analysis of gene expression
+    OBI:0002030 # genotyping by tiling array
+    OBI:0002031 # genotyping by SNP array
+    OBI:0002032 # parallel analysis of RNA structure
+    OBI:0002033 # translation-associated transcript leader sequencing
+    OBI:0002034 # transcript leader sequencing
+    OBI:0002035 # peptide mass fingerprinting
+    OBI:0002036 # array based nucleic acid structure mapping assay
+    OBI:0002037 # micrococcal nuclease digestion followed by tiling array assay
+    OBI:0002038 # ribosomal profiling by sequencing assay
+    OBI:0002039 # assay for transposase-accessible chromatin using sequencing
+    OBI:0002040 # chromatin isolation by RNA purification sequencing assay
+    OBI:0002041 # self-transcribing active regulatory region sequencing assay
+    OBI:0002042 # carbon-copy chromosome conformation capture assay followed by sequencing assay
+    OBI:0002043 # individual-nucleotide resolution cross-linking and immunoprecipitation sequencing assay
+    OBI:0002044 # RNA Bind-n-Seq assay
+    OBI:0002045 # poly(A)-site sequencing assay
+    OBI:0002082 # reporter gene assay
+    OBI:0002083 # enhancer activity detection by reporter gene assay
+    OBI:0002084 # transcription cofactor activity region identification by ChIP-Seq assay
+    OBI:0002085 # transcript expression location detection by hybridization chain reaction
+    OBI:0302736 # comet assay
+    OBI:0302737 # PCR-SSCP assay
+    OBI:0600002 # tumor grading
+    OBI:0600003 # performing a clinical assessment
+    OBI:0600017 # detection of molecular label
+    OBI:0600020 # histology
+    OBI:0600025 # substance detection
+    OBI:0600026 # longitudinal mass measurement assay
+    OBI:0600047 # sequencing assay
+  }
+
+  OPTIONAL {
+    ?subject rdfs:label ?label .
+  }
+  OPTIONAL {
+    ?subject IAO:0000118 ?alternative_term .
+  }
+  OPTIONAL {
+    ?subject OBI:9991119 ?fged_alternative_term .
+  }
+  OPTIONAL {
+    ?subject OBI:9991118 ?iedb_alternative_term .
+  }
+  OPTIONAL {
+    ?subject OBI:0001847 ?isa_alternative_term .
+  }
+  OPTIONAL {
+    ?subject OBI:0001886 ?niaid_alternative_term .
+  }
+  OPTIONAL {
+    ?subject IAO:0000115 ?definition .
+  }
+  OPTIONAL {
+    ?subject IAO:0000119 ?definition_source .
+  }
+  OPTIONAL {
+    ?subject IAO:0000112 ?example_of_usage .
+  }
+  OPTIONAL {
+    ?subject IAO:0000116 ?editor_note .
+  }
+  OPTIONAL {
+    ?subject IAO:0000232 ?curator_note .
+  }
+  OPTIONAL {
+    ?subject IAO:0000117 ?term_editor .
+  }
+  OPTIONAL {
+    ?subject IAO:0000114 ?has_curation_status .
+    ?has_curation_status rdfs:label ?curation_status .
+  }
+
+}
+
+GROUP BY ?subject ?curation_status
+ORDER BY ?subject
+

@@ -1,0 +1,27 @@
+http://purl.obolibrary.org/obo/OBI_0001850
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: transcript analysis by paired-end tag sequencing
+  alternative term: RNA-PET
+  alternative term: RNA-PET assay
+  definition: An assay that incorporates Paired-End Tags and sequencing technology to determine transcripts, gene structures, and gene expressions.
+  definition source: Ruan, et al. Genome wide full-length transcript analysis using 5' and 3' paired-end-tag next generation sequencing (RNA-PET). Methods Mol Biol. 2012;809:535-62. [PMID:22113299]
+  example of usage: Ruan, et al. Genome wide full-length transcript analysis using 5' and 3' paired-end-tag next generation sequencing (RNA-PET). Methods Mol Biol. 2012;809:535-62. [PMID:22113299]
+  term editor: Person: Venkat Malladi, Chris Stoeckert, Jie Zheng
+
+  subclass of: achieves_planned_objective some 'transcription profiling identification objective'
+  subclass of: has_specified_output some 'DNA sequence data'
++ subclass of: 'transcription profiling assay, sequencing assay'
++ subclass of: (has_specified_input some 'DNA sequencer') and (realizes some (function and ('inheres in' some 'DNA sequencer')))
++ subclass of: (has_specified_input some 'ribonucleic acid') and (realizes some ('evaluant role' and ('inheres in' some 'ribonucleic acid')))
++ subclass of: has_part some 'RNA sequencing, paired-end library preparation'
++ subclass of: has_specified_input some 'ribonucleic acid'
++ subclass of: has_specified_input some RNA
+- subclass of: 'has part' some 'RNA sequencing'
+- subclass of: 'has part' some 'paired-end library preparation'
+- subclass of: 'has participant' some 'DNA sequencer'
+- subclass of: assay
+- subclass of: has_specified_input some 
+          ('ribonucleic acid'
+           and ('has role' some 'evaluant role'))

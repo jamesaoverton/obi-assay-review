@@ -1,0 +1,16 @@
+http://purl.obolibrary.org/obo/OBI_0001001
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: Edinburgh handedness assay
+  definition: The Edinburgh Handedness assay is an assay in which a set of questions  = the Edinburgh Handedness inventory - is asked and the answers to these questions are turned into a score, used to assess the dominance of a person's right or left hand in everyday activities. The inventory can be used by an observer assessing the person, or by a person self-reporting hand use. The latter method tends to be less reliable due to a person over-attributing tasks to the dominant hand.
+  definition source: WEB:http://en.wikipedia.org/wiki/Edinburgh_Handedness_Inventory
+  term editor: PERSON:Jessica Turner
+  term editor: Person:Alan Ruttenberg
+
+  subclass of: has_specified_output some 'Edinburgh score'
++ subclass of: 'handedness assay'
++ subclass of: has_specified_input some 'Edinburgh handedness inventory'
++ subclass of: has_specified_input some 'data item'
+- subclass of: assay
+- subclass of: has_specified_input value 'Edingburgh handedness inventory'

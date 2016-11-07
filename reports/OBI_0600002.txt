@@ -1,0 +1,19 @@
+http://purl.obolibrary.org/obo/OBI_0600002
+Reviewed: FALSE
+Curation Status: pending final vetting
+
+  label: tumor grading
+  alternative term: grading of tumor
+  definition: Determination of the grade (severity/stage) of a tumor sample, used in cancer biology to describe abnormalities/qualities of tumor cells or tissues. Values can be described by terms from NCI Thesaurus.
+  definition source: OBI branch derived; submitted by MO
+  term editor: Compiled by Helen Parkinson for Transcriptomics thanks to Adam Witney
+
+  subclass of: has_specified_input some specimen
++ subclass of: assay
++ subclass of: has_specified_output some 'disease course'
++ subclass of: has_specified_output some 'measurement datum'
+- subclass of: achieves_planned_objective some 'assay objective'
+- subclass of: has_specified_output some 
+          ('measurement datum'
+           and ('is about' some 'disease course'))
+- subclass of: process

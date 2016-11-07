@@ -1,0 +1,22 @@
+http://purl.obolibrary.org/obo/OBI_0000872
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: serum neutralization of viral infectivity assay
+  alternative term: influenza neutralization assay
+  definition: A quantitative assay where different
+    dilutions of serum are mixed with virus and used to infect cells. At
+    the lower dilutions, antibodies will block infection, but at higher
+    dilutions, there will be too few antibodies to have an effect. The
+    simple process of dilution provides a way to compare the virus-
+    neutralizing abilities of different sera. The neutralization titer is
+    expressed as the reciprocal of the highest dilution at which virus
+    infection is blocked.
+  definition source: WEB: http://www.virology.ws/2009/05/28/influenza-microneutralization-assay/
+  curator note: MC, 20100217: I added influenza neutralization assay as alternative term. This should be tagged with a community specific value, eg "influenza ontology" or else.
+  term editor: person: Bjoern Peters
+  term editor: person: Melanie Courtot
+
++ subclass of: 'analyte assay'
+- subclass of: achieves_planned_objective some 'analyte measurement objective'
+- subclass of: assay

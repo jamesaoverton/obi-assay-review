@@ -1,0 +1,31 @@
+http://purl.obolibrary.org/obo/OBI_0001857
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: RNP (ribonuclear particle) immunoprecipitation high- throughput sequencing assay
+  alternative term: RIP-seq
+  alternative term: RIP-seq assay
+  definition: An assay that combines immunoprecipitation of an RNA-binding protein and RNA-seq to identify mRNAs associated with selected RNA binding proteins (RBPs).
+  definition source: Zhao et al. Genome-wide identification of polycomb-associated RNAs by RIP-seq. Molecular Cell (2010) vol. 40 (6) pp. 939-53 [PMID:21172659]
+  example of usage: Zhao et al. Genome-wide identification of polycomb-associated RNAs by RIP-seq. Molecular Cell (2010) vol. 40 (6) pp. 939-53 [PMID:21172659]
+  term editor: Person: Venkat Malladi, Chris Stoeckert, Jie Zheng
+
+  subclass of: achieves_planned_objective some 'protein and RNA interaction identification objective'
+  subclass of: has_specified_output some 'DNA sequence data'
++ subclass of: 'analyte assay, sequencing assay'
++ subclass of: (has_specified_input some 'DNA sequencer, sonicator') and (realizes some (function and ('inheres in' some 'DNA sequencer, sonicator')))
++ subclass of: (has_specified_input some 'protein complex') and (realizes some ('evaluant role' and ('inheres in' some 'protein complex')))
++ subclass of: has_part some 'immunoprecipitation, library preparation, cross linking, RNA sequencing'
++ subclass of: has_specified_input some 'protein complex'
++ subclass of: has_specified_input some protein
+- subclass of: 'has part' some 'RNA sequencing'
+- subclass of: 'has part' some 'cross linking'
+- subclass of: 'has part' some 'library preparation'
+- subclass of: 'has part' some immunoprecipitation
+- subclass of: 'has participant' some 'DNA sequencer'
+- subclass of: 'has participant' some sonicator
+- subclass of: achieves_planned_objective some 'analyte measurement objective'
+- subclass of: assay
+- subclass of: has_specified_input some 
+          ('protein complex'
+           and ('has role' some 'evaluant role'))

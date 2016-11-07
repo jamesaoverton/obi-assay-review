@@ -1,0 +1,24 @@
+http://purl.obolibrary.org/obo/OBI_0001686
+Reviewed: FALSE
+Curation Status: ready for release
+
++ label: in-situ hybridization
+- label: in situ hybridization
+  alternative term: ISH
++ definition: is an assay using artificially induced nucleic hybridization to localize a specific DNA or RNA sequence in a portion or section of tissue
+- definition: is an assay using artificially induced nucleic hybridization to localize a specific DNA or RNA sequence in a portion or section of tissue 
+  definition source: PMID:9021518
+  example of usage: Use of in situ hybridization to examine gene expression in the embryonic, neonatal, and adult urogenital system.
+    PMID:22639265
+    
+  term editor: PERSON:Philippe Rocca-Serra; Marcus Chibucos
+
++ subclass of: '(assay and (has_specified_input some 'labeled nucleic acid extract') and (has_specified_output some ('data item' and ('is about' some 'macromolecule localization')))) and (achieves_planned_objective some 'biological feature identification objective')'
++ subclass of: achieves_planned_objective some 'biological feature identification objective'
++ subclass of: assay
++ subclass of: has_specified_input some 'labeled nucleic acid extract'
++ subclass of: has_specified_input some 'nucleic acid'
++ subclass of: has_specified_output some 'data item'
++ subclass of: has_specified_output some 'macromolecule localization'
+- equivalent to: (assay and (has_specified_input some 'labeled nucleic acid extract') and (has_specified_output some 
+      ('data item' and ('is about' some 'macromolecule localization')))) and (achieves_planned_objective some 'biological feature identification objective')

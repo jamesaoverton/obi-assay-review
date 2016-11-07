@@ -1,0 +1,36 @@
+http://purl.obolibrary.org/obo/OBI_0000748
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: bisulfite sequencing
+  definition: An assay which allows to determine the methylation status of genomic DNA using DNA sequencing techniques preceded by a bisulfite based chemical modification of genomic DNA at CpG island location.
+  definition source: adapted from Wikipedia
+  example of usage: PMID: 19581485. High definition profiling of mammalian DNA methylation by array capture and single molecule bisulfite sequencing. Hodges E, Smith A, Kendall J, Xuan Z, Ravi K, Rooks M, Zhang M, Ye K, Battacharjee A, Brizuela L, McCombie WR, Wigler M, Hannon GJ, Hicks J.
+    Genome Res. 2009 Jul 6.
+  editor note: 8/19/09: Chris says that there may used to be a way of doing bisulfite sequencing comparing lengths of restriction fragments, which implies that it is possible to do without DNA sequencing.
+  term editor: Philippe Rocca-Serra
+
+  subclass of: achieves_planned_objective some 'epigenetic modification identification objective'
++ subclass of: 'DNA sequencing, DNA methylation profiling by high throughput sequencing assay'
++ subclass of: (has_specified_input some 'DNA sequencer') and (realizes some (function and ('inheres in' some 'DNA sequencer')))
++ subclass of: (has_specified_input some 'deoxyribonucleic acid') and (realizes some ('evaluant role' and ('inheres in' some 'deoxyribonucleic acid')))
++ subclass of: has_part some 'DNA sequencing'
++ subclass of: has_specified_input some 'deoxyribonucleic acid'
++ subclass of: has_specified_input some DNA
++ subclass of: has_specified_output some 'DNA residue methylation  regulation of DNA methylation'
++ subclass of: has_specified_output some 'measurement datum  DNA sequence data'
+- subclass of: 'has part' some 'DNA sequencing'
+- subclass of: 'has participant' some 'DNA sequencer'
+- subclass of: assay
+- subclass of: has_specified_input some 
+          ('deoxyribonucleic acid'
+           and ('has role' some 'evaluant role'))
+- subclass of: has_specified_output some 
+          ('DNA sequence data'
+           and ('is about' some 'regulation of DNA methylation'))
+- subclass of: has_specified_output some 
+          ('measurement datum'
+           and ('is about' some 'DNA residue methylation'))
+- subclass of: realizes some 
+          ('reagent role'
+           and ('inheres in' some hydrogensulfite))

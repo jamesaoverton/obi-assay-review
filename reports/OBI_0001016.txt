@@ -1,0 +1,25 @@
+http://purl.obolibrary.org/obo/OBI_0001016
+Reviewed: FALSE
+Curation Status: ready for release
+
+  label: DNASE 1 structure mapping assay
+  alternative term: DNAse footprinting assay
+  alternative term: single nucleotide resolution mapping assay using DNAse I
+  definition: a single-nucleotide-resolution deoxyribonucleic acid structure mapping assay which uses DNAse 1 as reagent and enzymatic probe to generate data and information at nucleotide resolution scale contributing to the determination of nucleic acid secondary structure
+  definition source: RNA ontology
+  example of usage: PMID:3773731
+  term editor: Person:Philippe Rocca-Serra
+
+  subclass of: has_specified_input some 'deoxyribonucleic acid'
++ subclass of: 'single-nucleotide-resolution nucleic acid structure mapping assay using enzymatic probing'
++ subclass of: has_specified_input some DNA
++ subclass of: has_specified_output some 'measurement datum'
++ subclass of: has_specified_output some 'secondary structure of sequence macromolecule'
+- subclass of: achieves_planned_objective some 'assay objective'
+- subclass of: has_specified_output some 
+          ('measurement datum'
+           and ('is about' some 'secondary structure of sequence macromolecule'))
+- subclass of: process
+- subclass of: realizes some 
+          ('catalytic activity'
+           and ('inheres in' some deoxyribonuclease-1))

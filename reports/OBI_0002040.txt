@@ -1,0 +1,14 @@
+http://purl.obolibrary.org/obo/OBI_0002040
+Reviewed: FALSE
+Curation Status: 
+
+  label: chromatin isolation by RNA purification sequencing assay
+  alternative term: ChIRP-seq
+  alternative term: ChIRP-seq assay
+  alternative term: Chromatin Isolation by RNA purification
+  definition: A detection of specific nucleic acids with complementary probes to discover regions of the genome which are bound by a specific RNA (or a by a ribonucleoprotein containing the RNA of interest) using high-throughput sequencing.
+  definition source: Chu et al. (31 August 2011). "Genomic Maps of Long Noncoding RNA Occupancy Reveal Principles of RNA-Chromatin Interactions". Molecular Cell.
+  example of usage: Csorba et al., (November 2014). "Antisense COOLAIR mediates the coordinated switching of chromatin states at FLC during vernalization." Proc Natl Acad Sci 111(45):16160-5. doi: 10.1073/pnas.1419030111.
+  term editor: Person: Venkat Malladi, Chris Stoeckert, Jie Zheng
+
+  subclass of: 'detection of specific nucleic acid polymers with complementary probes'

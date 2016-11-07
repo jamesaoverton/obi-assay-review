@@ -1,0 +1,19 @@
+http://purl.obolibrary.org/obo/OBI_0002029
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: serial analysis of gene expression
+  alternative term: SAGE
++ definition: A transcription profiling assay which aims to quantify RNA through creating short signature tags of the messages and ligating them into a larger molecule that is than sequenced.
+- definition: A transcription profiling assay which aims to quantify RNA through creating short signature tags of the messages and ligating them into a larger molecule that is than sequenced. 
+  definition source: PMID:7570003
+  example of usage: PMID:15905473
+  editor note: Details see tracker: https://sourceforge.net/p/obi/obi-terms/720/
+  term editor: Person:Janos Demeter, Chris Stoeckert, Jie Zheng
+
+  subclass of: 'transcription profiling assay'
++ subclass of: (has_specified_input some 'DNA sequencer') and (realizes some (function and ('inheres in' some 'DNA sequencer')))
++ subclass of: has_part some 'SAGE ditag library preparation, sequencing assay'
+- subclass of: 'has part' some 'SAGE ditag library preparation'
+- subclass of: 'has part' some 'sequencing assay'
+- subclass of: 'has participant' some 'DNA sequencer'

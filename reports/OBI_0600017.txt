@@ -1,0 +1,21 @@
+http://purl.obolibrary.org/obo/OBI_0600017
+Reviewed: FALSE
+Curation Status: pending final vetting
+
+  label: detection of molecular label
+  definition: an assay that detects the presence or a quality of a molecular label which is a proxy for the detection of the molecular target to which the label is attached
+  definition source: OBI developer call, 3-12-12
+  example of usage: Determination of the amount of phycoerytherin label present in a cell population stained with anti-CD8-PE in order to determine the percentage of CD8+ T cells present
+  term editor: PERSON:Matthew Brush
+
+  subclass of: has_specified_input some 'molecular-labeled material'
++ subclass of: assay
++ subclass of: has_specified_input some 'material entity'
++ subclass of: has_specified_output some 'measurement datum'
++ subclass of: has_specified_output some 'molecular labeled material'
+- subclass of: achieves_planned_objective some 'assay objective'
+- subclass of: has_specified_output some 
+          ('measurement datum'
+           and ('is about' some 'molecular-labeled material'))
+- subclass of: process
+- subclass of: realizes some 'molecular label role'

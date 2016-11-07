@@ -1,0 +1,27 @@
+http://purl.obolibrary.org/obo/OBI_0302736
+Reviewed: FALSE
+Curation Status: ready for release
+
+  label: comet assay
+  alternative term: SCGE assay
+  alternative term: single cell gel electrophoresis  assay
+  definition: a comet assay is an assay which utilizes gel electrophoresis on cell exposed to a challenge with the objective to assess DNA damage (DNA breakage) by determining the size and shape of DNA migration in cell placed in an electric field in specific conditions.
+  definition source: PMID:7686265 .Mutat Res. 1993 Jul;288(1):47-63.The single cell gel electrophoresis assay (comet assay): a European review.
+  example of usage: PMID: 18326531.Mutagenesis. 2008 Mar 6.Recommendations for design of the rat comet assay.
+  term editor: Philippe Rocca-Serra
+
++ subclass of: (has_specified_input some 'gel tank, power supply') and (realizes some (function and ('inheres in' some 'gel tank, power supply')))
++ subclass of: assay
++ subclass of: has_specified_input some 'cell  agarose gel'
++ subclass of: has_specified_input some 'cell  reagent'
++ subclass of: has_specified_output some 'cellular response to DNA damage stimulus'
++ subclass of: has_specified_output some 'information content entity'
+- subclass of: 'has participant' some 'gel tank'
+- subclass of: 'has participant' some 'power supply'
+- subclass of: achieves_planned_objective some 'assay objective'
+- subclass of: has_specified_input some 'agarose gel'
+- subclass of: has_specified_input some cell
+- subclass of: has_specified_output some 
+          ('information content entity'
+           and ('is about' some 'cellular response to DNA damage stimulus'))
+- subclass of: process

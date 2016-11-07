@@ -1,0 +1,23 @@
+http://purl.obolibrary.org/obo/OBI_0302737
+Reviewed: FALSE
+Curation Status: ready for release
+
+  label: PCR-SSCP assay
+  alternative term: polymerase chain reaction-single strand conformation polymorphism assay
+  definition: a PCR-SSCP assay is an assay that identifies DNA sequence variation (mutation, deletion, insertions) using gel electrophoresis technique and denaturating conditions on target DNA sequences amplified using polymerase chain reaction procedure.
+  definition source: PMID: 18219595.Mol Biotechnol. 2008 Feb;38(2):155-63.PCR-SSCP: a method for the molecular analysis of genetic diseases.
+  example of usage: PMID: 17334176.Hum Exp Toxicol. 2007 Jan;26(1):9-18.Is there a role for PCR-SSCP among the methods for missense mutation detection of TP53 gene?
+  term editor: PERSON: Philippe Rocca-Serra
+
+  subclass of: has_specified_input some 'amplified DNA'
++ subclass of: 'genotyping assay'
++ subclass of: has_part some 'polymerase chain reaction, material component separation'
++ subclass of: has_specified_input some DNA
++ subclass of: has_specified_output some 'image, genotype information'
+- subclass of: 'has part' some 'material component separation'
+- subclass of: 'has part' some 'polymerase chain reaction'
+- subclass of: 'has participant' some 'polyacrylamide gel'
+- subclass of: achieves_planned_objective some 'assay objective'
+- subclass of: assay
+- subclass of: has_specified_output some 'genotype information'
+- subclass of: has_specified_output some image

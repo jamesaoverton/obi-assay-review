@@ -1,28 +1,29 @@
 http://purl.obolibrary.org/obo/OBI_0000435
-label: genotyping assay
-alternative term: genotype profiling, SNP genotyping
-definition: an assay which generates data about a genotype from a specimen of genomic DNA. A variety of  
-techniques and instruments can be used to produce information about sequence variation at particular genomic positions.
-definition source: OBI Biomaterial
-example of usage: High-throughput genotyping of oncogenic human papilloma viruses with MALDI-TOF mass spectrometry. Clin Chem. 2008 Jan;54(1):86-92. Epub 2007 Nov 2.PMID: 17981923
-term editor: Philippe Rocca-Serra
+Reviewed: FALSE
+Curation Status: metadata complete
 
-DIFFERENT LOGIC
+  label: genotyping assay
+  alternative term: genotype profiling, SNP genotyping
+  ISA alternative term: SNP analysis
++ definition: an assay which generates data about a genotype from a specimen of genomic DNA. A variety of techniques and instruments can be used to produce information about sequence variation at particular genomic positions.
+- definition: an assay which generates data about a genotype from a specimen of genomic DNA. A variety of
+    techniques and instruments can be used to produce information about sequence variation at particular genomic positions.
+  definition source: OBI Biomaterial
+  example of usage: High-throughput genotyping of oncogenic human papilloma viruses with MALDI-TOF mass spectrometry. Clin Chem. 2008 Jan;54(1):86-92. Epub 2007 Nov 2.PMID: 17981923
+  term editor: Philippe Rocca-Serra
 
-BEFORE
-equivalent to: has_specified_output some 'genotype information'
-subclass of: achieves_planned_objective some 'sequence feature identification objective'
-subclass of: assay
-subclass of: has_specified_input some 
-      (specimen
-       and ('has part' some 'deoxyribonucleic acid'))
-subclass of: has_specified_output some 'genotype information'
-subclass of: realizes some 
-      ('analyte role'
-       and ('role of' some 'deoxyribonucleic acid'))
-
-AFTER
-subclass of: (has_specified_input some 'deoxyribonucleic acid') and (realizes some ('analyte role' and ('inheres in' some 'deoxyribonucleic acid')))
-subclass of: 'analyte assay'
-subclass of: has_specified_input some 'specimen and ('has part' some deoxyribonucleic acid)'
-subclass of: has_specified_output some 'genotype information'
+  subclass of: achieves_planned_objective some 'sequence feature identification objective'
+  subclass of: has_specified_output some 'genotype information'
++ subclass of: 'analyte assay'
++ subclass of: 'has_specified_output some 'genotype information''
++ subclass of: (has_specified_input some 'deoxyribonucleic acid') and (realizes some ('analyte role' and ('inheres in' some 'deoxyribonucleic acid')))
++ subclass of: has_specified_input some 'specimen and ('has part' some deoxyribonucleic acid)'
++ subclass of: has_specified_input some DNA
+- equivalent to: has_specified_output some 'genotype information'
+- subclass of: assay
+- subclass of: has_specified_input some 
+          (specimen
+           and ('has part' some 'deoxyribonucleic acid'))
+- subclass of: realizes some 
+          ('analyte role'
+           and ('role of' some 'deoxyribonucleic acid'))

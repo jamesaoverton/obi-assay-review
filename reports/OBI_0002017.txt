@@ -1,0 +1,18 @@
+http://purl.obolibrary.org/obo/OBI_0002017
+Reviewed: FALSE
+Curation Status: 
+
+  label: histone modification identification by ChIP-Seq assay
+  alternative term: histone modification ChIP-Seq
+  definition: A ChIP-seq assay to identify regions containing specific histones and their modifications.
+  definition source: Penn group
+  term editor: Person: Chris Stoeckert, Jie Zheng
+
+  subclass of: 'ChIP-seq assay'
++ subclass of: achieves_planned_objective some 'epigenetic modification indentification objective'
++ subclass of: has_specified_output some 'histone modification'
++ subclass of: has_specified_output some 'information content entity'
+- subclass of: achieves_planned_objective some 'epigenetic modification identification objective'
+- subclass of: has_specified_output some 
+          ('information content entity'
+           and ('is about' some 'histone modification'))

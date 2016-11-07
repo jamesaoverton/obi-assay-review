@@ -1,0 +1,20 @@
+http://purl.obolibrary.org/obo/OBI_0001669
+Reviewed: FALSE
+Curation Status: ready for release
+
+  label: far-Western blot
+  definition: is a adaptation on the western blot assay to explore protein-protein interaction. The assay involves separating target proteins on an SDS-PAGE gel, blotting to a membrane, hybridization with a protein probe and visualization using a probe-directed antibody. 
+  definition source: adapted from ECO, PMID:18079728
+  example of usage: Studying protein-protein interactions via blot overlay or Far Western blot.
+    Hall RA.
+    Methods Mol Biol. 2004;261:167-74. Review.
+    PMID: 15064457
+  term editor: PERSON:Philippe Rocca-Serra; Marcus Chibucos
+
++ subclass of: '(assay and (has_specified_input some 'protein complex') and (has_specified_output some ('data item' and ('is about' some 'protein domain specific binding')))) and (achieves_planned_objective some 'assay objective')'
++ subclass of: 'binding assay'
++ subclass of: has_specified_input some 'protein complex'
++ subclass of: has_specified_output some 'data item'
++ subclass of: has_specified_output some 'protein domain specific binding'
+- equivalent to: (assay and (has_specified_input some 'protein complex') and (has_specified_output some 
+      ('data item' and ('is about' some 'protein domain specific binding')))) and (achieves_planned_objective some 'assay objective')

@@ -1,0 +1,17 @@
+http://purl.obolibrary.org/obo/OBI_0001672
+Reviewed: FALSE
+Curation Status: ready for release
+
+  label: gene knock-down assay
+  definition: is an assay which transiently disrupts gene transcripts by expressing antisense RNA constructs or delivering RNA interfering molecules in cells.
+  definition source: PMID:17430206
+  term editor: PERSON:Philippe Rocca-Serra; Marcus Chibucos
+
++ subclass of: '(assay and (has_specified_input some 'cultured cell population') and (has_specified_output some ('data item' and ('is about' some molecular_function)))) and (achieves_planned_objective some 'assay objective')'
++ subclass of: assay
++ subclass of: has_specified_input some 'cultured cell population'
++ subclass of: has_specified_input some cell
++ subclass of: has_specified_output some 'data item'
++ subclass of: has_specified_output some 'molecular function'
+- equivalent to: (assay and (has_specified_input some 'cultured cell population') and (has_specified_output some 
+      ('data item' and ('is about' some molecular_function)))) and (achieves_planned_objective some 'assay objective')

@@ -1,0 +1,22 @@
+http://purl.obolibrary.org/obo/OBI_0001683
+Reviewed: FALSE
+Curation Status: ready for release
+
++ label: chromosome organization assay by fluorescence in-situ hybridization
+- label: chromosome organization assay by fluorescence in situ hybridization
+  alternative term: FISH
+  definition: is an in situ hybridization assay that uses fluorescence as means of detection chromosomal integrity
++ example of usage: Duplication of intrachromosomal insertion segments 4q32äÊÍq35 confirmed by comparative genomic hybridization and fluorescent in situ hybridization.PMID:22384449
+- example of usage: Duplication of intrachromosomal insertion segments 4q32→q35 confirmed by comparative genomic hybridization and fluorescent in situ hybridization.PMID:22384449
+  editor note: Changed label from fluorescence in situ hybridization as per tracker item #788
+  term editor: PERSON:Philippe Rocca-Serra; Marcus Chibucos
+
++ subclass of: '('in-situ hybridization' and (has_specified_input some 'binding constant') and (has_specified_output some ('data item' and ('is about' some 'chromosome organization')))) and (achieves_planned_objective some 'biological feature identification objective')'
++ subclass of: 'in-situ hybridization'
++ subclass of: achieves_planned_objective some 'biological feature identification objective'
++ subclass of: has_specified_input some 'binding constant'
++ subclass of: has_specified_input some 'data item'
++ subclass of: has_specified_output some 'chromosome organization'
++ subclass of: has_specified_output some 'data item'
+- equivalent to: ('in situ hybridization' and (has_specified_input some 'binding constant') and (has_specified_output some 
+      ('data item' and ('is about' some 'chromosome organization')))) and (achieves_planned_objective some 'biological feature identification objective')

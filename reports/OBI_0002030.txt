@@ -1,0 +1,15 @@
+http://purl.obolibrary.org/obo/OBI_0002030
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: genotyping by tiling array
+  alternative term: DNA sequence variation detection by tiling array
+  definition: A genotyping by array assay that aims to detect variation in (mostly) genomic DNA of an organism, strain, etc relative to some reference sequence employing tiling array technology.
+  definition source: PMID:19521816
+  example of usage: PMID:19521816
+  editor note: Details see tracker: https://sourceforge.net/p/obi/obi-terms/720/
+  term editor: Person:Janos Demeter, Chris Stoeckert, Jie Zheng
+
+  subclass of: 'genotyping by array assay'
++ subclass of: (has_specified_input some 'tiling microarray') and (realizes some (function and ('inheres in' some 'tiling microarray')))
+- subclass of: 'has participant' some 'tiling microarray'

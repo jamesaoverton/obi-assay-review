@@ -1,0 +1,18 @@
+http://purl.obolibrary.org/obo/OBI_0001304
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: RNAi profiling by array assay
+  definition: An assay in which double stranded RNA is synthesized with a sequence complementary to a gene(s) of interest and introduced into a cell or organism, where it is recognized as exogenous genetic material and activates the RNAi pathway resulting in knockdown of the transcripts and providing a means to study downstream changes in gene expression.
+  definition source: EFO_0001030 RNAi profiling by array
+  term editor: PERSON: James Malone
+
+  subclass of: achieves_planned_objective some 'molecular feature identification objective'
++ subclass of: 'analyte assay'
++ subclass of: (has_specified_input some 'DNA microarray') and (realizes some (function and ('inheres in' some 'DNA microarray')))
++ subclass of: (has_specified_input some 'ribonucleic acid') and (realizes some ('analyte role' and ('inheres in' some 'ribonucleic acid')))
+- subclass of: 'has participant' some 'DNA microarray'
+- subclass of: assay
+- subclass of: realizes some 
+          ('analyte role'
+           and ('role of' some 'ribonucleic acid'))

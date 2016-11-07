@@ -1,0 +1,14 @@
+http://purl.obolibrary.org/obo/OBI_0002038
+Reviewed: FALSE
+Curation Status: 
+
+  label: ribosomal profiling by sequencing assay
+  alternative term: Ribo-seq
+  alternative term: Ribo-seq assay
+  alternative term: ribosomal profiling
+  definition: A RNA-seq assay to sequence only mRNA protected by the ribosome during translation.
+  definition source: Ingolia, Nicholas T. (28 January 2014). "Ribosome profiling: new views of translation, from single codons to genome scale". Nature Reviews Genetics 15 (3): 205-213. doi:10.1038/nrg3645. PMID 24468696.
+  example of usage: Aspden et al., (August 2014). "Extensive translation of small open reading frames revealed by poly-ribo-seq." eLIFE 2014;3:e03528
+  term editor: Person: Venkat Malladi, Chris Stoeckert, Jie Zheng
+
+  subclass of: 'RNA-seq assay'

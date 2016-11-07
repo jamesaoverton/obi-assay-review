@@ -1,0 +1,25 @@
+http://purl.obolibrary.org/obo/OBI_0000706
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: SOLiD sequencing
+  definition: is a DNA sequencing which allows sequence identification by relying on the following steps:
+    1. Primers hybridize to the P1 adapter sequence within the library template.
+    2. A set of four fluorescently labeled di-base probes compete for ligation to the sequencing primer. Specificity of the di-base probe is achieved by interrogating every 1st and 2nd base in each ligation reaction.
+    3. Multiple cycles of ligation, detection and cleavage are performed with the number of cycles determining the eventual read length.
+    4. Following a series of ligation cycles, the extension product is removed and the template is reset with a primer complementary to the n-1 position for a second round of ligation cycles
+  definition source: adapted from Wikipedia and Applied Biosystems web site
+  example of usage: PMID: 19119315. High-resolution analysis of the 5'-end transcriptome using a next generation DNA sequencer.  Hashimoto S, Qu W, Ahsan B, Ogoshi K, Sasaki A, Nakatani Y, Lee Y, Ogawa M, Ametani A, Suzuki Y, Sugano S, Lee CC, Nutter RC, Morishita S, Matsushima K. PLoS One. 2009;4(1):e4108.
+  term editor: Philippe Rocca-Serra
+
+  subclass of: 'DNA sequencing by ligation'
++ subclass of: (has_specified_input some 'AB SOLiD System') and (realizes some (function and ('inheres in' some 'AB SOLiD System')))
++ subclass of: has_specified_input some 'DNA ligase, paired-end library or single fragment library'
++ subclass of: has_specified_input some reagent
+- subclass of: 'has participant' some 'AB SOLiD System'
+- subclass of: 'immediately preceded by' some 
+          (immobilization
+           and ('immediately preceded by' some 'vector mediated amplification'))
+- subclass of: has_specified_input some 
+          ('paired-end library' or 'single fragment library')
+- subclass of: has_specified_input some 'DNA ligase'

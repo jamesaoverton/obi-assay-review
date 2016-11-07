@@ -1,0 +1,15 @@
+http://purl.obolibrary.org/obo/OBI_0000615
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: protein expression profiling
+  alternative term: proteomic analysis
+  definition: a planned process which aims to provide information about protein expression and translation activity using protein extracts collected from a material entity using a range of techniques and instrument such as Mass spectrometers, Gel electrophoresis, Western Blots, Protein microarrays
+  definition source: OBI branch derived
+  example of usage: Protein Expression Profiling During Chick Retinal Maturation: A Proteomics-based approach.
+    Finnegan S, Robson JL, Wylie M, Healy A, Stitt AW, Curry WJ.
+    Proteome Sci. 2008 Dec 10;6(1):34.PMID: 19077203
+  term editor: Phlippe Rocca-Serra
+
+  subclass of: assay
+- subclass of: achieves_planned_objective some 'assay objective'

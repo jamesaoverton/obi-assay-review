@@ -1,0 +1,17 @@
+http://purl.obolibrary.org/obo/OBI_0001017
+Reviewed: FALSE
+Curation Status: ready for release
+
+  label: single-nucleotide-resolution nucleic acid structure mapping assay using chemical probing
+  definition: a single-nucleotide-resolution nucleic acid structure mapping assay which relies on small chemical compounds acting as chemical probes  in order to produce measurement information which one interpreted provide structural information about the RNA species under study.
+  definition source: RNAO and OBI
+  term editor: Person: Philippe Rocca-Serra
+
+  subclass of: 'single-nucleotide-resolution nucleic acid structure mapping assay'
++ subclass of: '(realizes some ('reagent role' and ('inheres in' some ('molecular entity' or 'nucleic acid')))) and (has_specified_output some ('measurement datum' and ('is about' some 'secondary structure of sequence macromolecule')))'
++ subclass of: has_specified_output some 'measurement datum'
++ subclass of: has_specified_output some 'secondary structure of sequence macromolecule'
+- equivalent to: (realizes some 
+      ('reagent role' and ('inheres in' some 
+      ('molecular entity' or 'nucleic acid')))) and (has_specified_output some 
+      ('measurement datum' and ('is about' some 'secondary structure of sequence macromolecule')))

@@ -1,0 +1,13 @@
+http://purl.obolibrary.org/obo/OBI_0002032
+Reviewed: FALSE
+Curation Status: 
+
+  label: parallel analysis of RNA structure
+  alternative term: PARS
+  definition: A single-nucleotide-resolution nucleic acid structure mapping assay using enzymatic probing based on deep sequencing fragments of RNAs that were treated with structure-specific enzymes, thus providing simultaneous in vitro profiling of the secondary structure of thousands of RNA species at single nucleotide resolution.
+  definition source: pmid:20811459
+  example of usage: pmid:20811459
+  editor note: Details see tracker: https://sourceforge.net/p/obi/obi-terms/725/
+  term editor: Janos Demeter, Chris Stoeckert
+
+  subclass of: 'single-nucleotide-resolution nucleic acid structure mapping assay using enzymatic probing'

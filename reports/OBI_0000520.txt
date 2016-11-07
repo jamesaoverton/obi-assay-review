@@ -1,0 +1,28 @@
+http://purl.obolibrary.org/obo/OBI_0000520
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: clinical chemistry assay
+  alternative term: chemical pathology
+  alternative term: detection of analyte in blood sample
+  ISA alternative term: clinical chemistry
+  definition: a process which uses analytical methods to produce measurements and data on the concentration of a chemical parameters (analytes) present in a bodily fluid collected from an organism.
+  definition source: adapted from Wikipedia
+  example of usage: Influence of hydroxyethyl starch (6% HES 130/0.4) administration on hematology and clinical chemistry parameters.
+    Mueller T, Schimetta W, Dieplinger B, Loeffler P, Rehm M, Kreimeier U, Poelz W, Haltmayer M.
+    Clin Chem Lab Med. 2008;46(4):558-62.
+    PMID: 18605936
+  editor note: 3/26/09: There needs to be a restriction set that specifies which type of evaluants are used in the assay, somewhere along the lines of 'sample derived of bodily fluid'
+  term editor: Person: Philippe Rocca-Serra
+
++ subclass of: 'analyte assay'
++ subclass of: (has_specified_input some 'material entity') and (realizes some ('evaluant role' and ('inheres in' some 'material entity')))
++ subclass of: (has_specified_input some 'scattered molecular aggregate') and (realizes some ('analyte role' and ('inheres in' some 'scattered molecular aggregate')))
+- subclass of: achieves_planned_objective some 'analyte measurement objective'
+- subclass of: process
+- subclass of: realizes some 
+          ('analyte role'
+           and ('role of' some 'scattered molecular aggregate'))
+- subclass of: realizes some 
+          ('evaluant role'
+           and ('role of' some 'material entity'))

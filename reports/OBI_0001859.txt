@@ -1,0 +1,29 @@
+http://purl.obolibrary.org/obo/OBI_0001859
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: formaldehyde-assisted isolation of regulatory elements assay
+  alternative term: FAIRE-seq
+  alternative term: FAIRE-seq assay
+  definition: An assay to determine the sequences of those DNA regions in the genome associated with regulatory activity.
+  definition source: http://en.wikipedia.org/wiki/FAIRE-Seq
++ example of usage: Giresi, et al. FAIRE (Formaldehyde-Assisted Isolation of Regulatory Elements) isolates active regulatory elements from human chromatin. Genome Research 17 (6): 877äóñ85. [PMID:17179217]
+- example of usage: Giresi, et al. FAIRE (Formaldehyde-Assisted Isolation of Regulatory Elements) isolates active regulatory elements from human chromatin. Genome Research 17 (6): 877–85. [PMID:17179217]
+  term editor: Person: Venkat Malladi, Chris Stoeckert, Jie Zheng
+
+  subclass of: achieves_planned_objective some 'protein and DNA interaction identification objective'
+  subclass of: has_specified_output some 'DNA sequence data'
++ subclass of: 'DNA sequencing'
++ subclass of: (has_specified_input some 'deoxyribonucleic acid') and (realizes some ('evaluant role' and ('inheres in' some 'deoxyribonucleic acid')))
++ subclass of: has_part some 'DNA sequencing, library preparation, cross linking'
++ subclass of: has_specified_input some 'deoxyribonucleic acid'
++ subclass of: has_specified_input some DNA
+- subclass of: 'has part' some 'DNA sequencing'
+- subclass of: 'has part' some 'cross linking'
+- subclass of: 'has part' some 'library preparation'
+- subclass of: 'has participant' some 'DNA sequencer'
+- subclass of: 'has participant' some sonicator
+- subclass of: assay
+- subclass of: has_specified_input some 
+          ('deoxyribonucleic acid'
+           and ('has role' some 'evaluant role'))

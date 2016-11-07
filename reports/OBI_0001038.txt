@@ -1,0 +1,25 @@
+http://purl.obolibrary.org/obo/OBI_0001038
+Reviewed: FALSE
+Curation Status: ready for release
+
+  label: Ruthenium structure mapping assay
+  definition: is a single-nucleotide-resolution nucleic acid structure mapping assay which uses Rhutenium as reagent and chemical probe to generate data and information at nucleotide resolution scale contributing to the determination of nucleic acid secondary structure
+  definition source: RNAOntology
+  example of usage: PMID:3016894
+  term editor: Person:Philippe Rocca-Serra
+
++ subclass of: 'single-nucleotide-resolution nucleic acid structure mapping assay using chemical probing'
++ subclass of: has_specified_input some 'DNA or RNA'
++ subclass of: has_specified_input some 'deoxyribonucleic acid or ribonucleic acid'
++ subclass of: has_specified_output some 'measurement datum'
++ subclass of: has_specified_output some 'secondary structure of RNA molecule'
+- subclass of: achieves_planned_objective some 'assay objective'
+- subclass of: has_specified_input some 
+          ('deoxyribonucleic acid' or 'ribonucleic acid')
+- subclass of: has_specified_output some 
+          ('measurement datum'
+           and ('is about' some 'secondary structure of RNA molecule'))
+- subclass of: process
+- subclass of: realizes some 
+          ('reagent role'
+           and ('inheres in' some 'ruthenium atom'))

@@ -1,0 +1,14 @@
+http://purl.obolibrary.org/obo/OBI_0000723
+Reviewed: FALSE
+Curation Status: metadata incomplete
+
+  label: DNA sequencing by ligation
+  definition: is a DNA sequencing which relies on DNA ligase activity to perform chain extension during the sequencing reaction step.
+  example of usage: PMID: 19546169. Sequence and structural variation in a human genome uncovered by short-read, massively parallel ligation sequencing using two base encoding.
+    McKernan KJ, Peckham HE, Costa G, McLaughlin S, Tsung E, Fu Y, 
+    Clouser C, Dunkan C, Ichikawa J, Lee C, Zhang Z, Sheridan A, Fu H, Ranade S, Dimilanta E, Sokolsky T, Zhang L, Hendrickson C, Li B, Kotler L, Stuart J, Malek J, Manning J, Antipova A, Perez D, Moore M, Hayashibara K, Lyons M, Beaudoin R, Coleman B, Laptewicz M, Sanicandro A, Rhodes M, De La Vega F, Gottimukkala RK, Hyland F, Reese M, Yang S, Bafna V, Bashir A, Macbride A, Aklan C, Kidd JM, Eichler EE, Blanchard AP. Genome Res. 2009 Jun 22.
+  editor note: PERSON: Philippe Rocca-Serra
+
+  subclass of: 'DNA sequencing'
+  subclass of: has_specified_input some 'DNA ligase'
++ subclass of: has_specified_input some reagent

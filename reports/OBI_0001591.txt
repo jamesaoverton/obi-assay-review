@@ -1,0 +1,13 @@
+http://purl.obolibrary.org/obo/OBI_0001591
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: direct binding assay
++ definition: a binding assay that measures the formation or disassociation of a complex of 2 material entities directly without use of a competitve ligand.
+- definition: a binding assay that measures the formation or disassociation of a complex of 2 material entities directly without use of a competitve ligand. 
+  definition source: IEDB
+  example of usage: Detecting the binding of a fluorescently labeled antibody to a peptide bound to the bottom of an ELISA plate, by incubating the antibody in the well, washing the plate, and detecing fluorescence which is a proxy for the presence of the bound antibody. 
+    
+  term editor: PERSON:Bjoern Peters, Randi Vita
+
+  subclass of: 'binding assay'

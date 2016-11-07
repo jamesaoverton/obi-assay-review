@@ -1,0 +1,23 @@
+http://purl.obolibrary.org/obo/OBI_0001960
+Reviewed: FALSE
+Curation Status: ready for release
+
+  label: taxonomic diversity assessment by targeted gene survey
+  alternative term: targeted gene survey DNA barcoding
+  ISA alternative term: environmental gene survey
+  ISA alternative term: targeted gene survey
+  definition: is an assay which aims to provide information about taxonomic information and community diversity by mean of sequencing specific genomic regions used as marker of identity or diversity.
+  definition source: OBI
+  example of usage: http://www.ncbi.nlm.nih.gov/pubmed/20679230
+    
+    http://www.ncbi.nlm.nih.gov/pubmed/25367129
+  term editor: PERSON:Philippe Rocca-Serra
+
+  subclass of: achieves_planned_objective some 'biodiversity assessment objective'
++ subclass of: 'sequencing assay'
++ subclass of: has_specified_output some 'sequence data'
++ subclass of: has_specified_output some population
+- subclass of: assay
+- subclass of: has_specified_output some 
+          ('sequence data'
+           and ('is about' some population))

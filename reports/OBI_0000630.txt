@@ -1,0 +1,22 @@
+http://purl.obolibrary.org/obo/OBI_0000630
+Reviewed: FALSE
+Curation Status: metadata incomplete
+
+  label: hematology
+  alternative term: blood analysis, haematology
+  definition: hematology is a process studying blood and blood producing organs relying on a variety of techniques and instruments
+  definition source: OBI branch derived
+  example of usage: Co-associations between insulin sensitivity and measures of liver function, subclinical inflammation, and hematology. 
+    Godsland IF, Johnston DG. 
+    Metabolism. 2008 Sep;57(9):1190-7. 
+    PMID: 18702943
+  term editor: Philippe Rocca-Serra
+
++ subclass of: assay
++ subclass of: has_specified_output some 'information content entity'
++ subclass of: has_specified_output some hemopoiesis
+- subclass of: achieves_planned_objective some 'assay objective'
+- subclass of: has_specified_output some 
+          ('information content entity'
+           and ('is about' some hemopoiesis))
+- subclass of: process

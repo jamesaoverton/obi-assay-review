@@ -1,0 +1,12 @@
+http://purl.obolibrary.org/obo/OBI_0001158
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: age measurement assay
+  definition: An assay that measures the duration of temporal interval of a process that is part of the life of the bearer, where the initial time point of the measured process is the beginning of some transitional state of the bearer such as birth or when planted.
+  definition source: OBI group
+  editor note: This assay measures time not developmental stage.  we recognize that development takes different time periods under different conditions such as media / temperature. For example, age measurement assay of fly age, the output likes 28 days but not mid-life of age at room temperature.
+  term editor: PERSON: Alan Ruttenberg
+
+  subclass of: assay
+  subclass of: has_specified_output some 'age measurement datum'

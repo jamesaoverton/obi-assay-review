@@ -1,0 +1,23 @@
+http://purl.obolibrary.org/obo/OBI_0000911
+Reviewed: FALSE
+Curation Status: metadata complete
+
++ label: real time reverse-transcription polymerase chain reaction assay
+- label: real time reverse-transcription polymerase chain reaction  assay
+  alternative term: RRT-PCR
+  alternative term: RT-rt PCR
+  alternative term: qRT-PCR
+  definition: Is_a PCR real time preceded by a reverse transcription step (reverse transcription step = an RNA strand is reverse transcribed into its DNA complement using the enzyme reverse transcriptase)
+  term editor: PERSON: Bjoern Peters
+  term editor: PERSON: Melanie Courtot
+
++ subclass of: 'assay and ('has part' some ('real time polymerase chain reaction assay' and ('immediately preceded by' some 'artificially induced reverse transcription'))) and ('immediately preceded by' some 'artificially induced reverse transcription')'
++ subclass of: assay
++ subclass of: has_part some 'real time polymerase chain reaction assay  artificially induced reverse transcription'
++ subclass of: has_specified_output some 'gene expression'
++ subclass of: has_specified_output some 'information content entity'
+- equivalent to: assay and ('has part' some 
+      ('real time polymerase chain reaction assay' and ('immediately preceded by' some 'artificially induced reverse transcription'))) and ('immediately preceded by' some 'artificially induced reverse transcription')
+- subclass of: has_specified_output some 
+          ('information content entity'
+           and ('is about' some 'gene expression'))

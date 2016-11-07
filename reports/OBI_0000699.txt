@@ -1,0 +1,18 @@
+http://purl.obolibrary.org/obo/OBI_0000699
+Reviewed: FALSE
+Curation Status: metadata incomplete
+
+  label: survival assessment
+- IEDB alternative term: 
+  definition: Survival assessment is an assay that measures the occurrence of death events in one or more organisms that are monitored over time
+  editor note: Need to point out more specifically that survival / death is measured.
+
+  subclass of: has_specified_input some organism
++ subclass of: assay
++ subclass of: has_specified_output some 'survival rate'
++ subclass of: has_specified_output some organism
+- subclass of: achieves_planned_objective some 'assay objective'
+- subclass of: has_specified_output some 
+          ('survival rate'
+           and ('is about' some organism))
+- subclass of: process

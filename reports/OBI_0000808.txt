@@ -1,0 +1,22 @@
+http://purl.obolibrary.org/obo/OBI_0000808
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: spectrolyse heparin antifactor-Xa assay
+  definition: A Spectrolyse Heparin (Xa) assay is intended for the quantitative determination of therapeutic Heparin in human plasma.
+    
+    The principle inhibitor of Thrombin, Factor Xa and other coagulation serine proteases in plasma is Antithrombin III. The rate of inhibition, under normal conditions, is slow, but can be increased several thousand-fold by Heparin. This mechanism accounts for the anticoagulant effect of Heparin. Low Molecular Weight Therapeutic Heparin (LMWH) preparations appear to catalyze the reaction between Factor Xa and Antithrombin III more readily than the reaction between Thrombin and Antithrombin III while standard Heparin catalyzes both reactions equally. The Factor Xa inhibition test is the most useful test for assaying the widest variety of therapeutic Heparin preparations. In this method, when both Factor Xa and Antithrombin III are present in excess, the rate of Factor Xa inhibition is directly proportional to the Heparin concentration. The residual Factor Xa activity, measured with a Factor Xa-specific chromogenic substrate, is inversely proportional to the Heparin concentration.
+  definition source: WEB:http://www.kordia.nl/en/product/hemostasis/specialty_kits__reagens/598/spectrolyse_heparin_anti_xa@2009/08/06
+  example of usage: PMID:19696660#Antifactor-Xa (anti-Xa) was determined using spectrolyse heparin (Xa) (Trinity Biotech plc, Bray, County Wicklow, Ireland).
+  editor note: 2009/10/18 Alan Ruttenberg. This assay was added during the fucoidan use case exercise but still needs to be fleshed out. Only the AT-III assay has more carefully specified inputs and outputs
+  curator note: 2009/09/28 Alan Ruttenberg. Fucoidan-use-case
+  term editor: Person:Alan Ruttenberg
+
+  subclass of: assay
++ subclass of: has_specified_input some 'blood serum specimen'
++ subclass of: has_specified_output some 'blood coagulation'
++ subclass of: has_specified_output some 'scalar measurement datum'
+- subclass of: (has_specified_input some 'blood serum specimen')
+       and (has_specified_output some 
+          ('scalar measurement datum'
+           and ('is about' some 'blood coagulation')))

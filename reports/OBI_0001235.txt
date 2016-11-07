@@ -1,0 +1,28 @@
+http://purl.obolibrary.org/obo/OBI_0001235
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: transcription profiling by tiling array assay
+  definition: An assay in which the transcriptome of a biological sample is analysed using a tiling path array.
+  definition source: EFO_0002769 transcription profiling by tiling array
+  term editor: Person: James Malone
+
+  subclass of: achieves_planned_objective some 'transcription profiling identification objective'
++ subclass of: 'transcription profiling assay'
++ subclass of: (has_specified_input some 'ribonucleic acid') and (realizes some ('analyte role' and ('inheres in' some 'ribonucleic acid')))
++ subclass of: (has_specified_input some 'tiling microarray') and (realizes some (function and ('inheres in' some 'tiling microarray')))
++ subclass of: has_specified_input some 'specimen and ('has part' some ribonucleic acid)'
++ subclass of: has_specified_input some RNA
++ subclass of: has_specified_output some 'gene expression'
++ subclass of: has_specified_output some 'measurement datum'
+- subclass of: 'has participant' some 'tiling microarray'
+- subclass of: assay
+- subclass of: has_specified_input some 
+          (specimen
+           and ('has part' some 'ribonucleic acid'))
+- subclass of: has_specified_output some 
+          ('measurement datum'
+           and ('is about' some 'gene expression'))
+- subclass of: realizes some 
+          ('analyte role'
+           and ('role of' some 'ribonucleic acid'))

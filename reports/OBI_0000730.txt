@@ -1,0 +1,17 @@
+http://purl.obolibrary.org/obo/OBI_0000730
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: pyrosequencing
+  definition: is a DNA sequencing which allows sequencing of a single strand of DNA by synthesizing the complementary strand along it, one base pair at a time, and detecting which base was actually added at each step. The template DNA is immobilized, and solutions of A, C, G, and T nucleotides are added and removed after the reaction, sequentially. Light is produced only when the nucleotide solution complements the first unpaired base of the template. The sequence of solutions which produce chemiluminescent signals allows the determination of the sequence of the template.
+    
+    ssDNA template is hybridized to a sequencing primer and incubated with the enzymes DNA polymerase, ATP sulfurylase, luciferase and apyrase, and with the substrates adenosine 5-prime phosphosulfate (APS) and luciferin.
+  definition source: Wikipedia (http://en.wikipedia.org/wiki/Pyrosequencing) and Roche 454 life science web site
+  example of usage: Pyrosequencing sheds light on DNA sequencing.
+    PMID: 1115661.  Ronaghi M. Genome Res. 2001 Jan;11(1):3-11. Review.
+  term editor: Philippe Rocca-Serra
+
+  subclass of: 'DNA sequencing by synthesis'
++ subclass of: (has_specified_input some '454 Genome Sequence 20 or 454 Genome Sequencer FLX') and (realizes some (function and ('inheres in' some '454 Genome Sequence 20 or 454 Genome Sequencer FLX')))
+- subclass of: 'has participant' some 
+          ('454 Genome Sequence 20' or '454 Genome Sequencer FLX')

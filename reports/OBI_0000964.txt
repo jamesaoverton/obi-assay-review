@@ -1,0 +1,8 @@
+http://purl.obolibrary.org/obo/OBI_0000964
+Reviewed: FALSE
+Curation Status: metadata incomplete
+
+  label: in live cell assay
+  definition: An assay in which a measurement is made by observing entities located in a live cell.
+
+  subclass of: assay

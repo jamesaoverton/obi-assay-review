@@ -1,0 +1,28 @@
+http://purl.obolibrary.org/obo/OBI_0001919
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: Carbon-copy chromosome conformation capture assay
+  alternative term: 5C
+  alternative term: 5C assay
+  definition: An assay that is used to analyze the organization of chromosomes at the genome-wide scale.
+  definition source: "Dostie et al. Chromosome Conformation Capture Carbon Copy (5C): a massively parallel solution for mapping interactions between genomic elements. Genome Res. 2006 October; 16(10):1299-309.[PMID:16954542]"
+  example of usage: van Berkum et al. Determining spatial chromatin organization of large genomic regions using 5C technology. Methods Mol Biol (2009) vol. 567 pp. 189-213 [PMID:19588094]
+  term editor: Venkat Malladi, Chris Stoeckert, Jie Zheng
+
+  subclass of: achieves_planned_objective some 'chromosome conformation identification objective'
+  subclass of: has_specified_output some 'DNA sequence data'
++ subclass of: 'sequencing assay'
++ subclass of: (has_specified_input some 'DNA sequencer') and (realizes some (function and ('inheres in' some 'DNA sequencer')))
++ subclass of: (has_specified_input some 'deoxyribonucleic acid') and (realizes some ('evaluant role' and ('inheres in' some 'deoxyribonucleic acid')))
++ subclass of: has_part some 'DNA sequencing, library preparation, cross linking, multiplex ligation-mediated amplification, specific enzymatic cleavage'
+- subclass of: 'has part' some 'DNA sequencing'
+- subclass of: 'has part' some 'cross linking'
+- subclass of: 'has part' some 'library preparation'
+- subclass of: 'has part' some 'multiplex ligation-mediated amplification'
+- subclass of: 'has part' some 'specific enzymatic cleavage'
+- subclass of: 'has participant' some 'DNA sequencer'
+- subclass of: assay
+- subclass of: realizes some 
+          ('evaluant role'
+           and ('role of' some 'deoxyribonucleic acid'))

@@ -1,0 +1,20 @@
+http://purl.obolibrary.org/obo/OBI_0001187
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: infectious agent detection assay
+  definition: An assay in which the presence or amount of an infectious agent in an input material is detected in an evaluant
+    
+  example of usage: Culturing a sputum sample on agar medium to detect bacterial growth; Stain slices of liver from a mouse to count presence of infectious centers. 
+    
+  editor note: 2/22/2011, BP: This should probably be an analyte assay, but the logical definition of those is currently restricted to 'scattered molecular aggregates', which excludes using infectious agents as analytes. See below
+    (realizes some 
+        ('evaluant role'
+         and (role_of some material_entity)))
+     and (realizes some 
+        ('analyte role'
+         and (role_of some 'infectious agent')))
+     and (achieves_planned_objective some 'analyte measurement objective')
+  term editor: Bjoern Peters, Randi Vita, Jason Greenbaum
+
+  subclass of: assay

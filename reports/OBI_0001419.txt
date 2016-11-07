@@ -1,0 +1,12 @@
+http://purl.obolibrary.org/obo/OBI_0001419
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: ChIP-chip by tiling array assay
+  definition: An assay where chromatin immunoprecipitation (ChIP) is used in combination with tiling  microarray technology
+  definition source: EFO_0002762 ChIP-chip by tiling array
+  term editor: Group: ArrayExpress production team
+
+  subclass of: 'ChIP-chip assay'
++ subclass of: (has_specified_input some 'tiling microarray') and (realizes some (function and ('inheres in' some 'tiling microarray')))
+- subclass of: 'has participant' some 'tiling microarray'

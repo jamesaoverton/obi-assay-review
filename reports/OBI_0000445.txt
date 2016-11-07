@@ -1,0 +1,21 @@
+http://purl.obolibrary.org/obo/OBI_0000445
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: mass measurement assay
+  definition: a process to determine the mass of an evaluant
+  definition source: OBI
+  example of usage: The patients was weighed and mass was determined to be 47 kilograms
+  term editor: Helen Parkinson
+
+  subclass of: assay
+  subclass of: has_specified_output some 'mass measurement datum'
++ subclass of: (has_specified_input some 'material entity') and (realizes some ('evaluant role' and ('inheres in' some 'material entity')))
++ subclass of: has_specified_input some 'material entity'
+- subclass of: achieves_planned_objective some 'assay objective'
+- subclass of: has_specified_input some 
+          ('material entity'
+           and ('has role' some 'evaluant role'))
+- subclass of: realizes some 
+          ('evaluant role'
+           and ('role of' some 'material entity'))

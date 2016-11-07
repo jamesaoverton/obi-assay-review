@@ -1,0 +1,29 @@
+http://purl.obolibrary.org/obo/OBI_0001848
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: chromatin interaction analysis by paired-end tag sequencing
+  alternative term: ChIA-PET
+  alternative term: ChIA-PET assay
+  definition: An assay that incorporates chromatin immunoprecipitation (ChIP)-based enrichment, chromatin proximity ligation, Paired-End Tags, and high-throughput sequencing to determine de novo long-range chromatin interactions genome-wide.
+  definition source: http://en.wikipedia.org/wiki/ChIA-PET
+  example of usage: Zhang, et al. ChIA-PET analysis of transcriptional chromatin interactions. Methods. 2012 Nov;58(3):289-99. [PMID:22926262]
+  term editor: Person: Venkat Malladi, Chris Stoeckert, Jie Zheng
+
+  subclass of: achieves_planned_objective some 'protein and DNA interaction identification objective'
+  subclass of: has_specified_output some 'DNA sequence data'
++ subclass of: 'assay using chromatin immunoprecipitation, sequencing assay'
++ subclass of: (has_specified_input some 'DNA sequencer') and (realizes some (function and ('inheres in' some 'DNA sequencer')))
++ subclass of: (has_specified_input some 'protein complex') and (realizes some ('evaluant role' and ('inheres in' some 'protein complex')))
++ subclass of: has_part some 'DNA sequencing, immunoprecipitation, cross linking, paired-end library preparation'
++ subclass of: has_specified_input some 'protein complex'
+- subclass of: 'has part' some 'DNA sequencing'
+- subclass of: 'has part' some 'cross linking'
+- subclass of: 'has part' some 'paired-end library preparation'
+- subclass of: 'has part' some immunoprecipitation
+- subclass of: 'has participant' some 'DNA sequencer'
+- subclass of: achieves_planned_objective some 'analyte measurement objective'
+- subclass of: assay
+- subclass of: has_specified_input some 
+          ('protein complex'
+           and ('has role' some 'evaluant role'))

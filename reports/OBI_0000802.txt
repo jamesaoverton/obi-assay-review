@@ -1,0 +1,20 @@
+http://purl.obolibrary.org/obo/OBI_0000802
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: prothrombin time assay
+  definition: The prothrombin time is an assay most commonly measured using blood plasma. Blood is drawn into a test tube containing liquid citrate, which acts as an anticoagulant by binding the calcium in a sample. The blood is mixed, then centrifuged to separate blood cells from plasma. In newborns, whole blood is used. The plasma is analyzed by a biomedical scientist on an automated instrument at 37 degrees C, which takes a sample of the plasma. An excess of calcium is added (thereby reversing the effects of citrate), which enables the blood to clot again. For an accurate measurement the proportion of blood to citrate needs to be fixed; many laboratories will not perform the assay if the tube is underfilled and contains a relatively high concentration of citrate. If the tube is underfilled or overfilled with blood, the standardized dilution of 1 part anticoagulant to 9 parts whole blood is no longer valid. For the prothrombin time test the appropriate sample is the blue top tube, or sodium citrate tube, which is a liquid anticoagulant. Tissue factor (also known as factor III or thromboplastin) is added, and the time the sample takes to clot is measured optically. Some laboratories use a mechanical measurement, which eliminates interferences from lipemic and icteric samples. The prothrombin ratio is the prothrombin time for a patient, divided by the result for control plasma.
+  definition source: WEB:http://en.wikipedia.org/wiki/Prothrombin_time@2009/10/06
+  example of usage: PMID:19696660#The prothrombin time (PT) was quantitatively determined using RecombiPlasTin (Instrumentation Laboratory Company, Lexington, Massachusetts, USA).
+  editor note: 2009/10/18 Alan Ruttenberg. This assay was added during the fucoidan use case exercise but still needs to be fleshed out. Only the AT-III assay has more carefully specified inputs and outputs
+  curator note: 2009/09/28 Alan Ruttenberg. Fucoidan-use-case
+  term editor: Person:Alan Ruttenberg
+
+  subclass of: assay
++ subclass of: has_specified_input some 'blood serum specimen'
++ subclass of: has_specified_output some 'blood coagulation'
++ subclass of: has_specified_output some 'scalar measurement datum'
+- subclass of: (has_specified_input some 'blood serum specimen')
+       and (has_specified_output some 
+          ('scalar measurement datum'
+           and ('is about' some 'blood coagulation')))

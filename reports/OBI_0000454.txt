@@ -1,0 +1,18 @@
+http://purl.obolibrary.org/obo/OBI_0000454
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: extracellular electrophysiology recording
+  definition: An extracellular electrophysiology recording is process where the recording location of the electrode is extracellular and data
+  definition source: PERSON: Frank Gibson
+  example of usage: The recording of a spike train in the caudate nucleus of a monkey where the electrodes are extra cellular, i.e. not in the neuron
+  term editor: PERSON: Frank Gibson, Helen Parkinson
+
++ subclass of: assay
++ subclass of: has_specified_output some 'ion channel activity'
++ subclass of: has_specified_output some 'mass measurement datum'
+- subclass of: achieves_planned_objective some 'assay objective'
+- subclass of: has_specified_output some 
+          ('measurement datum'
+           and ('is about' some 'ion channel activity'))
+- subclass of: process

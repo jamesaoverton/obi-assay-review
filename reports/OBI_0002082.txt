@@ -1,0 +1,12 @@
+http://purl.obolibrary.org/obo/OBI_0002082
+Reviewed: FALSE
+Curation Status: pending final vetting
+
+  label: reporter gene assay
+  alternative term: reporter gene detection assay
+  definition: An assay in which expression of a reporter gene is detected that was inserted under the control of a regulatory sequence of interest.
+  definition source: Paul D. Thomas, Yang Chai; FaceBase
+  editor note: tracker item: 781
+  term editor: Chris Stoeckert, Paul D. Thomas
+
+  subclass of: assay

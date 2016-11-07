@@ -1,0 +1,13 @@
+http://purl.obolibrary.org/obo/OBI_0001921
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: RNA-binding protein immunoprecipitation tiling array profiling
+  definition: A RNA-binding protein immunoprecipitation array profiling assay that combines immunoprecipitation of an RNA-binding protein and RNA tiling array  to identify mRNAs associated with selected RNA binding proteins (RBPs).
+  definition source: Jain et al. RIP-Chip analysis: RNA-Binding Protein Immunoprecipitation-Microarray (Chip) Profiling. Methods Mol Biol. 2011;703:247-63. [PMID:21125495]
+  example of usage: Jain et al. RIP-Chip analysis: RNA-Binding Protein Immunoprecipitation-Microarray (Chip) Profiling. Methods Mol Biol. 2011;703:247-63. [PMID:21125495]
+  term editor: Person: Venkat Malladi, Chris Stoeckert, Jie Zheng
+
+  subclass of: 'RNA-binding protein immunoprecipitation array profiling assay'
++ subclass of: (has_specified_input some 'tiling microarray') and (realizes some (function and ('inheres in' some 'tiling microarray')))
+- subclass of: 'has participant' some 'tiling microarray'

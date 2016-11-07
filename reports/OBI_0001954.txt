@@ -1,0 +1,39 @@
+http://purl.obolibrary.org/obo/OBI_0001954
+Reviewed: FALSE
+Curation Status: ready for release
+
+  label: ChIP assay
+  alternative term: chromatin immunoprecipitation assay
+  definition: An assay in which protein-DNA complexes are extracted from short regions of chromatin and are reversibly cross linked, immunoprecipitated with antibodies or tags, purified, and amplified with the aim of analysis gene- and promoter-specific known targets
+  definition source: adapted from CHS protocols, wikipedia, life tech, ChIP-seq term definition
+  example of usage: PMID: 6379641
+    Gilmour & Lis. Proc Natl Acad Sci U S A. 1984 Jul;81(14):4275-9.
+    and can be found linked from here:
+    
+  curator note: as per user (pployd) request and proposal by Alan Ruttenberg
+    http://sourceforge.net/p/obi/obi-terms/707/
+  term editor: Philippe Rocca-Serra
+
++ subclass of: 'assay using chromatin immunoprecipitation, epigenetic modification assay'
++ subclass of: (has_specified_input some 'deoxyribonucleic acid') and (realizes some ('analyte role' and ('inheres in' some 'deoxyribonucleic acid')))
++ subclass of: achieves_planned_objective some 'epigenetic modification identification objective  protein and DNA interaction identification objective'
++ subclass of: has_part some immunoprecipitation
++ subclass of: has_specified_input some 'DNA and protein complex'
++ subclass of: has_specified_input some 'specimen and ('has part' some 'deoxyribonucleic acid' and 'protein complex))'
++ subclass of: has_specified_output some 'chromatin remodeling' or 'regulation of molecular function, epigenetic' or 'sequence-specific DNA binding' or 'transcription factor binding site'
++ subclass of: has_specified_output some 'information content entity'
+- subclass of: 'has part' some immunoprecipitation
+- subclass of: achieves_planned_objective some 'epigenetic modification identification objective'
+- subclass of: achieves_planned_objective some 'protein and DNA interaction identification objective'
+- subclass of: assay
+- subclass of: has_specified_input some 
+          (specimen
+           and (('has part' some 'deoxyribonucleic acid')
+           and ('has part' some 'protein complex')))
+- subclass of: has_specified_output some 
+          ('information content entity'
+           and ('is about' some 
+              ('chromatin remodeling' or 'regulation of molecular function, epigenetic' or 'sequence-specific DNA binding' or 'transcription factor binding site')))
+- subclass of: realizes some 
+          ('analyte role'
+           and ('role of' some 'deoxyribonucleic acid'))

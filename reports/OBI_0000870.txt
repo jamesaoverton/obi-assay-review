@@ -1,0 +1,17 @@
+http://purl.obolibrary.org/obo/OBI_0000870
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: single-nucleotide-resolution nucleic acid structure mapping assay
+  definition: is an assay which aims to provide information about the secondary structure of nucleic acids using chemical or enzymatic probing to establish the extent of base-pairing or solvent accessiblity.
+  definition source: RNAO
+- example of usage: 
+  editor note: 2010-01-31: Philippe Rocca-Serra: OBI needs to review 'structure assay' as currently defined. Need to get feedback from Kevin Clancy.
+  term editor: Person: Philippe Rocca-Serra
+
+  subclass of: assay
++ subclass of: '(has_specified_output some ('measurement datum' and ('is about' some 'secondary structure of sequence macromolecule'))) and (achieves_planned_objective some 'assay objective')'
++ subclass of: has_specified_output some 'measurement datum'
++ subclass of: has_specified_output some 'secondary structure of a sequence macromolecule'
+- equivalent to: (has_specified_output some 
+      ('measurement datum' and ('is about' some 'secondary structure of sequence macromolecule'))) and (achieves_planned_objective some 'assay objective')

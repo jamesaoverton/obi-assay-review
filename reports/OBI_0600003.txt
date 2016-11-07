@@ -1,0 +1,22 @@
+http://purl.obolibrary.org/obo/OBI_0600003
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: performing a clinical assessment
+  alternative term: clinical diagnosis
+  definition: a protocol application during which a series of tests are made of a patient  leading to determination of disease state, or condition.
+  definition source: OBI branch derived
+  curator note: (maybe CIO)
+  term editor: PlanAndPlannedProcess Branch
+
+  subclass of: has_specified_output some 'diagnosis textual entity'
++ subclass of: assay
++ subclass of: has_part some 'performing a diagnosis'
++ subclass of: has_specified_input some 'organism and ('has role' some 'patient role')'
++ subclass of: has_specified_input some organism
+- subclass of: 'has part' some 'performing a diagnosis'
+- subclass of: achieves_planned_objective some 'assay objective'
+- subclass of: has_specified_input some 
+          (organism
+           and ('has role' some 'patient role'))
+- subclass of: process

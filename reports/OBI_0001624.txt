@@ -1,0 +1,24 @@
+http://purl.obolibrary.org/obo/OBI_0001624
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: organism identification assay
+  NIAID GSCID-BRC alternative term: Organism Detection Method
+  definition: An assay that identifies the organism species in a specimen.
+  definition source: NIAID GSCID-BRC metadata working group
+  term editor: Person: Chris Stoeckert, Jie Zheng
+
++ subclass of: 'assay and (achieves_planned_objective some 'organism identification objective')'
++ subclass of: achieves_planned_objective some 'organism identification objective'
++ subclass of: assay
++ subclass of: has_specified_input some 'specimen and ('has part' some organism)'
++ subclass of: has_specified_input some organism
++ subclass of: has_specified_output some 'information content entity'
++ subclass of: has_specified_output some organism
+- equivalent to: assay and (achieves_planned_objective some 'organism identification objective')
+- subclass of: (has_specified_input some 
+          (specimen
+           and ('has part' some organism)))
+       and (has_specified_output some 
+          ('information content entity'
+           and ('is about' some organism)))

@@ -1,16 +1,13 @@
 http://purl.obolibrary.org/obo/OBI_0000185
-label: imaging assay
-definition: An imaging assay is an assay to produce a picture of an entity. definition_source: OBI.
-definition source: OBI branch derived
-term editor: PlanAndPlannedProcess Branch
+Reviewed: FALSE
+Curation Status: pending final vetting
 
-DIFFERENT LOGIC
+  label: imaging assay
+  definition: An imaging assay is an assay to produce a picture of an entity. definition_source: OBI.
+  definition source: OBI branch derived
+  term editor: PlanAndPlannedProcess Branch
 
-BEFORE
-subclass of: achieves_planned_objective some 'assay objective'
-subclass of: has_specified_output some image
-subclass of: process
-
-AFTER
-subclass of: assay
-subclass of: has_specified_output some image
+  subclass of: has_specified_output some image
++ subclass of: assay
+- subclass of: achieves_planned_objective some 'assay objective'
+- subclass of: process

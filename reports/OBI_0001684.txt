@@ -1,0 +1,25 @@
+http://purl.obolibrary.org/obo/OBI_0001684
+Reviewed: FALSE
+Curation Status: ready for release
+
++ label: methylation-specific polymerase chain reaction
+- label: methylation-specific polymerase chain reaction 
+  alternative term: MSP
+  definition: is an assay which uses initial modification of DNA by sodium bisulfite, converting all unmethylated, but not methylated, cytosines to uracil, and subsequent amplification with primers specific for methylated versus unmethylated DNA.
+  definition source: PMID:8790415
+  example of usage: Methylation status of breast cancer resistance protein detected by methylation-specific polymerase chain reaction analysis is correlated inversely with its expression in drug-resistant lung cancer cells. PMID: 18219662
+  editor note: 2015-03-30 OBI dev call:
+    The assay was defined as equvivalent to
+    (assay and (has_specified_input some 'binding complex 3D structure determination assay') and (has_specified_output some 
+    ('data item' and ('is about' some 'regulation of DNA methylation')))) and (achieves_planned_objective some 'epigenetic modification identification objective')
+     'binding complex 3D structure determination assay' is a process and cannot be the input of another process which cause inconsistent.
+    In the call, we decided to remove axiom and will discuss it in the assay harmonization discussion.
+    see tracker:
+    https://sourceforge.net/p/obi/obi-terms/747/
+    
+    
+  term editor: PERSON:Philippe Rocca-Serra; Marcus Chibucos
+
+  subclass of: assay
++ subclass of: has_specified_output some 'data item'
++ subclass of: has_specified_output some 'regulation of DNA methylation'

@@ -1,0 +1,23 @@
+http://purl.obolibrary.org/obo/OBI_0000537
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: copy number variation profiling
+  alternative term: CNV analysis
+  definition: copy number variation profiling is a process which aims to provide information about lost or amplified genomic regions of DNA by comparing genomic DNA originated from tissues from same or different individuals using specific techniques such as CGH, array CGH, SNP genotyping.
++ example of usage: Profiling of copy number variations (CNVs) in healthy individuals from three ethnic groups using a human genome 32 K BAC-clone-based array.
+    de Ståhl TD, Sandgren J, Piotrowski A, Nord H, Andersson R, Menzel U, Bogdan A, Thuresson AC, Poplawski A, von Tell D, Hansson CM, Elshafie AI, Elghazali G, Imreh S, Nordenskjí_ld M, Upadhyaya M, Komorowski J, Bruder CE, Dumanski JP.
+    Hum Mutat. 2008 Mar;29(3):398-408. PMID: 18058796
+- example of usage: Profiling of copy number variations (CNVs) in healthy individuals from three ethnic groups using a human genome 32 K BAC-clone-based array.
+    de Ståhl TD, Sandgren J, Piotrowski A, Nord H, Andersson R, Menzel U, Bogdan A, Thuresson AC, Poplawski A, von Tell D, Hansson CM, Elshafie AI, Elghazali G, Imreh S, Nordenskjöld M, Upadhyaya M, Komorowski J, Bruder CE, Dumanski JP.
+    Hum Mutat. 2008 Mar;29(3):398-408. PMID: 18058796
+  term editor: Philippe Rocca-Serra
+
++ subclass of: assay
++ subclass of: has_specified_output some 'genetic characteristics information'
++ subclass of: has_specified_output some 'measurement datum'
+- subclass of: achieves_planned_objective some 'assay objective'
+- subclass of: has_specified_output some 
+          ('measurement datum'
+           and ('is about' some 'genetic characteristics information'))
+- subclass of: process

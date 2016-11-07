@@ -1,0 +1,29 @@
+http://purl.obolibrary.org/obo/OBI_0000634
+Reviewed: FALSE
+Curation Status: ready for release
+
+  label: DNA methylation profiling assay
+  ISA alternative term: DNA methylation profiling
+  definition: an assay which aims to provide information about state of methylation of DNA molecules using genomic DNA collected from a material entity using a range of techniques and instrument such as DNA sequencers and often relying on treatment with bisulfites to ensure cytosine conversion.
+  definition source: OBI branch derived
+  example of usage: Genome-wide, high-resolution DNA methylation profiling using bisulfite-mediated cytosine conversion.  Reinders J, Delucinge Vivier C, Theiler G, Chollet D, Descombes P, Paszkowski J. 
+    Genome Res. 2008 Mar;18(3):469-76. Epub 2008 Jan 24.  PMID: 18218979
+  term editor: Philippe Rocca-Serra
+
+  subclass of: achieves_planned_objective some 'epigenetic modification identification objective'
++ subclass of: 'analyte assay, epigenetic modification assay'
++ subclass of: 'has_specified_output some ('information content entity' and ('is about' some 'regulation of DNA methylation'))'
++ subclass of: (has_specified_input some 'deoxyribonucleic acid') and (realizes some ('analyte role' and ('inheres in' some 'deoxyribonucleic acid')))
++ subclass of: has_specified_input some 'specimen and ('has part' some deoxyribonucleic acid)'
++ subclass of: has_specified_input some DNA
++ subclass of: has_specified_output some 'information content entity'
++ subclass of: has_specified_output some 'regulation of DNA methylation'
+- equivalent to: has_specified_output some 
+      ('information content entity' and ('is about' some 'regulation of DNA methylation'))
+- subclass of: assay
+- subclass of: has_specified_input some 
+          (specimen
+           and ('has part' some 'deoxyribonucleic acid'))
+- subclass of: realizes some 
+          ('analyte role'
+           and ('role of' some 'deoxyribonucleic acid'))

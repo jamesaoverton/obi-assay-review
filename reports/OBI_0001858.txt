@@ -1,0 +1,31 @@
+http://purl.obolibrary.org/obo/OBI_0001858
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: cross-linking immunoprecipitation high-throughput sequencing assay
+  alternative term: CLIP-seq
+  alternative term: CLIP-seq assay
+  alternative term: HITS-CLIP
+  definition: An assay that employs UV-crosslinking between RNA and the protein, followed by immunoprecipitation with antibodies for the protein, fragmentation, and high-throughput used for screening for RNA sequences that interact with a particular RNA-binding protein.
+  definition source: Licatalosi et al. HITS-CLIP yields genome-wide insights into brain alternative RNA processing. Nature. 2008 Nov 27 456: 464-469 [PMID:18978773]
+  example of usage: Heulga et al. Integrative genome-wide analysis reveals cooperative regulation of alternative splicing by hnRNP proteins. Cell Rep. 2012 Feb 23;1(2):167-78. [PMID:22574288]
+  term editor: Person: Venkat Malladi, Chris Stoeckert, Jie Zheng
+
+  subclass of: achieves_planned_objective some 'protein and RNA interaction identification objective'
+  subclass of: has_specified_output some 'DNA sequence data'
++ subclass of: 'analyte assay, sequencing assay'
++ subclass of: (has_specified_input some 'protein complex') and (realizes some ('evaluant role' and ('inheres in' some 'protein complex')))
++ subclass of: has_part some 'immunoprecipitation, library preparation, cross linking, RNA sequencing'
++ subclass of: has_specified_input some 'protein complex'
++ subclass of: has_specified_input some protein
+- subclass of: 'has part' some 'RNA sequencing'
+- subclass of: 'has part' some 'cross linking'
+- subclass of: 'has part' some 'library preparation'
+- subclass of: 'has part' some immunoprecipitation
+- subclass of: 'has participant' some 'DNA sequencer'
+- subclass of: 'has participant' some sonicator
+- subclass of: achieves_planned_objective some 'analyte measurement objective'
+- subclass of: assay
+- subclass of: has_specified_input some 
+          ('protein complex'
+           and ('has role' some 'evaluant role'))

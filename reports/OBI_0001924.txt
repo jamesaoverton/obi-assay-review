@@ -1,0 +1,26 @@
+http://purl.obolibrary.org/obo/OBI_0001924
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: micrococcal nuclease digestion followed by high throughput sequencing assay
+  alternative term: MNase-seq
+  alternative term: MNase-seq assay
+  definition: An assay to identify nucleosome positioning by genome wide sequencing of regions senstative to digestion by micrococal nuclease
+  definition source: Johnson et al. Flexibility and constraint in the nucleosome core landscape of Caenorhabditis elegans chromatin. Genome Res. 2006 Dec;16(12):1505-16. [PMID:17038564]
+  example of usage: Cui et al.Genome-wide approaches to determining nucleosome occupancy in metazoans using MNase-Seq. Methods Mol Biol. 2012;833:413-9. [PMID:22183607]
+  curator note: JZ: should be inferred as 'DNA sequencing'. Will check in the future.
+  term editor: Person: Venkat Malladi, Chris Stoeckert, Jie Zheng
+
+  subclass of: achieves_planned_objective some 'protein and DNA interaction identification objective'
+  subclass of: has_specified_output some 'DNA sequence data'
++ subclass of: 'sequencing assay'
++ subclass of: (has_specified_input some 'DNA sequencer') and (realizes some (function and ('inheres in' some 'DNA sequencer')))
++ subclass of: (has_specified_input some 'deoxyribonucleic acid') and (realizes some ('evaluant role' and ('inheres in' some 'deoxyribonucleic acid')))
++ subclass of: has_part some 'library preparation, non specific enzymatic cleavage'
+- subclass of: 'has part' some 'library preparation'
+- subclass of: 'has part' some 'non specific enzymatic cleavage'
+- subclass of: 'has participant' some 'DNA sequencer'
+- subclass of: assay
+- subclass of: realizes some 
+          ('evaluant role'
+           and ('role of' some 'deoxyribonucleic acid'))

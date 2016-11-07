@@ -1,0 +1,14 @@
+http://purl.obolibrary.org/obo/OBI_0002045
+Reviewed: FALSE
+Curation Status: 
+
+  label: poly(A)-site sequencing assay
+  alternative term: PAS-seq
+  alternative term: PAS-seq assay
+  alternative term: Poly(A)-site sequencing
+  definition: A RNA-seq assay for quantitatively profiling RNA polyadenylation at the transcriptome level.
+  definition source: Shepard et al., (April 2011). "Complex and dynamic landscape of RNA polyadenylation revealed by PAS-Seq." RNA. 2011 Apr;17(4):761-72. doi: 10.1261/rna.2581711
+  example of usage: Wu et al., (July 2014). "Genome-wide determination of poly(A) sites in Medicago truncatula: evolutionary conservation of alternative poly(A) site choice. BMC Genomics. 2014 Jul 21;15:615. doi: 10.1186/1471-2164-15-615.
+  term editor: Person: Venkat Malladi, Chris Stoeckert, Jie Zheng
+
+  subclass of: 'RNA-seq assay'

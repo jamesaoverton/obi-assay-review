@@ -1,0 +1,16 @@
+http://purl.obolibrary.org/obo/OBI_0000697
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: Helicos sequencing
+  alternative term: true single molecule sequencing
+  definition: is a DNA sequencing which allows sequence identification of billions of DNA molecules immobilized to a surface by using DNA polymerase and fluorescently labeled nucleotides added one at a time. The sequencing process does not requires amplification step and is typically able to produce reads of 25 base pair length.
+  definition source: adapted from wikipedia
+  example of usage: PMID: 18388294. Single-molecule DNA sequencing of a viral genome.
+    Harris TD, Buzby PR, Babcock H, Beer E, Bowers J, Braslavsky I, Causey M, Colonell J, Dimeo J, Efcavitch JW, Giladi E, Gill J, Healy J, Jarosz M, Lapen D, Moulton K, Quake SR, Steinmann K, Thayer E, Tyurina A, Ward R, Weiss H, Xie Z. Science. 2008 Apr 4;320(5872):106-9.
+  term editor: Philippe Rocca-Serra
+
+  subclass of: 'DNA sequencing by synthesis'
++ subclass of: (has_specified_input some 'HeliScope SIngle Molecule Sequencer') and (realizes some (function and ('inheres in' some 'HeliScope SIngle Molecule Sequencer')))
+- subclass of: 'has participant' some 'HeliScope Single Molecule Sequencer'
+- subclass of: 'immediately preceded by' some immobilization

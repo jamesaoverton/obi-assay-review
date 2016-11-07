@@ -1,0 +1,30 @@
+http://purl.obolibrary.org/obo/OBI_0001361
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: transcription profiling by RT-PCR assay
+  definition: An assay in which the transcriptome of a biological sample is analysed by reverse transcription PCR (RT-PCR)
+  definition source: EFO_0002943: transcription profiling by RT-PCR
+  term editor: Person: Anna Farne
+
+  subclass of: achieves_planned_objective some 'transcription profiling identification objective'
++ subclass of: 'transcription profiling assay'
++ subclass of: (has_specified_input some 'PCR instrument') and (realizes some (function and ('inheres in' some 'PCR instrument')))
++ subclass of: (has_specified_input some 'ribonucleic acid') and (realizes some ('analyte role' and ('inheres in' some 'ribonucleic acid')))
++ subclass of: has_part some 'reverse transcribed polymerase chain reaction'
++ subclass of: has_specified_input some 'specimen and ('has part' some ribonucleic acid)'
++ subclass of: has_specified_input some RNA
++ subclass of: has_specified_output some 'gene expression'
++ subclass of: has_specified_output some 'measurement datum'
+- subclass of: 'has part' some 'reverse transcribed polymerase chain reaction'
+- subclass of: 'has participant' some 'PCR instrument'
+- subclass of: assay
+- subclass of: has_specified_input some 
+          (specimen
+           and ('has part' some 'ribonucleic acid'))
+- subclass of: has_specified_output some 
+          ('measurement datum'
+           and ('is about' some 'gene expression'))
+- subclass of: realizes some 
+          ('analyte role'
+           and ('role of' some 'ribonucleic acid'))

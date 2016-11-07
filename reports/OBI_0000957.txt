@@ -1,0 +1,14 @@
+http://purl.obolibrary.org/obo/OBI_0000957
+Reviewed: FALSE
+Curation Status: metadata incomplete
+
+  label: self reported handedness assessment
+  definition: An assay in which a person makes a statement that indicates what handedness he has from a choice of different categories.
+
++ subclass of: 'handedness assay'
++ subclass of: has_specified_output some 'categorical measurement datum'
++ subclass of: has_specified_output some handedness
+- subclass of: assay
+- subclass of: has_specified_output some 
+          ('categorical measurement datum'
+           and ('is quality measurement of' some handedness))

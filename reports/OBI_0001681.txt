@@ -1,0 +1,22 @@
+http://purl.obolibrary.org/obo/OBI_0001681
+Reviewed: FALSE
+Curation Status: ready for release
+
++ label: yeast one-hybrid
+- label: yeast one-hybrid 
+  alternative term: Y1H
++ definition: The one-hybrid variation of this technique is designed to investigate proteinäóñDNA interactions and uses a single fusion protein in which the AD is linked directly to the binding domain.
+- definition: The one-hybrid variation of this technique is designed to investigate protein–DNA interactions and uses a single fusion protein in which the AD is linked directly to the binding domain. 
+  definition source: PMID: 22218861
+  example of usage: Yeast one-hybrid assays for gene-centered human gene regulatory network mapping. Nat Methods. 2011 Oct 30;8(12):1050-2. doi: 10.1038/nmeth.1764.
+    PMID: 22037702 
+  curator note: add regulatory region DNA binding;obo:GO:0000975;
+  term editor: PERSON:Philippe Rocca-Serra; Marcus Chibucos
+
++ subclass of: '(assay and (has_specified_input some 'genetically modified material') and (has_specified_output some ('data item' and ('is about' some 'sequence-specific DNA binding')))) and (achieves_planned_objective some 'assay objective')'
++ subclass of: 'binding assay'
++ subclass of: has_specified_input some 'genetically modified material'
++ subclass of: has_specified_output some 'data item'
++ subclass of: has_specified_output some 'sequence-specific DNA binding'
+- equivalent to: (assay and (has_specified_input some 'genetically modified material') and (has_specified_output some 
+      ('data item' and ('is about' some 'sequence-specific DNA binding')))) and (achieves_planned_objective some 'assay objective')

@@ -1,0 +1,12 @@
+http://purl.obolibrary.org/obo/OBI_0000865
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: 96-well neutralization assay
+  alternative term: microneutralization assay
+  definition: A serum neutralization of viral infectivity assay which done in a 96-well plate.
+  curator note: MC: 20100217: microneutralization is used by the influenza community, to refer to a nutralizationassay at a smaller scale. However smaller is difficult to define accurately, and we therefore chose a label being more specific.
+  term editor: person: Bjoern Peters
+  term editor: person: Melanie Courtot
+
+  subclass of: 'serum neutralization of viral infectivity assay'

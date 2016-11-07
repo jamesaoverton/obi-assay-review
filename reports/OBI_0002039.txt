@@ -1,0 +1,13 @@
+http://purl.obolibrary.org/obo/OBI_0002039
+Reviewed: FALSE
+Curation Status: 
+
+  label: assay for transposase-accessible chromatin using sequencing
+  alternative term: ATAC-seq
+  alternative term: ATAC-seq assay
+  definition: An assay to capture the location of open chromatin, DNA-binding proteins, individual nucleosomes and chromatin compaction at nucleotide resolution by Tn5 transposase insertion.
+  definition source: Buenrostro JD, Giresi PG, Zaba LC, Chang HY, and Greenleaf WJ. (2013) "Transposition of native chromatin for fast and sensitive epigenomic profiling of open chromatin, DNA-binding proteins and nucleosome position." Nature Methods
+  example of usage: Kasinathan et al., (February 2014). "High-resolution mapping of transcription factor binding sites on natitve chromatin." Nat Methods 11(2):203-9. doi: 10.1038/nmeth.2766.
+  term editor: Person: Venkat Malladi, Chris Stoeckert, Jie Zheng
+
+  subclass of: assay

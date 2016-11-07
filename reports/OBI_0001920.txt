@@ -1,0 +1,35 @@
+http://purl.obolibrary.org/obo/OBI_0001920
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: DNA replication timing by sequencing assay
+  alternative term: Repli-seq
+  alternative term: Repli-seq assay
+  definition: An assay in which timing of DNA replication is quantified as a function of genome position based on genome-wide sequencing.
++ definition source: Hansen et al. Sequencing newly replicated DNA reveals widespread plasticity in human replication timing. Proc Natl Acad Sci U S A. 2010 January 5; 107(1): 139äóñ144. [PMID:19966280]
+- definition source: Hansen et al. Sequencing newly replicated DNA reveals widespread plasticity in human replication timing. Proc Natl Acad Sci U S A. 2010 January 5; 107(1): 139–144. [PMID:19966280]
++ example of usage: Hansen et al. Sequencing newly replicated DNA reveals widespread plasticity in human replication timing. Proc Natl Acad Sci U S A. 2010 January 5; 107(1): 139äóñ144. [PMID:19966280]
+- example of usage: Hansen et al. Sequencing newly replicated DNA reveals widespread plasticity in human replication timing. Proc Natl Acad Sci U S A. 2010 January 5; 107(1): 139–144. [PMID:19966280]
+  term editor: Venkat Malladi, Chris Stoeckert, Jie Zheng
+
+  subclass of: achieves_planned_objective some 'DNA replication identification objective'
+  subclass of: has_specified_input some 5-bromo-2'-deoxyuridine
++ subclass of: 'sequencing assay'
++ subclass of: (has_specified_input some 'deoxyribonucleic acid') and (realizes some ('evaluant role' and ('inheres in' some 'deoxyribonucleic acid')))
++ subclass of: (has_specified_input some 'flow cytometer sorter, DNA sequencer') and (realizes some (function and ('inheres in' some 'flow cytometer sorter, DNA sequencer')))
++ subclass of: has_part some 'DNA sequencing, immunoprecipitation'
++ subclass of: has_specified_input some reagent
++ subclass of: has_specified_output some 'DNA replication'
++ subclass of: has_specified_output some 'DNA sequence data  information content entity'
+- subclass of: 'has part' some 'DNA sequencing'
+- subclass of: 'has part' some immunoprecipitation
+- subclass of: 'has participant' some 'DNA sequencer'
+- subclass of: 'has participant' some 'flow cytometer sorter'
+- subclass of: assay
+- subclass of: has_specified_output some 
+          ('information content entity'
+           and ('is about' some 'DNA replication'))
+- subclass of: has_specified_output some 'DNA sequence data'
+- subclass of: realizes some 
+          ('evaluant role'
+           and ('role of' some 'deoxyribonucleic acid'))

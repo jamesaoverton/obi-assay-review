@@ -1,0 +1,13 @@
+http://purl.obolibrary.org/obo/OBI_0000623
+Reviewed: FALSE
+Curation Status: metadata incomplete
+
+  label: NMR spectroscopy
+  alternative term: Nuclear magnetic resonance spectroscopy
+  definition: NMR spectroscopy is a process which exploits the magnetic properties of certain nuclei (those with a spin) to resonate when placed in particular magnetic field conditions. Instruments recording NMR spectrum and sets of analysis can be used to deduce  identity of chemical as well as composition of complex chemical mixtures.
+  definition source: adapted from Wikipedia
+  example of usage: Metabolic profiling studies on the toxicological effects of realgar in rats by (1)H NMR spectroscopy.  Wei L, Liao P, Wu H, Li X, Pei F, Li W, Wu Y. Toxicol Appl Pharmacol. 2008 Nov 25. PMID: 19073202
+  term editor: Philippe Rocca-Serra
+
+  subclass of: assay
+- subclass of: achieves_planned_objective some 'assay objective'

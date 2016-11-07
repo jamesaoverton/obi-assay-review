@@ -1,0 +1,31 @@
+http://purl.obolibrary.org/obo/OBI_0001668
+Reviewed: FALSE
+Curation Status: ready for release
+
++ label: split-ubiquitin assay
+- label: split-ubiquitin assay 
++ definition: is a kind of yeast 2 hybrid system which enables membrane soluble proteins to be screened.  two integral membrane proteins to be studied are fused to two different ubiquitin moieties: a C-terminal ubiquitin moiety (\"Cub\", residues 35äóñ76) and an N-terminal ubiquitin moiety (\"Nub\", residues 1äóñ34). These fused proteins are called the bait and prey, respectively. In addition to being fused to an integral membrane protein, the Cub moiety is also fused to a transcription factor (TF) that can be cleaved off by ubiquitin specific proteases. Upon baitäóñprey interaction, Nub and Cub-moieties assemble, reconstituting the split-ubiquitin. The reconstituted split-ubiquitin molecule is recognized by ubiquitin specific proteases, which cleave off the reporter protein, allowing it to induce the transcription of reporter genes.
+- definition: is a kind of yeast 2 hybrid system which enables membrane soluble proteins to be screened.  two integral membrane proteins to be studied are fused to two different ubiquitin moieties: a C-terminal ubiquitin moiety (\"Cub\", residues 35–76) and an N-terminal ubiquitin moiety (\"Nub\", residues 1–34). These fused proteins are called the bait and prey, respectively. In addition to being fused to an integral membrane protein, the Cub moiety is also fused to a transcription factor (TF) that can be cleaved off by ubiquitin specific proteases. Upon bait–prey interaction, Nub and Cub-moieties assemble, reconstituting the split-ubiquitin. The reconstituted split-ubiquitin molecule is recognized by ubiquitin specific proteases, which cleave off the reporter protein, allowing it to induce the transcription of reporter genes.
+  definition source: adapted from wikipedia
++ example of usage: Split-ubiquitin two-hybrid assay to analyze protein-protein interactions at the endosome: application to Saccharomyces cerevisiae Bro1 interacting with ESCRT complexes, the Doa4 ubiquitin hydrolase, and the Rsp5 ubiquitin ligase.
+    Nikko E, Andrí© B.
+    Eukaryot Cell. 2007 Aug;6(8):1266-77. Epub 2007 May 18.
+    PMID: 17513562 
+- example of usage: Split-ubiquitin two-hybrid assay to analyze protein-protein interactions at the endosome: application to Saccharomyces cerevisiae Bro1 interacting with ESCRT complexes, the Doa4 ubiquitin hydrolase, and the Rsp5 ubiquitin ligase.
+    Nikko E, André B.
+    Eukaryot Cell. 2007 Aug;6(8):1266-77. Epub 2007 May 18.
+    PMID: 17513562 
+  curator note: add regulatory region DNA binding;sequence-specific DNA binding;obo:GO:0000975;obo:GO:0043565;
+  term editor: PERSON:Philippe Rocca-Serra; Marcus Chibucos
+
++ subclass of: 'binding assay'
++ subclass of: achieves_planned_objective some 'protein and DNA interaction identification objective'
++ subclass of: has_specified_input some 'genetically modified material'
++ subclass of: has_specified_output some 'data item'
++ subclass of: has_specified_output some 'protein domain specific binding'
+- subclass of: (assay
+       and (has_specified_input some 'genetically modified material')
+       and (has_specified_output some 
+          ('data item'
+           and ('is about' some 'protein domain specific binding'))))
+       and (achieves_planned_objective some 'protein and DNA interaction identification objective')

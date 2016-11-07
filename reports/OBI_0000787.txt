@@ -1,0 +1,26 @@
+http://purl.obolibrary.org/obo/OBI_0000787
+Reviewed: FALSE
+Curation Status: ready for release
+
+  label: human antithrombin-III (AT-III) in blood assay
+  definition: An assay to measure the amount of antithrombin III in blood.
+  definition source: WEB:http://www.muschealth.com/lab/content.aspx?id=150006@2009/08/06
+  example of usage: PMID:19696660#The antithrombin-III (AT-III) was determined using a Berichrom(r) Antithrombin-III (A) kit.
+  term editor: Person:Alan Ruttenberg
+
++ subclass of: 'analyte assay'
++ subclass of: (has_specified_input some 'scattered molecular aggregate' and ('has grain' some antithrombin-III)') and (realizes some ('analyte role' and ('inheres in' some 'scattered molecular aggregate' and ('has grain' some antithrombin-III)')))
++ subclass of: has_specified_input some 'blood serum specimen'
++ subclass of: has_specified_output some 'blood coagulation'
++ subclass of: has_specified_output some 'scalar measurement datum'
+- subclass of: (has_specified_input some 'blood serum specimen')
+       and (has_specified_output some 
+          ('scalar measurement datum'
+           and ('is about' some 'blood coagulation')))
+       and (achieves_planned_objective some 'analyte measurement objective')
+- subclass of: assay
+- subclass of: realizes some 
+          ('analyte role'
+           and ('role of' some 
+              ('scattered molecular aggregate'
+               and ('has grain' some antithrombin-III))))

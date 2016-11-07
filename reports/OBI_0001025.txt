@@ -1,0 +1,14 @@
+http://purl.obolibrary.org/obo/OBI_0001025
+Reviewed: FALSE
+Curation Status: metadata incomplete
+
+  label: binding constant determination assay
+  definition: A binding assay where the specified output is a binding constant
++ example of usage: Determination of KD value for an antibody binding a protein using a BIACORE assay.
+- example of usage: Determination of KD value for an antibody binding a protein using a BIACORE assay. 
+  term editor: PERSON: Bjoern Peters, Randi Vita, Jason Greenbaum
+
++ subclass of: 'binding assay'
++ subclass of: 'binding assay' and (has_specified_output some 'binding constant')'
++ subclass of: has_specified_output some 'binding constant'
+- equivalent to: 'binding assay' and (has_specified_output some 'binding constant')

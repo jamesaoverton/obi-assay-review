@@ -1,0 +1,13 @@
+http://purl.obolibrary.org/obo/OBI_0002084
+Reviewed: FALSE
+Curation Status: 
+
+  label: transcription cofactor activity region identification by ChIP-Seq assay
+  alternative term: chromatin modifier binding site identification by ChIP-Seq assay
+  definition: A ChIP-seq assay to identify regions of chromatin bound to a chromatin modifying protein, e.g. a histone acetyltransferase.
+  definition source: FaceBase, PMID 19212405
+  example of usage: PMID 19212405: "we present the results of chromatin immunoprecipitation with the enhancer-associated protein p300 followed by massively parallel sequencing, and map several thousand in vivo binding sites of p300 in mouse embryonic forebrain, midbrain and limb tissue"
+  editor note: Tracker item: 782
+  term editor: Paul D. Thomas, Yang Chai
+
+  subclass of: 'ChIP-seq assay'

@@ -1,0 +1,27 @@
+http://purl.obolibrary.org/obo/OBI_0600020
+Reviewed: FALSE
+Curation Status: pending final vetting
+
+  label: histology
+  alternative term: histopathology
+  definition: the visual examination of cells or tissue (or images of them) with an assessment regarding a quality of the cells or tissue. Parts are: staining, imaging, judgement
+  definition source: OBI branch derived
+  example of usage: the counting of the number of cells with fluorescent label at their surface to determine the percentage of the population which was activated
+  curator note: PRS:20090901: addition of alternative term = histopathology
+  curator note: need to incorporate parts\n---\nThis is a very vague term, it should be in the same place as transcriptomics, proteomics metaboloimcs. It is the 'study' of tissues, not the process of studying tissues\n
+  term editor: PERSON:Compiled by Helen Parkinson for Transcriptomics thanks to Adam Witney
+
++ subclass of: assay
++ subclass of: has_part some 'imaging assay, histological sample preparation, staining, collecting specimen from organism'
++ subclass of: has_specified_output some 'cell or organ section'
++ subclass of: has_specified_output some 'information content entity'
+- subclass of: 'has part' some 'collecting specimen from organism'
+- subclass of: 'has part' some 'histological sample preparation'
+- subclass of: 'has part' some 'imaging assay'
+- subclass of: 'has part' some staining
+- subclass of: achieves_planned_objective some 'assay objective'
+- subclass of: has_specified_output some 
+          ('information content entity'
+           and ('is about' some 
+              (cell or 'organ section')))
+- subclass of: process

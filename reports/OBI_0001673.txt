@@ -1,0 +1,26 @@
+http://purl.obolibrary.org/obo/OBI_0001673
+Reviewed: FALSE
+Curation Status: ready for release
+
++ label: nano-cap analysis of gene expression
+- label: nano-cap analysis of gene expression 
+  alternative term: nano-CAGE
+  definition: nano-CAGE is a type of CAGE developed to work from very low amount (nanogram scale) of mRNA samples
+  definition source: PMID: 20543846
+  example of usage: Linking promoters to functional transcripts in small samples with nanoCAGE and CAGEscan. 
+    PMID:20543846
+    
+  term editor: PERSON:Philippe Rocca-Serra; Marcus Chibucos
+
++ subclass of: 'transcription profiling assay'
++ subclass of: achieves_planned_objective some 'transcription profiling identification objective'
++ subclass of: has_specified_input some 'RNA extract'
++ subclass of: has_specified_input some RNA
++ subclass of: has_specified_output some 'data item'
++ subclass of: has_specified_output some 'gene expression'
+- subclass of: (assay
+       and (has_specified_input some 'RNA extract')
+       and (has_specified_output some 
+          ('data item'
+           and ('is about' some 'gene expression'))))
+       and (achieves_planned_objective some 'transcription profiling identification objective')

@@ -1,20 +1,18 @@
 http://purl.obolibrary.org/obo/OBI_0000418
-label: measuring glucose concentration in blood serum
-definition: An assay that determines the concentration of glucose molecules in a blood serum sample
-term editor: Person:Bjoern Peters
+Reviewed: FALSE
+Curation Status: metadata incomplete
 
-DIFFERENT LOGIC
+  label: measuring glucose concentration in blood serum
+  definition: An assay that determines the concentration of glucose molecules in a blood serum sample
+  term editor: Person:Bjoern Peters
 
-BEFORE
-subclass of: assay
-subclass of: realizes some 
-      ('analyte role'
-       and ('role of' some glucose))
-subclass of: realizes some 
-      ('evaluant role'
-       and ('role of' some 'blood serum specimen'))
-
-AFTER
-subclass of: (has_specified_input some 'blood serum specimen') and (realizes some ('evaluant role' and ('inheres in' some 'blood serum specimen')))
-subclass of: (has_specified_input some glucose) and (realizes some ('analyte role' and ('inheres in' some glucose)))
-subclass of: 'analyte assay'
++ subclass of: 'analyte assay'
++ subclass of: (has_specified_input some 'blood serum specimen') and (realizes some ('evaluant role' and ('inheres in' some 'blood serum specimen')))
++ subclass of: (has_specified_input some glucose) and (realizes some ('analyte role' and ('inheres in' some glucose)))
+- subclass of: assay
+- subclass of: realizes some 
+          ('analyte role'
+           and ('role of' some glucose))
+- subclass of: realizes some 
+          ('evaluant role'
+           and ('role of' some 'blood serum specimen'))

@@ -1,0 +1,12 @@
+http://purl.obolibrary.org/obo/OBI_0001247
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: genotyping by high throughput sequencing assay
+  definition: An assay in which high througput sequencer is used to detect polymorphisms in DNA samples
+  definition source: EFO_0002771: genotyping by high throughput sequencing
+  term editor: Person: James Malone
+
+  subclass of: 'genotyping assay'
++ subclass of: (has_specified_input some 'DNA sequencer') and (realizes some (function and ('inheres in' some 'DNA sequencer')))
+- subclass of: 'has participant' some 'DNA sequencer'

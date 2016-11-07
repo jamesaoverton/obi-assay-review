@@ -1,0 +1,23 @@
+http://purl.obolibrary.org/obo/OBI_0000871
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: viral hemagglutination assay
+  alternative term: HA
+  alternative term: HI
+  alternative term: viral hemeagglutination assay
+  definition: The viral hemagglutination assay (HA) is a quantification of viruses by hemagglutination.
+  definition source: WEB: http://en.wikipedia.org/wiki/Hemagglutination_assay
+  term editor: person: Bjoern Peters
+  term editor: person: Melanie Courtot
+
++ subclass of: 'analyte assay'
++ subclass of: has_part some 'induced hemagglutination'
++ subclass of: has_specified_output some 'measurement datum'
++ subclass of: has_specified_output some viruses
+- subclass of: 'has part' some 'induced hemagglutination'
+- subclass of: achieves_planned_objective some 'analyte measurement objective'
+- subclass of: assay
+- subclass of: has_specified_output some 
+          ('measurement datum'
+           and ('is about' some Viruses))

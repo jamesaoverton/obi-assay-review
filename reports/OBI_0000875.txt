@@ -1,0 +1,15 @@
+http://purl.obolibrary.org/obo/OBI_0000875
+Reviewed: FALSE
+Curation Status: 
+
+  label: viral hemagglutination inhibition assay
+  definition: An assay that measures the ability of an evaluant to inhibit hemagglutination by a virus. Hemagglutinin is a viral protein which binds to sialic acid receptors on cells or to erythrocytes, causing the cells to clump. Loss of clumping indicates hemagglutination inhibition by the antibody.
+  definition source: Bjoern and Melanie
+  example of usage: Examining the ability of a monoclonal antibody to inhibit hemagglutination by Influenza A virus by comparing the levels of hemagglutination with and without the presence of the antibody.
+  term editor: Bjoern and Melanie
+
++ subclass of: 'assay and (has_specified_input some Viruses) and (has_specified_output some ('is about' some 'induced hemagglutination'))'
++ subclass of: assay
++ subclass of: has_specified_input some Viruses
++ subclass of: has_specified_output some 'induced hemagglutination'
+- equivalent to: assay and (has_specified_input some Viruses) and (has_specified_output some ('is about' some 'induced hemagglutination'))

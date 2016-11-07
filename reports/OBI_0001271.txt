@@ -1,0 +1,33 @@
+http://purl.obolibrary.org/obo/OBI_0001271
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: RNA-seq assay
+  alternative term: transcription profiling by high throughput sequencing
+  definition: An assay in which sequencing technology (e.g. Solexa/454) is used to generate RNA sequence, analyse the transcibed regions of the genome, and or to quantitate transcript abundance
+  definition source: EFO_0002770 transcription profiling by high throughput sequencing
+  curator note: JZ: should be inferred as 'DNA sequencing'. Will check in the future.
+  curator note: an assay that uses high-throughput sequencing technologies to sequence cDNA in order to get information about a sample's RNA content. RNA-Seq provides researchers with efficient ways to measure transcriptome data experimentally, allowing them to get information such as how different alleles of a gene are expressed, detect post-transcriptional mutations or identify gene fusions.
+    
+    WEB: http://en.wikipedia.org/wiki/RNA-Seq
+  term editor: PERSON: James Malone
+
+  subclass of: achieves_planned_objective some 'transcription profiling identification objective'
++ subclass of: 'transcription profiling assay, sequencing assay'
++ subclass of: (has_specified_input some 'DNA sequencer') and (realizes some (function and ('inheres in' some 'DNA sequencer')))
++ subclass of: (has_specified_input some 'ribonucleic acid') and (realizes some ('analyte role' and ('inheres in' some 'ribonucleic acid')))
++ subclass of: has_specified_input some 'specimen and ('has part' some ribonucleic acid)'
++ subclass of: has_specified_input some RNA
++ subclass of: has_specified_output some 'gene expression'
++ subclass of: has_specified_output some 'sequence data'
+- subclass of: 'has participant' some 'DNA sequencer'
+- subclass of: assay
+- subclass of: has_specified_input some 
+          (specimen
+           and ('has part' some 'ribonucleic acid'))
+- subclass of: has_specified_output some 
+          ('sequence data'
+           and ('is about' some 'gene expression'))
+- subclass of: realizes some 
+          ('analyte role'
+           and ('role of' some 'ribonucleic acid'))

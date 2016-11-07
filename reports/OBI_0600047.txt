@@ -1,0 +1,21 @@
+http://purl.obolibrary.org/obo/OBI_0600047
+Reviewed: FALSE
+Curation Status: pending final vetting
+
+  label: sequencing assay
+  definition: the use of a chemical or biochemical means to infer the sequence of a biomaterial
+  definition source: OBI branch derived
+  example of usage: The use of the Sanger method of DNA sequencing to determine the order of the nucleotides in a DNA template
+  editor note: has_output should be sequence of input; we don't have sequence well defined yet
+  term editor: PlanAndPlannedProcess Branch
+
+  subclass of: assay
++ subclass of: '(has_specified_output some 'sequence data') and (achieves_planned_objective some 'assay objective')'
++ subclass of: (has_specified_input some 'deoxyribonucleic acid' or 'ribonucleic acid' or protein') and (realizes some ('evaluant role' and ('inheres in' some 'deoxyribonucleic acid' or 'ribonucleic acid' or protein')))
++ subclass of: has_specified_input some 'DNA or RNA or protein'
++ subclass of: has_specified_input some 'deoxyribonucleic acid' or 'ribonucleic acid' or protein'
++ subclass of: has_specified_output some 'sequence data'
+- equivalent to: (has_specified_output some 'sequence data') and (achieves_planned_objective some 'assay objective')
+- subclass of: has_specified_input some 
+          (('deoxyribonucleic acid' or 'ribonucleic acid' or protein)
+           and ('has role' some 'evaluant role'))

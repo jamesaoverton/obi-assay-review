@@ -1,0 +1,17 @@
+http://purl.obolibrary.org/obo/OBI_0001956
+Reviewed: FALSE
+Curation Status: ready for release
+
+  label: assay using chromatin immunoprecipitation
+  definition: an assay which uses immunoprecipitation and which produces data about protein-DNA interaction or DNA epigenetic modification
+  example of usage: http://www.lifetechnologies.com/uk/en/home/life-science/epigenetics-noncoding-rna-research/chromatin-remodeling/chromatin-immunoprecipitation-chip.html
+  editor note: as per user (pployd) request and proposal by Alan Ruttenberg
+    http://sourceforge.net/p/obi/obi-terms/707/
+  term editor: PERSON: Philippe Rocca-Serra
+
+  subclass of: 'immunoprecipitation assay'
++ subclass of: '('has part' some immunoprecipitation) and (achieves_planned_objective some ('epigenetic modification identification objective' or 'protein and DNA interaction identification objective'))'
++ subclass of: achieves_planned_objective some 'protein and DNA interaction identification objective'
++ subclass of: has_part some immunoprecipitation
+- equivalent to: ('has part' some immunoprecipitation) and (achieves_planned_objective some 
+      ('epigenetic modification identification objective' or 'protein and DNA interaction identification objective'))

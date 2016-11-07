@@ -1,0 +1,38 @@
+http://purl.obolibrary.org/obo/OBI_0000721
+Reviewed: FALSE
+Curation Status: ready for release
+
+  label: glucose tolerance test
+  definition: is a process in  which following administration of a bolus a glucose in-vivo, glucose clearance from blood plasma is monitored over time by repeated glucose measurement in blood serum. the output of a process is a measure which can be used to evaluate the severity of insulin resistance or the efficiency of glucose clearance.
+  definition source: NuGO OBI plan branch
+  example of usage: PMID: 19527607
+    Using the 100-g Oral Glucose Tolerance Test to Predict Fetal and Maternal Outcomes in Women with Gestational Diabetes Mellitus.
+    Lin CH, Wen SF, Wu YH, Huang MJ.
+    Chang Gung Med J. 2009 May-Jun;32(3):283-9.
+  editor note: 30-10-2013:[author: PRS] removing "realizes some (concretizes some 'time series design')" axiom as it causes 'gtt' to be classified under study design execution instead of assay
+  term editor: Philippe Rocca-Serra
+
+  subclass of: achieves_planned_objective some 'biological feature identification objective'
++ subclass of: 'has part' some ('data transformation' and (has_specified_input some 'measurement datum') and (has_specified_output some graph))'
++ subclass of: (has_specified_input some 'is_proxy_for some 'Insulin resistance'') and (realizes some ('evaluant role' and ('inheres in' some 'is_proxy_for some 'Insulin resistance'')))
++ subclass of: assay
++ subclass of: has_part some 'measuring glucose concentration in blood serum, data transformation. administering substance in vivo'
++ subclass of: has_specified_input some 'information content entity'
++ subclass of: has_specified_output some 'information content entity  graph'
++ subclass of: has_specified_output some 'is_proxy_for some 'Insulin resistance''
+- subclass of: 'has part' some 
+          ('administering substance in vivo'
+           and (has_specified_input some glucose))
+- subclass of: 'has part' some 
+          ('data transformation'
+           and (has_specified_input some 'measurement datum')
+           and (has_specified_output some graph))
+- subclass of: 'has part' some 
+          ('measuring glucose concentration in blood serum'
+           and (realizes some (concretizes some 'study design dependent variable')))
+- subclass of: achieves_planned_objective some 'assay objective'
+- subclass of: has_specified_output some 
+          ('information content entity'
+           and (is_proxy_for some 'Insulin resistance'))
+- subclass of: process
+- subclass of: realizes some (concretizes some 'study design independent variable')

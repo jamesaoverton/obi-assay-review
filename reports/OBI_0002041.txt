@@ -1,0 +1,14 @@
+http://purl.obolibrary.org/obo/OBI_0002041
+Reviewed: FALSE
+Curation Status: 
+
+  label: self-transcribing active regulatory region sequencing assay
+  alternative term: STARR-seq
+  alternative term: STARR-seq assay
+  alternative term: self-transcribing active regulatory region sequencing
+  definition: A RNA-seq assay to identify the sequences that act as transcriptional enhancers in a direct, quantitative, and genome-wide manner from sheared genomic DNA.
+  definition source: Arnold et al. (January 2013). "Genome-Wide Quantitative Enhancer Activity Maps Identified by STARR-seq". Science 339 (6123): 1074-7.
+  example of usage: Bohla et al., (September 2014). "A functional insulator screen identifies NURF and dREAM components to be required for enhancer-blocking." PLoS One 9(9):e107765. doi: 10.1371/journal.pone.0107765.
+  term editor: Person: Venkat Malladi, Chris Stoeckert, Jie Zheng
+
+  subclass of: 'RNA-seq assay'

@@ -1,0 +1,15 @@
+http://purl.obolibrary.org/obo/OBI_0000470
+Reviewed: FALSE
+Curation Status: 
+
+  label: mass spectrometry assay
+  definition: An assay that identifies the amount and type of material entities present in a sample by fragmenting it and measuring the mass-to-charge ratio of the resulting particles.
+  definition source: Philippe Rocca-Serra
+  example of usage: Identification of a proteins cut out from a 2D gel by cleaving it into peptides using trypsin digestion using electrospray ionizatino to ensure the peptides are charged, and accelerating them with an electro magnetic field in which the flight path is determined by the mass / charge ratio of the peptides. Comparing the mass/charge ratio of peptides in the proteins with databases of protein sequences allows to identify which protein gave rise to the peptides.
+  term editor: Philippe Rocca-Serra
+
++ subclass of: 'assay and ((realizes some (function and ('inheres in' some 'mass spectrometer'))) and (has_specified_input some 'mass spectrometer'))'
++ subclass of: (has_specified_input some 'mass spectrometer  (using has_specified_input)') and (realizes some (function and ('inheres in' some 'mass spectrometer  (using has_specified_input)')))
++ subclass of: assay
+- equivalent to: assay and ((realizes some 
+      (function and ('inheres in' some 'mass spectrometer'))) and (has_specified_input some 'mass spectrometer'))

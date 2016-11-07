@@ -1,0 +1,14 @@
+http://purl.obolibrary.org/obo/OBI_0000743
+Reviewed: FALSE
+Curation Status: metadata incomplete
+
+  label: immune response assay
+  definition: an assay with the objective to determine information about an immune response
+
++ subclass of: '(has_specified_output some ('measurement datum' and ('is about' some 'immune response'))) and (achieves_planned_objective some 'assay objective')'
++ subclass of: assay
++ subclass of: has_specified_output some 'immune response'
++ subclass of: has_specified_output some 'measurement datum'
+- equivalent to: (has_specified_output some 
+      ('measurement datum' and ('is about' some 'immune response'))) and (achieves_planned_objective some 'assay objective')
+- subclass of: process

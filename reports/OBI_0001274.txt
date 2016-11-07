@@ -1,0 +1,12 @@
+http://purl.obolibrary.org/obo/OBI_0001274
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: genotyping by array assay
+  definition: An assay in which an array is used to detect polymorphisms in DNA samples
+  definition source: EFO_0002767: genotyping by array
+  term editor: Group: ArrayExpress production team
+
+  subclass of: 'genotyping assay'
++ subclass of: (has_specified_input some 'DNA microarray') and (realizes some (function and ('inheres in' some 'DNA microarray')))
+- subclass of: 'has participant' some 'DNA microarray'

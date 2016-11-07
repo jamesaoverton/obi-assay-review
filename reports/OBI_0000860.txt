@@ -1,0 +1,33 @@
+http://purl.obolibrary.org/obo/OBI_0000860
+Reviewed: FALSE
+Curation Status: metadata incomplete
+
+  label: northern blot analysis
+  alternative term: northern blot
+  definition: a northern blot analysis is an assay allowing monitoring presence of gene transcripts  by hybridizing labeled RNA or DNA probes against messenger RNAs isolated from tissue or cell cultures, resolved on denaturing agarose gel, transfered by blotting procedure to a nitrocellulose or nylon membrane and immobilized by cross linking or baking to the membrane. Detection of  hybridization signals is carried out by immunofluorescence or radioactivity measurements using photographic films or digital imaging devices such as Phosphor Imager
+  example of usage: PMID: 18428227. Analysis of RNA by northern blot hybridization.
+    Brown T, Mackey K.  Curr Protoc Hum Genet. 2001 Nov;Appendix 3:Appendix 3K.
+  editor note: 2010-01-31: Philippe Rocca-Serra: Need to add a restriction taking into account probe and transcript information
+  term editor: Person: Philippe Rocca-Serra
+
++ subclass of: 'analyte assay'
++ subclass of: (has_specified_input some 'polyA RNA extract') and (realizes some ('evaluant role' and ('inheres in' some 'polyA RNA extract')))
++ subclass of: (has_specified_input some 'scattered molecular aggregate and ('has grain' only 'nucleic acid')') and (realizes some ('analyte role' and ('inheres in' some 'scattered molecular aggregate and ('has grain' only 'nucleic acid')')))
++ subclass of: has_specified_output some 'gene expression'
++ subclass of: has_specified_output some 'measurement datum'
+- subclass of: achieves_planned_objective some 'assay objective'
+- subclass of: assay
+- subclass of: has_specified_output some 
+          ('measurement datum'
+           and ('is about' some 'gene expression'))
+- subclass of: realizes some 
+          ('analyte role'
+           and ('inheres in' some 
+              ('scattered molecular aggregate'
+               and ('has grain' only 'nucleic acid'))))
+- subclass of: realizes some 
+          ('complementary nucleotide probe role'
+           and ('inheres in' some 'nucleic acid'))
+- subclass of: realizes some 
+          ('evaluant role'
+           and ('inheres in' some 'polyA RNA extract'))

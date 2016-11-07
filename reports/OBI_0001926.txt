@@ -1,0 +1,21 @@
+http://purl.obolibrary.org/obo/OBI_0001926
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: microRNA profiling assay
+  alternative term: miRNA expression assay
+  alternative term: microRNA expression assay
+  definition: A transcription profiling assay in which aims to quantify the microRNA species within a biological sample.
+  definition source: Kolbert et al. Multi-Platform Analysis of MicroRNA Expression Measurements in RNA from Fresh Frozen and FFPE Tissues. PLoS One. 2013;8(1):e52517 [PMID: 23382819]
+  term editor: Person: Venkat Malladi, Chris Stoeckert, Jie Zheng
+
+  subclass of: 'transcription profiling assay'
++ subclass of: 'transcription profiling assay' and (has_specified_output some ('measured expression level' and ('is about' some miRNA)))'
++ subclass of: (has_specified_input some 'ribonucleic acid') and (realizes some ('evaluant role' and ('inheres in' some 'ribonucleic acid')))
++ subclass of: has_specified_output some 'measured expression level'
++ subclass of: has_specified_output some miRNA
+- equivalent to: 'transcription profiling assay' and (has_specified_output some 
+      ('measured expression level' and ('is about' some miRNA)))
+- subclass of: realizes some 
+          ('evaluant role'
+           and ('role of' some 'ribonucleic acid'))

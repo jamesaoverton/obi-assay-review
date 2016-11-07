@@ -1,0 +1,23 @@
+http://purl.obolibrary.org/obo/OBI_0001318
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: proteomic profiling by array assay
+  definition: An assay that proteins in a sample are detected, quantified or otherwise analysed, e.g. antibody profiling using an array based technology
+  definition source: EFO_0002765 proteomic profiling by array
+  term editor: Person: James Malone
+
+  subclass of: achieves_planned_objective some 'molecular feature identification objective'
++ subclass of: 'analyte assay'
++ subclass of: (has_specified_input some 'protein microarray') and (realizes some (function and ('inheres in' some 'protein microarray')))
++ subclass of: (has_specified_input some protein) and (realizes some ('analyte role' and ('inheres in' some protein)))
++ subclass of: has_specified_input some 'specimen and ('has part' some protein)'
++ subclass of: has_specified_input some protein
+- subclass of: 'has participant' some 'protein microarray'
+- subclass of: assay
+- subclass of: has_specified_input some 
+          (specimen
+           and ('has part' some protein))
+- subclass of: realizes some 
+          ('analyte role'
+           and ('role of' some protein))

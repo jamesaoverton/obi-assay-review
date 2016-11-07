@@ -1,0 +1,14 @@
+http://purl.obolibrary.org/obo/OBI_0001146
+Reviewed: FALSE
+Curation Status: 
+
+  label: binding assay
+  definition: An assay with the objective to characterize the disposition of two or more material entities to form a complex.
+  definition source: PERSON:Bjoern Peters, Randi Vita, Jason Greenbaum
+  example of usage: Determination of KD value for an antibody binding a protein using a BIACORE assay. Using plate bound antigen in an ELISA to determine if a mixture of serum antibodies bind the antigen.nnThe following are NOT binding assays, as the desired output is not binding data: RNA microarray experiments to determine levels of gene expression. ChIP experiments to determine where in DNA a transcription factor binds. Using an IL-2 antibody on an ELISA plate to determine presence of IL-2 after stimulating a T cell culture. 
+  term editor: PERSON:Bjoern Peters, Randi Vita, Jason Greenbaum
+
++ subclass of: 'assay and (has_specified_output some ('is about' some binding))'
++ subclass of: assay
++ subclass of: has_specified_output some 'binding datum'
+- equivalent to: assay and (has_specified_output some ('is about' some binding))

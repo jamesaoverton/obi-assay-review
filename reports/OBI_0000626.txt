@@ -1,0 +1,23 @@
+http://purl.obolibrary.org/obo/OBI_0000626
+Reviewed: FALSE
+Curation Status: metadata incomplete
+
+  label: DNA sequencing
+  ISA alternative term: nucleotide sequencing
+  definition: DNA sequencing is a sequencing process which uses deoxyribonucleic acid as input and results in a the creation of DNA sequence information artifact using a DNA sequencer instrument.
+  definition source: OBI Branch derived
++ example of usage: Genomic deletions of OFD1 account for 23% of oral-facial-digital type 1 syndrome after negative DNA sequencing. Thauvin-Robinet C, Franco B, Saugier-Veber P, Aral B, Gigot N, Donzel A, Van Maldergem L, Bieth E, Layet V, Mathieu M, Teebi A, Lespinasse J, Callier P, Mugneret F, Masurel-Paulet A, Gautier E, Huet F, Teyssier JR, Tosi M, Frí©bourg T, Faivre L.  Hum Mutat. 2008 Nov 19. PMID: 19023858
+- example of usage: Genomic deletions of OFD1 account for 23% of oral-facial-digital type 1 syndrome after negative DNA sequencing. Thauvin-Robinet C, Franco B, Saugier-Veber P, Aral B, Gigot N, Donzel A, Van Maldergem L, Bieth E, Layet V, Mathieu M, Teebi A, Lespinasse J, Callier P, Mugneret F, Masurel-Paulet A, Gautier E, Huet F, Teyssier JR, Tosi M, Frébourg T, Faivre L.  Hum Mutat. 2008 Nov 19. PMID: 19023858
+  term editor: Philippe Rocca-Serra
+
+  subclass of: 'sequencing assay'
++ subclass of: '(has_specified_input some ('deoxyribonucleic acid' and ('has role' some 'evaluant role'))) and (has_specified_output some 'DNA sequence data')'
++ subclass of: (has_specified_input some 'DNA sequencer') and (realizes some (function and ('inheres in' some 'DNA sequencer')))
++ subclass of: (has_specified_input some 'deoxyribonucleic acid') and (realizes some ('evaluant role' and ('inheres in' some 'deoxyribonucleic acid')))
++ subclass of: has_specified_input some 'deoxyribonucleic acid'
++ subclass of: has_specified_input some DNA
++ subclass of: has_specified_output some 'DNA sequence data'
+- equivalent to: (has_specified_input some 
+      ('deoxyribonucleic acid' and ('has role' some 'evaluant role'))) and (has_specified_output some 'DNA sequence data')
+- subclass of: 'has participant' some 'DNA sequencer'
+- subclass of: achieves_planned_objective some 'assay objective'

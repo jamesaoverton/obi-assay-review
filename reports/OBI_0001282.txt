@@ -1,0 +1,16 @@
+http://purl.obolibrary.org/obo/OBI_0001282
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: translation profiling assay
+  definition: An assay in which surface-bound, translationally competent ribosome complexes are used to generate a translation profile for mRNA, which mRNA may be a single molecular species, or a combination of species, including complex mixtures such as those found in the set of mRNAs isolated from a cell or tissue. One or more components of the surface-bound ribosome complex may be labeled at specific positions to permit analysis of multiple or single molecules for determination of ribosomal conformational changes and translation kinetics. Translation profiles are used as the basis for comparison of an mRNA or set of mRNA species. The translation profile can be used to determine such characteristics as kinetics of initiation, kinetic of elongation, identity of the polypeptide product, and the like. Analysis of translation profiles may be used to determine differential gene expression, optimization of mRNA sequences for expression, screening drug candidates for an effect on translation.
+  definition source: EFO_0001033 translation profiling
+  term editor: PERSON: James Malone
+
+  subclass of: achieves_planned_objective some 'molecular feature identification objective'
++ subclass of: 'analyte assay'
++ subclass of: (has_specified_input some 'ribonucleic acid') and (realizes some ('analyte role' and ('inheres in' some 'ribonucleic acid')))
+- subclass of: assay
+- subclass of: realizes some 
+          ('analyte role'
+           and ('role of' some 'ribonucleic acid'))

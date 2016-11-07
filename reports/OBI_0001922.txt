@@ -1,0 +1,27 @@
+http://purl.obolibrary.org/obo/OBI_0001922
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: microRNA profiling by high throughput sequencing assay
+  alternative term: miRNA-seq
+  alternative term: microRNA-seq
+  alternative term: microRNA-seq assay
+  definition: A RNA-seq assay in which high throughput sequencing technology is used to analyse the microRNA component of the transcriptome.
+  definition source: http://www.ebi.ac.uk/efo/EFO_0002896
+  example of usage: Juhlia et al. MicroRNA expression profiling reveals miRNA families regulating 
+    specific biological pathways in mouse frontal cortex and hippocampus. PLoS One. 2011;6(6). [PMID: 21731767]
+  term editor: Person: Venkat Malladi, Chris Stoeckert, Jie Zheng
+
++ subclass of: 'RNA-seq assay, microRNA profiling assay'
++ subclass of: (has_specified_input some 'ribonucleic acid') and (realizes some ('evaluant role' and ('inheres in' some 'ribonucleic acid')))
++ subclass of: has_part some 'library preparation'
++ subclass of: has_specified_output some 'measured expression level'
++ subclass of: has_specified_output some miRNA
+- subclass of: 'RNA-seq assay'
+- subclass of: 'has part' some 'library preparation'
+- subclass of: has_specified_output some 
+          ('measured expression level'
+           and ('is about' some miRNA))
+- subclass of: realizes some 
+          ('evaluant role'
+           and ('role of' some 'ribonucleic acid'))

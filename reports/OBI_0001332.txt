@@ -1,0 +1,12 @@
+http://purl.obolibrary.org/obo/OBI_0001332
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: DNA methylation profiling by array assay
+  definition: An assay in which the methylation state of DNA is determined and is compared between samples using array technology
+  definition source: EFO_0002759 methylation profiling by array
+  term editor: Person: James Malone
+
++ subclass of: 'DNA methylation profiling assay'
++ subclass of: (has_specified_input some 'DNA microarray') and (realizes some (function and ('inheres in' some 'DNA microarray')))
+- equivalent to: 'DNA methylation profiling assay' and ('has participant' some 'DNA microarray')

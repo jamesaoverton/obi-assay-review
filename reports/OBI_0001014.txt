@@ -1,0 +1,13 @@
+http://purl.obolibrary.org/obo/OBI_0001014
+Reviewed: FALSE
+Curation Status: ready for release
+
+  label: single-nucleotide-resolution nucleic acid structure mapping assay using enzymatic probing
+  definition: a single-nucleotide-resolution nucleic acid structure mapping assay which relies on proteins acting as enzymatic probes  in order to produce measurement information which one interpreted provide structural information about the RNA species under study.
+  definition source: RNAO and OBI
+  term editor: Person: Philippe Rocca-Serra
+
+  subclass of: 'single-nucleotide-resolution nucleic acid structure mapping assay'
++ subclass of: 'realizes some ('catalytic activity' and ('inheres in' some protein))'
+- equivalent to: realizes some 
+      ('catalytic activity' and ('inheres in' some protein))

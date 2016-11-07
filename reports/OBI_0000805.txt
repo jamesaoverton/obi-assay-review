@@ -1,0 +1,16 @@
+http://purl.obolibrary.org/obo/OBI_0000805
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: antithrombin-III (AT-III) berichrome assay
+  definition: An antithrombin-III (AT-III) assay in which exogenous bovine thrombin and heparin are added to test plasma to form a thrombin-heparin-AT complex. The residual thrombin not bound then hydrolyzes the p-nitroalanine substrate to produce a yellow color, which is read at 405 nm. The intensity of color produced is inversely proportional to the AT present. A calibration is done with standard human plasma reagent and results for a given specimen are reported as a percentage relative to the standard
+  definition source: WEB:http://www.clinchem.org/cgi/content/full/43/9/1783@2009/08/06
+  editor note: todo Reagents from Berichrom(r) Antithrombin III (A) and standard human plasma
+  curator note: 2009/09/28 Alan Ruttenberg. Fucoidan-use-case
+
+  subclass of: 'human antithrombin-III (AT-III) in blood assay'
++ subclass of: '(has_specified_output some 'scalar measurement datum') and ('has participant' some 'Berichrom(r) Antithrombin III (A) Kit') and (has_specified_output exactly 1 Thing)'
++ subclass of: has_specified_output some 'scalar measurement datum'
+- subclass of: (has_specified_output some 'scalar measurement datum')
+       and ('has participant' some 'Berichrom(r) Antithrombin III (A) Kit')
+       and (has_specified_output exactly 1 Thing)

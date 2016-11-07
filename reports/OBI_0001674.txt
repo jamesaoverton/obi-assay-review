@@ -1,0 +1,30 @@
+http://purl.obolibrary.org/obo/OBI_0001674
+Reviewed: FALSE
+Curation Status: ready for release
+
++ label: cap analysis of gene expression
+- label: cap analysis of gene expression 
+  alternative term: CAGE
+  definition: An assay which aims at monitoring RNA transcript abundances in biological samples by extracting 5' ends of capped transcripts, RTPCR and sequence those. Copy numbers of CAGE tags provide  a way of quantification and provide a measure of expression of the transcriptome 
+  definition source: PMID:14663149
+  example of usage: 5' end-centered expression profiling using cap-analysis gene expression and next-generation sequencing.
+    Takahashi H, Lassmann T, Murata M, Carninci P.
+    Nat Protoc. 2012 Feb 23;7(3):542-61. doi: 10.1038/nprot.2012.005.
+    PMID: 22362160
+  term editor: PERSON:Philippe Rocca-Serra; Marcus Chibucos
+
+  subclass of: achieves_planned_objective some 'transcription profiling identification objective'
+  subclass of: has_specified_input some 'RNA extract'
++ subclass of: 'transcription profiling assay, sequencing assay'
++ subclass of: (has_specified_input some 'DNA sequencer') and (realizes some (function and ('inheres in' some 'DNA sequencer')))
++ subclass of: has_part some 'reverse transcribed polymerase chain reaction, DNA sequencing'
++ subclass of: has_specified_input some RNA
++ subclass of: has_specified_output some 'gene expression'
++ subclass of: has_specified_output some 'sequence data'
+- subclass of: 'has part' some 'DNA sequencing'
+- subclass of: 'has part' some 'reverse transcribed polymerase chain reaction'
+- subclass of: 'has participant' some 'DNA sequencer'
+- subclass of: assay
+- subclass of: has_specified_output some 
+          ('sequence data'
+           and ('is about' some 'gene expression'))

@@ -1,14 +1,12 @@
 http://purl.obolibrary.org/obo/OBI_0000117
-label: Bernoulli trial
-definition: is an assay where the output data is a datum with one of two values denoted success and failure.
-definition source: OBI branch derived
-term editor: PlanAndPlannedProcess Branch
+Reviewed: FALSE
+Curation Status: pending final vetting
 
-DIFFERENT LOGIC
+  label: Bernoulli trial
+  definition: is an assay where the output data is a datum with one of two values denoted success and failure.
+  definition source: OBI branch derived
+  term editor: PlanAndPlannedProcess Branch
 
-BEFORE
-subclass of: achieves_planned_objective some 'assay objective'
-subclass of: process
-
-AFTER
-subclass of: assay
++ subclass of: assay
+- subclass of: achieves_planned_objective some 'assay objective'
+- subclass of: process

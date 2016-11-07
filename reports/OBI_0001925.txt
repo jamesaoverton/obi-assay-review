@@ -1,0 +1,22 @@
+http://purl.obolibrary.org/obo/OBI_0001925
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: chromatin immunoprecipitation with exonuclease sequencing assay
+  alternative term: ChIP-exo assay
+  definition: A ChIP-seq assay to identify protein binding sites using an exonuclease  to provide greater binding resolution of immunoprecipitation assay by genome wide sequencing.
+  definition source: Rhee et al. Comprehensive Genome-wide Protein-DNA Interactions Detected at Single-Nucleotide Resolution. Cell. 2011 Dec;147(6):1408-19. [PMID:22153082]
+  example of usage: Rhee et al. Comprehensive Genome-wide Protein-DNA Interactions Detected at Single-Nucleotide Resolution. Cell. 2011 Dec;147(6):1408-19. [PMID:22153082]
+  term editor: Person: Venkat Malladi, Chris Stoeckert, Jie Zheng
+
+  subclass of: 'ChIP-seq assay'
+  subclass of: has_specified_output some 'DNA sequence data'
++ subclass of: (has_specified_input some 'protein complex') and (realizes some ('evaluant role' and ('inheres in' some 'protein complex')))
++ subclass of: (has_specified_input some sonicator) and (realizes some (function and ('inheres in' some sonicator)))
++ subclass of: has_part some 'cross linking, specific enzymatic cleavage'
+- subclass of: 'has part' some 'cross linking'
+- subclass of: 'has part' some 'specific enzymatic cleavage'
+- subclass of: 'has participant' some sonicator
+- subclass of: realizes some 
+          ('evaluant role'
+           and ('role of' some 'protein complex'))

@@ -1,0 +1,9 @@
+http://purl.obolibrary.org/obo/OBI_0000288
+Reviewed: FALSE
+Curation Status: metadata incomplete
+
+  label: protein-protein interaction detection
+  definition: An assay with the objective to determine interactions between proteins, such as protein-protein binding.
+  editor note: 20091101, Bjoern Peters: This class may be overly broad. Lot's of assays would seem to classify under it, and I have the feeling that the intend would be to limit this to determining protein-protein interactions as they occur within an organism, rather than e.g. peptide:MHC binding assays.
+
+  subclass of: assay

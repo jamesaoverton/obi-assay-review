@@ -1,0 +1,23 @@
+http://purl.obolibrary.org/obo/OBI_0001170
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: reverse transcription polymerase chain reaction assay
+  definition: an assay that evaluates the concentration of RNA in a sample in which an RNA strand is first reverse transcribed into its DNA complement (complementary DNA, or cDNA) using the enzyme reverse transcriptase, and the resulting cDNA is amplified using traditional or real-time PCR. 
+  definition source: GROUP: Penn Group
+  term editor: PERSON: Chris Stoeckert, Jie Zheng
+
+  subclass of: assay
++ subclass of: (has_specified_input some 'ribonucleic acid') and (realizes some ('evaluant role' and ('inheres in' some 'ribonucleic acid')))
++ subclass of: has_part some 'reverse transcribed polymerase chain reaction'
++ subclass of: has_specified_input some 'ribonucleic acid'
++ subclass of: has_specified_input some RNA
++ subclass of: has_specified_output some 'gene expression'
++ subclass of: has_specified_output some 'information content entity'
+- subclass of: 'has part' some 'reverse transcribed polymerase chain reaction'
+- subclass of: has_specified_input some 
+          ('ribonucleic acid'
+           and ('has role' some 'evaluant role'))
+- subclass of: has_specified_output some 
+          ('information content entity'
+           and ('is about' some 'gene expression'))

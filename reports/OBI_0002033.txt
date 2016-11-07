@@ -1,0 +1,13 @@
+http://purl.obolibrary.org/obo/OBI_0002033
+Reviewed: FALSE
+Curation Status: 
+
+  label: translation-associated transcript leader sequencing
+  alternative term: TATL-seq
+  definition: An RNA-seq assay that combines TL-seq with polysome fractionation
+  definition source: pmid:23580730
+  example of usage: pmid:23580730
+  editor note: Details see tracker: https://sourceforge.net/p/obi/obi-terms/725/
+  term editor: Janos Demeter, Chris Stoeckert
+
+  subclass of: 'RNA-seq assay'

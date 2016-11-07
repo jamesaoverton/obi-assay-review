@@ -1,0 +1,13 @@
+http://purl.obolibrary.org/obo/OBI_0002035
+Reviewed: FALSE
+Curation Status: 
+
+  label: peptide mass fingerprinting
+  alternative term: PMF
+  alternative term: protein fingerprinting
+  definition: A mass spectrometry assay in which an unknown protein of interest is cleaved into smaller peptides, whose absolute masses can be accurately measured with a mass spectrometer.  These masses are then compared to values in a database containing known protein sequences.
+  definition source: ERO:0001668 (http://en.wikipedia.org/wiki/Peptide_mass_fingerprinting)
+  editor note: Details see tracker: https://sourceforge.net/p/obi/obi-terms/725/
+  term editor: Janos Demeter, Chris Stoeckert
+
+  subclass of: 'mass spectrometry assay'

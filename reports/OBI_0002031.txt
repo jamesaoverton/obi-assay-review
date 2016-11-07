@@ -1,0 +1,15 @@
+http://purl.obolibrary.org/obo/OBI_0002031
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: genotyping by SNP array
+  alternative term: DNA sequence variation detection by snp array
+  definition: A genotyping by array assay that aims to detect variation in (mostly) genomic DNA of an organism, strain, etc relative to some reference sequence employing snp array technology. 
+  definition source: PMID:20393561
+  example of usage: PMID:20080586
+  editor note: Details see tracker: https://sourceforge.net/p/obi/obi-terms/720/
+  term editor: Person:Janos Demeter, Chris Stoeckert, Jie Zheng
+
+  subclass of: 'genotyping by array assay'
++ subclass of: (has_specified_input some 'SNP microarray') and (realizes some (function and ('inheres in' some 'SNP microarray')))
+- subclass of: 'has participant' some 'SNP microarray'

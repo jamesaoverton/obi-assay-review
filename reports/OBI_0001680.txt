@@ -1,0 +1,31 @@
+http://purl.obolibrary.org/obo/OBI_0001680
+Reviewed: FALSE
+Curation Status: ready for release
+
++ label: Sos-recruitment assay
+- label: Sos-recruitment assay 
+  alternative term: SRS
+  definition: is a kind of yeast 2 hybrid system where mammalian guanyl nucleotide exchange factor (GEF) Sos is recruited to the Saccharomyces cerevisiae plasma membrane harboring a temperature-sensitive Ras GEF, Cdc25-2, allowing growth at the nonpermissive temperature. Using the Sos recruitment system, interacting proteins for targeted domain can be detected.
+  definition source: adapted from the original publication by Aronheim et al, 1997. PMID: 9154808
++ example of usage: The Sos-recruitment system as a tool to analyze cellular localization of plant proteins: membrane localization of Arabidopsis thaliana PEPINO/PASTICCINO2.
+    Schí_nhofer-Merl S, Torres-Ruiz RA.
+    Mol Genet Genomics. 2010 May;283(5):439-49. Epub 2010 Mar 19.
+    PMID: 20300944
+- example of usage: The Sos-recruitment system as a tool to analyze cellular localization of plant proteins: membrane localization of Arabidopsis thaliana PEPINO/PASTICCINO2.
+    Schönhofer-Merl S, Torres-Ruiz RA.
+    Mol Genet Genomics. 2010 May;283(5):439-49. Epub 2010 Mar 19.
+    PMID: 20300944
+  curator note: add regulatory region DNA binding;GO:0043565;
+  term editor: PERSON:Philippe Rocca-Serra; Marcus Chibucos
+
++ subclass of: 'binding assay'
++ subclass of: achieves_planned_objective some 'protein and DNA interaction identification objective'
++ subclass of: has_specified_input some 'genetically modified material'
++ subclass of: has_specified_output some 'data item'
++ subclass of: has_specified_output some 'protein domain specific binding'
+- subclass of: (assay
+       and (has_specified_input some 'genetically modified material')
+       and (has_specified_output some 
+          ('data item'
+           and ('is about' some 'protein domain specific binding'))))
+       and (achieves_planned_objective some 'protein and DNA interaction identification objective')

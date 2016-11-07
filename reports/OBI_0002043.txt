@@ -1,0 +1,15 @@
+http://purl.obolibrary.org/obo/OBI_0002043
+Reviewed: FALSE
+Curation Status: 
+
+  label: individual-nucleotide resolution cross-linking and immunoprecipitation sequencing assay
+  alternative term: iCLIP
+  alternative term: iCLIP assay
+  alternative term: individual-nucleotide resolution cross-linking and immunoprecipitation
+  definition: A cross-linking immunoprecipitation high-throughput sequencing assay to identify protein-RNA interactions by using UV light to covalently bind proteins and RNA molecules, allowing for a very stringent purification of the linked protein-RNA complexes.
+  definition source: Huppertz et al., (February 2014). "iCLIP: protein-RNA interactions at nucleotide resolution.". Methods (San Diego, Calif.) 65 (3): 274-87. doi:10.1016/j.ymeth.2013.10.011
++ example of usage: Kí_nig et al., (18 January 2012). "Protein-RNA interactions: new genomic technologies and perspectives". Nature Reviews Genetics 13 (2): 77-83. doi:10.1038/nrg3141
+- example of usage: König et al., (18 January 2012). "Protein-RNA interactions: new genomic technologies and perspectives". Nature Reviews Genetics 13 (2): 77-83. doi:10.1038/nrg3141
+  term editor: Person: Venkat Malladi, Chris Stoeckert, Jie Zheng
+
+  subclass of: 'cross-linking immunoprecipitation high-throughput sequencing assay'

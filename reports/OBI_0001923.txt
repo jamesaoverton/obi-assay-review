@@ -1,0 +1,21 @@
+http://purl.obolibrary.org/obo/OBI_0001923
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: protein sequencing by tandem mass spectrometry assay
+  definition: A sequencing assay in which amino acid sequences of proteins is determined using multiple rounds of mass spectrometry and molecule fragmentation.
++ definition source: Hunt et al. Protein sequencing by tandem mass spectrometry. Proc Natl Acad Sci U S A. 1986;83(17): 6233äóñ6237. [PMID:3462691]
+- definition source: Hunt et al. Protein sequencing by tandem mass spectrometry. Proc Natl Acad Sci U S A. 1986;83(17): 6233–6237. [PMID:3462691]
+  example of usage: Taylor et al.Implementation and uses of automated de novo peptide sequencing by tandem mass spectrometry. Anal Chem. 2001 Jun;73(11):2594-604. [PMID:11403305]
+  term editor: Person: Venkat Malladi, Chris Stoeckert, Jie Zheng
+
+  subclass of: 'sequencing assay'
+  subclass of: has_specified_output some 'sequence data'
++ subclass of: (has_specified_input some 'tandem mass spectrometer') and (realizes some (function and ('inheres in' some 'tandem mass spectrometer')))
++ subclass of: (has_specified_input some protein) and (realizes some ('evaluant role' and ('inheres in' some protein)))
++ subclass of: has_part some 'protease cleavage'
+- subclass of: 'has part' some 'protease cleavage'
+- subclass of: 'has participant' some 'tandem mass spectrometer'
+- subclass of: realizes some 
+          ('evaluant role'
+           and ('role of' some protein))

@@ -1,0 +1,26 @@
+http://purl.obolibrary.org/obo/OBI_0001918
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: RNA-binding protein immunoprecipitation array profiling assay
+  alternative term: RIP-chip
+  alternative term: RIP-chip assay
+  definition: An assay that combines immunoprecipitation of an RNA-binding protein and array technology to identify mRNAs associated with selected RNA binding proteins (RBPs).
+  definition source: Jain et al. RIP-Chip analysis: RNA-Binding Protein Immunoprecipitation-Microarray (Chip) Profiling. Methods Mol Biol. 2011;703:247-63. [PMID:21125495]
+  example of usage: Jain et al. RIP-Chip analysis: RNA-Binding Protein Immunoprecipitation-Microarray (Chip) Profiling. Methods Mol Biol. 2011;703:247-63. [PMID:21125495]
+  term editor: Person: Venkat Malladi, Chris Stoeckert, Jie Zheng
+
+  subclass of: achieves_planned_objective some 'protein and RNA interaction identification objective'
+  subclass of: has_specified_output some 'measurement datum'
++ subclass of: 'analyte assay'
++ subclass of: (has_specified_input some 'DNA microarray') and (realizes some (function and ('inheres in' some 'DNA microarray')))
++ subclass of: (has_specified_input some 'protein complex') and (realizes some ('evaluant role' and ('inheres in' some 'protein complex')))
++ subclass of: has_part some 'immunoprecipitation, library preparation'
+- subclass of: 'has part' some 'library preparation'
+- subclass of: 'has part' some immunoprecipitation
+- subclass of: 'has participant' some 'DNA microarray'
+- subclass of: achieves_planned_objective some 'analyte measurement objective'
+- subclass of: assay
+- subclass of: realizes some 
+          ('evaluant role'
+           and ('role of' some 'protein complex'))

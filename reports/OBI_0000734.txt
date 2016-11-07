@@ -1,0 +1,12 @@
+http://purl.obolibrary.org/obo/OBI_0000734
+Reviewed: FALSE
+Curation Status: metadata incomplete
+
+  label: DNA sequencing by synthesis
+  definition: is a DNA sequencing which relies on DNA polymerase activity to perform chain extension during the sequencing reaction step.
+  example of usage: PMID: 18263613. A new class of cleavable fluorescent nucleotides: synthesis and optimization as reversible terminators for DNA sequencing by synthesis. Turcatti G, Romieu A, Fedurco M, Tairi AP. Nucleic Acids Res. 2008 Mar;36(4):e25.
+  term editor: PERSON: Philippe Rocca-Serra
+
+  subclass of: 'DNA sequencing'
+  subclass of: has_specified_input some 'DNA polymerase complex'
++ subclass of: has_specified_input some reagent

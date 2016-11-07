@@ -1,0 +1,12 @@
+http://purl.obolibrary.org/obo/OBI_0001491
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: radioactivity detection binding assay
+  definition: binding assay that uses radioactivity detection as an indicator of binding
+  definition source: IEDB
+  term editor: PERSON:Bjoern Peters, Randi Vita
+
++ subclass of: 'binding assay'
++ subclass of: has_part some 'radioactivity detection'
+- equivalent to: 'binding assay' and ('has part' some 'radioactivity detection')

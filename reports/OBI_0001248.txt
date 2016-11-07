@@ -1,0 +1,33 @@
+http://purl.obolibrary.org/obo/OBI_0001248
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: ChIP-chip assay
+  alternative term: ChIP-on-chip assay
+  definition: an assay that aims to investigate the interactions between protein and DNA relying on chromatin immunoprecipitation ('ChIP') combined with microarray technology ('chip'). Specially, it allows the identification of protein binding sites on a genome-wide basis.
+  definition source: WEB: http://en.wikipedia.org/wiki/ChIP-on-chip
+  term editor: Person: James Malone
+
+  subclass of: achieves_planned_objective some 'protein and DNA interaction identification objective'
++ subclass of: 'assay using chromatin immunoprecipitation'
++ subclass of: (has_specified_input some 'DNA microarray') and (realizes some (function and ('inheres in' some 'DNA microarray')))
++ subclass of: (has_specified_input some 'deoxyribonucleic acid') and (realizes some ('analyte role' and ('inheres in' some 'deoxyribonucleic acid')))
++ subclass of: has_part some immunoprecipitation
++ subclass of: has_specified_input some 'DNA and protein complex'
++ subclass of: has_specified_input some 'specimen and ('has part' some 'deoxyribonucleic acid') and ('has part' some 'protein complex')'
++ subclass of: has_specified_output some 'chromatin remodeling or regulation of molecular function, epigenetic or sequence-specific DNA binding or 'transcription factor binding site'
++ subclass of: has_specified_output some 'information content entity'
+- subclass of: 'has part' some immunoprecipitation
+- subclass of: 'has participant' some 'DNA microarray'
+- subclass of: assay
+- subclass of: has_specified_input some 
+          (specimen
+           and ('has part' some 'deoxyribonucleic acid')
+           and ('has part' some 'protein complex'))
+- subclass of: has_specified_output some 
+          ('information content entity'
+           and ('is about' some 
+              ('chromatin remodeling' or 'regulation of molecular function, epigenetic' or 'sequence-specific DNA binding' or 'transcription factor binding site')))
+- subclass of: realizes some 
+          ('analyte role'
+           and ('role of' some 'deoxyribonucleic acid'))

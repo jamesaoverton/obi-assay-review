@@ -1,0 +1,8 @@
+http://purl.obolibrary.org/obo/OBI_0000978
+Reviewed: FALSE
+Curation Status: metadata incomplete
+
+  label: in container assay
+  definition: an assay in which a measurement is made by observing entities located in a container.
+
+  subclass of: assay

@@ -1,26 +1,26 @@
 http://purl.obolibrary.org/obo/OBI_0000291
-label: transcription factor binding site assay
-alternative term: TF binding
-definition: An assay with objective to find DNA region specifically recognized by proteins that function as transcription factors
-definition source: OBI
-example of usage: Transcription factor binding site identification in yeast: a comparison of high-density oligonucleotide and PCR-based microarray platforms.  
-Funct Integr Genomics. 2007 Oct;7(4):335-45. Epub 2007 Jul 19. PMID: 17638031
-editor note: JZ: add equivalent axiom for classification  
-add alternative term 'TF binding' which was used in BCBC database
-editor note: JZ: fixed inconsistency issue and relabel the term  
-see tracker: https://sourceforge.net/p/obi/obi-terms/767/
-term editor: Philippe Rocca-Serra
+Reviewed: FALSE
+Curation Status: metadata complete
 
-DIFFERENT LOGIC
+  label: transcription factor binding site assay
+  alternative term: TF binding
+  definition: An assay with objective to find DNA region specifically recognized by proteins that function as transcription factors
+  definition source: OBI
+  example of usage: Transcription factor binding site identification in yeast: a comparison of high-density oligonucleotide and PCR-based microarray platforms.
+    Funct Integr Genomics. 2007 Oct;7(4):335-45. Epub 2007 Jul 19. PMID: 17638031
+  editor note: JZ: add equivalent axiom for classification
+    add alternative term 'TF binding' which was used in BCBC database
+  editor note: JZ: fixed inconsistency issue and relabel the term
+    see tracker: https://sourceforge.net/p/obi/obi-terms/767/
+  term editor: Philippe Rocca-Serra
 
-BEFORE
-equivalent to: assay and (has_specified_output some 
-  ('information content entity' and ('is about' some 'transcription factor binding site')))
-subclass of: assay
-subclass of: has_specified_output some 
-      ('measurement datum'
-       and ('is about' some 'sequence-specific DNA binding'))
-
-AFTER
-subclass of: 'binding assay'
-subclass of: has_specified_output some 'measurement datum  information content entity'
++ subclass of: 'assay and (has_specified_output some ('information content entity' and ('is about' some 'transcription factor binding site')))'
++ subclass of: 'binding assay'
++ subclass of: has_specified_output some 'measurement datum  information content entity'
++ subclass of: has_specified_output some 'sequence specific DNA binding  transcription factor binding site'
+- equivalent to: assay and (has_specified_output some 
+      ('information content entity' and ('is about' some 'transcription factor binding site')))
+- subclass of: assay
+- subclass of: has_specified_output some 
+          ('measurement datum'
+           and ('is about' some 'sequence-specific DNA binding'))

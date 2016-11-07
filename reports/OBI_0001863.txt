@@ -1,0 +1,20 @@
+http://purl.obolibrary.org/obo/OBI_0001863
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: shotgun bisulfite-seq assay
+  alternative term: Shotgun bisulfite sequencing
+  alternative term: WGBS
+  alternative term: WGSBS
+  alternative term: whole genome bisulfite sequencing
+  alternative term: whole-genome shotgun bisulfite sequencing
+  definition: A bisulfite sequencing assay that identifies methylated cytosines across the genome using high throughput sequencing.
+  definition source: Cokus et al. Shotgun bisulfite sequencing of the Arabidopsis genome reveals DNA methylation patterning. Nature. 2008 Mar 13;452(7184):215-9. [PMID:18278030]
+  example of usage: Cokus et al. Shotgun bisulfite sequencing of the Arabidopsis genome reveals DNA methylation patterning. Nature. 2008 Mar 13;452(7184):215-9. [PMID:18278030].
+  term editor: Person: Venkat Malladi, Chris Stoeckert, Jie Zheng
+
+  subclass of: 'bisulfite sequencing'
++ subclass of: (has_specified_input some sonicator) and (realizes some (function and ('inheres in' some sonicator)))
++ subclass of: has_part some 'library preparation'
+- subclass of: 'has part' some 'library preparation'
+- subclass of: 'has participant' some sonicator

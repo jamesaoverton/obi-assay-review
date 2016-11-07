@@ -1,0 +1,31 @@
+http://purl.obolibrary.org/obo/OBI_0001861
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: methylation-sensitive restriction enzyme sequencing assay
+  alternative term: MRE-seq
+  alternative term: MRE-seq assay
+  definition: An assay that identifies unmethylated CpGs by  use of methylation sensitive restriction enzymes to fragment DNA.
+  definition source: Maunakea et al. Conserved role of intragenic DNA methylation in regulating alternative promoters. Nature. 2010 Jul 8;466(7303):253-7. [PMID:20613842]
+  example of usage: Maunakea et al. Conserved role of intragenic DNA methylation in regulating alternative promoters. Nature. 2010 Jul 8;466(7303):253-7. [PMID:20613842]
+  term editor: Person: Venkat Malladi, Chris Stoeckert, Jie Zheng
+
+  subclass of: achieves_planned_objective some 'epigenetic modification identification objective'
++ subclass of: 'DNA sequencing, DNA methylation profiling by high throughput sequencing assay'
++ subclass of: (has_specified_input some 'deoxyribonucleic acid') and (realizes some ('evaluant role' and ('inheres in' some 'deoxyribonucleic acid')))
++ subclass of: has_part some 'DNA sequencing, library preparation, specific enzymatic cleavage'
++ subclass of: has_specified_input some 'deoxyribonucleic acid'
++ subclass of: has_specified_input some DNA
++ subclass of: has_specified_output some 'DNA sequence data'
++ subclass of: has_specified_output some 'regulation of DNA methylation'
+- subclass of: 'has part' some 'DNA sequencing'
+- subclass of: 'has part' some 'library preparation'
+- subclass of: 'has part' some 'specific enzymatic cleavage'
+- subclass of: 'has participant' some 'DNA sequencer'
+- subclass of: assay
+- subclass of: has_specified_input some 
+          ('deoxyribonucleic acid'
+           and ('has role' some 'evaluant role'))
+- subclass of: has_specified_output some 
+          ('DNA sequence data'
+           and ('is about' some 'regulation of DNA methylation'))

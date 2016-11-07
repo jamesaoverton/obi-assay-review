@@ -1,5 +1,8 @@
 (ns obi-assays.core
-  (:require [clojure.string :as str])
+  (:require [clojure.string :as string]
+            [clojure.java.io :as io]
+            [clojure.data.csv :as csv]
+            clojure.set)
   (:import (org.obolibrary.robot IOHelper OntologyHelper)
            (org.semanticweb.owlapi.model IRI)
            (org.semanticweb.owlapi.apibinding OWLManager)
@@ -34,7 +37,7 @@
       (quote-string (.getShortForm short-form-provider entity)))))
 
 (def io-helper (IOHelper.))
-(def obi-path "/Users/james/Repositories/OBO/OBI/trunk/src/ontology/branches/obi.owl")
+(def obi-path "obi-merged.owl")
 (def ontology (.loadOntology io-helper obi-path))
 (def manager (.getOWLOntologyManager ontology))
 (def data-factory (.getOWLDataFactory manager))
@@ -53,7 +56,7 @@
   "Sort axioms, ignoring single quotes."
   [axioms]
   (->> axioms
-       (map (fn [x] [(str/replace x "'" "") x]))
+       (map (fn [x] [(string/replace x "'" "") x]))
        sort
        (map second)))
 
@@ -66,28 +69,32 @@
     (concat
      (->> (.getEquivalentClassesAxioms ontology cls) 
           (map #(.render renderer %))
-          (map #(str/replace % #"^.*EquivalentTo " ""))
-          (map #(str/replace % "\n" "\n  "))
+          (map #(string/replace % #"^.*EquivalentTo " ""))
+          (map #(string/replace % "\n" "\n  "))
           sort-axioms
           (map (partial str "equivalent to: ")))
      (->> (.getSubClassAxiomsForSubClass ontology cls) 
           (map #(.render renderer (.getSuperClass %)))
-          (map #(str/replace % "\n" "\n  "))
+          (map #(string/replace % "\n" "\n  "))
           sort-axioms
           (map (partial str "subclass of: "))))))
 
 ; Define the annotations to report, in preferred order.
 
 (def annotation-properties
-  [["label"                 "http://www.w3.org/2000/01/rdf-schema#label"]
-   ["alternative term"      (obo "IAO_0000118")]
-   ["IEDB alternative term" (obo "OBI_9991118")]
-   ["definition"            (obo "IAO_0000115")]
-   ["definition source"     (obo "IAO_0000119")]
-   ["example of usage"      (obo "IAO_0000112")]
-   ["editor note"           (obo "IAO_0000116")]
-   ["term editor"           (obo "IAO_0000117")]
-   ])
+  [["label"                  "http://www.w3.org/2000/01/rdf-schema#label"]
+   ["alternative term"       (obo "IAO_0000118")]
+   ["FGED alternative term"  (obo "OBI_9991119")]
+   ["IEDB alternative term"  (obo "OBI_9991118")]
+   ["ISA alternative term"   (obo "OBI_0001847")]
+   ["NIAID GSCID-BRC alternative term" (obo "OBI_0001886")]
+   ["definition"             (obo "IAO_0000115")]
+   ["definition source"      (obo "IAO_0000119")]
+   ["example of usage"       (obo "IAO_0000112")]
+   ["editor note"            (obo "IAO_0000116")]
+   ["curator note"           (obo "IAO_0000232")]
+   ["term editor"            (obo "IAO_0000117")]
+   ["has curation status"    (obo "IAO_0000114")]])
 
 (def annotation-property-map
   (->> annotation-properties
@@ -107,16 +114,15 @@
         (get annotation-property-map property)
         iri)
        sort
-       (map #(str/replace % "\n" "  \n"))
-       (map (partial str property ": "))))
+       (filter string?)))
 
 (defn render-annotations
   "Given a term IRI,
    return a sequence of annotation blocks."
   [iri]
   (mapcat
-    #(render-annotation % iri)
-    (map first annotation-properties)))
+   #(render-annotation % iri)
+   (map first annotation-properties)))
 
 
 ;; ## Template Stuff
@@ -125,59 +131,81 @@
   "Given a ROBOT template string and a value,
    substitute the value into the template
    and return the result."
-  [[template value]]
-  (str/replace
-   (str/replace template "C " "")
-   "%"
-   (quote-string value)))
+  [template value]
+  (when (and
+         (not (string/blank? template))
+         (not (string/blank? value)))
+    (string/replace
+     (string/replace template "C " "")
+     "%"
+     (quote-string value))))
 
-(defn render-row
+(defn render-row-logic
   "Given a row from the TSV file,
    return a sequence of logic strings."
   [templates row]
-  (->> (map vector templates row)
-       (remove #(str/blank? (second %)))
-       (filter #(.startsWith (first %) "C "))
-       (map apply-template)
+  (->> templates
+       (filter #(.startsWith (val %) "C "))
+       (map #(apply-template (val %) (get row (key %))))
+       (remove string/blank?)
        (map (partial str "subclass of: "))
        sort-axioms))
 
 
 ;; ## Report Stuff
 
-(defn render-report
-  "Given an IRI, and before-and-after logic strings,
-   return a string with the term's annotations
-   the before logic and the after logic."
-  [iri before after]
-  (str/join
-   "\n"
-   (concat
-    [(.toString iri)]
-    (render-annotations iri)
-    [""]
-    (if (= before after) ["SAME LOGIC"] ["DIFFERENT LOGIC"])
-    ["" "BEFORE"]
-    before
-    ["" "AFTER"]
-    after)))
+(defn report-difference
+  [before after]
+  (let [before (set before)
+        after  (set after)]
+    (->> (clojure.set/union before after)
+         sort
+         (map
+          (fn [item]
+            (cond
+              (and (before item) (after item)) (str "  " item)
+              (before item) (str "- " item)
+              (after item) (str "+ " item))))
+         (map #(string/replace % #"(?m)\r?\n" "\n    "))
+         sort)))
 
-(defn compare-axioms
+(defn report-annotation-difference
+  [row iri property]
+  (report-difference
+   (->> (render-annotation property iri)
+        (map (partial str property ": ")))
+   (->> (string/split (get row property) #"\|")
+        (remove string/blank?)
+        sort
+        (map (partial str property ": ")))))
+
+(defn report-logic-difference
+  [templates row iri]
+  (report-difference
+   (render-axioms iri)
+   (render-row-logic templates row)))
+
+(defn report-differences
   "Given the template row and a term row,
    compare the term in the ontology (before)
    to the term in the table (after).
    If their logic differs, return a report."
   [templates row]
-  (let [id     (nth row 2)
-        ontid  (str/replace id ":" "_") 
-        label  (nth row 3)
-        iri    (IRI/create (obo ontid))
-        before (render-axioms iri)
-        after  (render-row templates row)]
-    (when-not (= before after)
-      [ontid
-       label
-       (render-report iri before after)])))
+  (let [ontid (string/replace (get row "ID") ":" "_") 
+        iri   (IRI/create (obo ontid))]
+    [ontid (get row "label") 
+     (string/join
+      "\n"
+      (concat
+       [iri
+        (str "Reviewed: " (get row "reviewed"))
+        (str "Curation Status: " (get row "has curation status"))
+        ""]
+       (mapcat
+        (partial report-annotation-difference row iri)
+        (map first (butlast annotation-properties)))
+       [""]
+       (report-logic-difference templates row iri)))]))
 
 
 ;; ## Table Stuff
@@ -185,11 +213,9 @@
 (defn read-rows
   "Given a path to a TSV file, return a sequence of sequences."
   [path]
-  (->> path
-       slurp
-       str/split-lines
-       (remove (partial str/blank?))
-       (map #(str/split % #"\t"))))
+  (with-open [in-file (io/reader path)]
+    (doall
+     (csv/read-csv in-file))))
 
 (defn process-table
   "Given a path to a TSV file of assays,
@@ -199,12 +225,13 @@
   [path]
   (let [rows      (read-rows path)
         headers   (first rows)
-        templates (second rows)]
+        templates (zipmap headers (second rows))]
     (->> rows
          (drop 2) ; drop headers
-         (take 10) ; testing
-         (remove #(= (nth % 1) "TRUE"))
-         (map (partial compare-axioms templates))
+         ;(take 10) ; testing
+         (map (partial zipmap headers))
+         (remove #(= (get % "reviewed") "TRUE"))
+         (map (partial report-differences templates))
          (remove nil?)
          (map (fn [[ontid label report]]
                 (spit
@@ -214,5 +241,4 @@
          doall)))
 
 (defn -main [& args]
-  (process-table "assays.tsv"))
-
+  (process-table "assays.csv"))

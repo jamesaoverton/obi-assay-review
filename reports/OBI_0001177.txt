@@ -1,0 +1,21 @@
+http://purl.obolibrary.org/obo/OBI_0001177
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: RNA sequencing
++ definition: RNA sequencing is a sequencing process which uses ribonucleic acid as input and results in a the creation of RNA sequence information artifact
+- definition: RNA sequencing is a sequencing process which uses ribonucleic acid as input and results in a the creation of RNA sequence information artifact 
+  definition source: Bjoern Peters
+  editor note: BP 12/21:Created based on a request from Melanie
+  term editor: Bjoern Peters
+
+  subclass of: 'sequencing assay'
++ subclass of: '(has_specified_input some ('ribonucleic acid' and ('has role' some 'evaluant role'))) and (has_specified_output some ('information content entity' and ('is about' some 'primary structure of RNA molecule')))'
++ subclass of: (has_specified_input some 'ribonucleic acid') and (realizes some ('evaluant role' and ('inheres in' some 'ribonucleic acid')))
++ subclass of: has_specified_input some 'ribonucleic acid'
++ subclass of: has_specified_input some RNA
++ subclass of: has_specified_output some 'information content entity'
++ subclass of: has_specified_output some 'primary structure of RNA molecule'
+- equivalent to: (has_specified_input some 
+      ('ribonucleic acid' and ('has role' some 'evaluant role'))) and (has_specified_output some 
+      ('information content entity' and ('is about' some 'primary structure of RNA molecule')))

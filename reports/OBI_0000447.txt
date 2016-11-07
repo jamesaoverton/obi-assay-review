@@ -1,0 +1,17 @@
+http://purl.obolibrary.org/obo/OBI_0000447
+Reviewed: FALSE
+Curation Status: metadata incomplete
+
+  label: intra cellular electrophysiology recording
+  definition: An intracellular electrophysiology recording is a process where the recording location of the electrode is intracellular
+  definition source: PERSON: Frank Gibson
+  term editor: PERSON: Frank Gibson
+
++ subclass of: assay
++ subclass of: has_specified_output some 'ion channel activity'
++ subclass of: has_specified_output some 'mass measurement datum'
+- subclass of: achieves_planned_objective some 'assay objective'
+- subclass of: has_specified_output some 
+          ('measurement datum'
+           and ('is about' some 'ion channel activity'))
+- subclass of: process

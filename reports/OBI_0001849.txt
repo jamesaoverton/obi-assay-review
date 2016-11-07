@@ -1,0 +1,22 @@
+http://purl.obolibrary.org/obo/OBI_0001849
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: structural analysis by paired-end tag sequencing
+  alternative term: DNA-PET
+  alternative term: DNA-PET assay
+  definition: An assay that incorporates Paired-End Tags and sequencing technology to determine structural variants.
+  definition source: Yao, et al. Long Span DNA Paired-End-Tag (DNA-PET) Sequencing Strategy for the Interrogation of Genomic Structural Mutations and Fusion-Point-Guided Reconstruction of Amplicons. PLoS One. 2012;7(9):e46152 [PMID:23029419]
+  example of usage: Yao, et al. Long Span DNA Paired-End-Tag (DNA-PET) Sequencing Strategy for the Interrogation of Genomic Structural Mutations and Fusion-Point-Guided Reconstruction of Amplicons. PLoS One. 2012;7(9):e46152 [PMID:23029419]
+  term editor: Person: Venkat Malladi, Chris Stoeckert, Jie Zheng
+
++ subclass of: 'DNA sequencing'
+- subclass of: 'has part' some 'DNA sequencing'
+- subclass of: 'has part' some 'paired-end library preparation'
+- subclass of: 'has participant' some 'DNA sequencer'
+- subclass of: achieves_planned_objective some 'sequence feature identification objective'
+- subclass of: assay
+- subclass of: has_specified_input some 
+          ('deoxyribonucleic acid'
+           and ('has role' some 'evaluant role'))
+- subclass of: has_specified_output some 'DNA sequence data'

@@ -1,0 +1,14 @@
+http://purl.obolibrary.org/obo/OBI_0002085
+Reviewed: FALSE
+Curation Status: pending final vetting
+
+  label: transcript expression location detection by hybridization chain reaction
+  alternative term: transcript expression location detection by fluorescent HCR.
+  definition: An in situ hybridization in which the location (e.g. anatomical/tissue) of a transcript is detected by a multiplexed fluorescent in situ hybridization, based on orthogonal amplification with hybridization chain reactions (HCR). RNA probes complementary to mRNA targets trigger chain reactions in which fluorophore-labeled RNA hairpins self-assemble into tethered fluorescent amplification polymers.
+  definition source: PMID 21037591
+  example of usage: PMID 25977364: "Multiplexed imaging of mRNA expression using fluorescent hybridization chain reaction (HCR) quantitatively confirmed the expression profiles of lead cells"
+  editor note: See tracker #783
+  term editor: Paul D. Thomas, Yang Chai
+
++ subclass of: 'in-situ hybridization'
+- subclass of: 'in situ hybridization'

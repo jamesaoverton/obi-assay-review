@@ -1,0 +1,31 @@
+http://purl.obolibrary.org/obo/OBI_0001463
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: transcription profiling by array assay
+  alternative term: RNA profiling by array assay
+  definition: An assay in which  the transcriptome of a biological sample is analysed using array technology.
+  definition source: EFO_0002768: transcription profiling by array
+  editor note: JZ: add alternative term: 'RNA profiling by array assay' requested by ENCODE developer.
+    See tracker: https://sourceforge.net/p/obi/obi-terms/757/
+  term editor: Person: James Malone
+
+  subclass of: achieves_planned_objective some 'transcription profiling identification objective'
++ subclass of: 'transcription profiling assay'
++ subclass of: (has_specified_input some 'DNA microarray') and (realizes some (function and ('inheres in' some 'DNA microarray')))
++ subclass of: (has_specified_input some 'ribonucleic acid') and (realizes some ('analyte role' and ('inheres in' some 'ribonucleic acid')))
++ subclass of: has_specified_input some 'specimen and ('has part' some ribonucleic acid)'
++ subclass of: has_specified_input some RNA
++ subclass of: has_specified_output some 'gene expression'
++ subclass of: has_specified_output some 'measurement datum'
+- subclass of: 'has participant' some 'DNA microarray'
+- subclass of: assay
+- subclass of: has_specified_input some 
+          (specimen
+           and ('has part' some 'ribonucleic acid'))
+- subclass of: has_specified_output some 
+          ('measurement datum'
+           and ('is about' some 'gene expression'))
+- subclass of: realizes some 
+          ('analyte role'
+           and ('role of' some 'ribonucleic acid'))

@@ -1,0 +1,13 @@
+http://purl.obolibrary.org/obo/OBI_0002044
+Reviewed: FALSE
+Curation Status: 
+
+  label: RNA Bind-n-Seq assay
+  alternative term: RBNS
+  alternative term: RNA Bind-n-Seq
+  alternative term: RNBS assay
+  definition: A RNA-seq assay that comprehensively characterizes sequence and structural specificity of RNA binding proteins (RBPs)
+  definition source: Lambert et al., (June 2014). "RNA Bind-n-Seq: quantitative assessment of the sequence and structural binding specificity of RNA binding proteins." Mol Cell. 2014 Jun 5;54(5):887-900. doi: 10.1016/j.molcel.2014.04.016
+  term editor: Person: Venkat Malladi, Chris Stoeckert, Jie Zheng
+
+  subclass of: 'RNA-seq assay'

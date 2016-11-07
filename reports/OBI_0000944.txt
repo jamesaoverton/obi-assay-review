@@ -1,0 +1,17 @@
+http://purl.obolibrary.org/obo/OBI_0000944
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: handedness assay
+  alternative term: handedness test
+  definition: A handedness assay measures the unequal distribution of fine motor skill between the left and right hands typically in human subjects by means of some questionnaire and scoring procedure.
+  definition source: http://en.wikipedia.org/wiki/Handedness
+  example of usage: The Edinburgh handedness assay is a specific method of determing handedness
+  term editor: Helen Parkinson
+
++ subclass of: 'assay and (has_specified_output some ('measurement datum' and ('is about' some handedness)))'
++ subclass of: assay
++ subclass of: has_specified_output some 'measurement datum'
++ subclass of: has_specified_output some handedness
+- equivalent to: assay and (has_specified_output some 
+      ('measurement datum' and ('is about' some handedness)))

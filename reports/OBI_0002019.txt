@@ -1,0 +1,18 @@
+http://purl.obolibrary.org/obo/OBI_0002019
+Reviewed: FALSE
+Curation Status: 
+
+  label: transcription factor binding site identification by ChIP-Seq assay
+  alternative term: TF Binding ChIP-Seq
+  definition: A ChIP-seq assay to identify binding sites for transcription factors.
+  definition source: Penn group
+  term editor: Person: Chris Stoeckert, Jie Zheng
+
+  subclass of: achieves_planned_objective some 'protein and DNA interaction identification objective'
++ subclass of: 'transcription factor binding site assay, ChIP-seq assay'
++ subclass of: has_specified_output some 'information content entity'
++ subclass of: has_specified_output some 'transcription factor binding site'
+- subclass of: 'ChIP-seq assay'
+- subclass of: has_specified_output some 
+          ('information content entity'
+           and ('is about' some 'transcription factor binding site'))

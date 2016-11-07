@@ -1,0 +1,14 @@
+http://purl.obolibrary.org/obo/OBI_0000966
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: in live organism assay
+  alternative term: in vivo assay
+  definition: An assay in which a measurement is made by observing entities located in an organism.
+  example of usage: Measuring the rate in which cells that are pulsed with a peptide are killed inside a mouse by peptide specific cytotoxic T cells.
+  term editor: PERSON:Bjoern Peters
+
++ subclass of: 'assay and ('has participant' some ('located in' some (organism and ('has quality' some alive))))'
++ subclass of: assay
+- equivalent to: assay and ('has participant' some ('located in' some 
+      (organism and ('has quality' some alive))))

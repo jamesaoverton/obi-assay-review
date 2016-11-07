@@ -1,0 +1,17 @@
+http://purl.obolibrary.org/obo/OBI_0001689
+Reviewed: FALSE
+Curation Status: ready for release
+
+  label: cytochalasin-induced inhibition of actin polymerization assay
+  definition: is an assay which uses compound cytochalasin (CHEBI: 23528)  to block actin polymerization-dependent cell motility (GO:0070358) and actin filament polymerization (GO:0030041).
+  curator note: add ;actin filament polymerization obo:GO:0070358;
+  term editor: PERSON:Philippe Rocca-Serra; Marcus Chibucos
+
++ subclass of: '(assay and (has_specified_input some cytochalasin) and (has_specified_output some ('data item' and ('is about' some 'actin filament polymerization')))) and (achieves_planned_objective some 'biological feature identification objective')'
++ subclass of: achieves_planned_objective some 'biological feature identification objective'
++ subclass of: assay
++ subclass of: has_specified_input some cytochalasin
++ subclass of: has_specified_output some 'actin filament polymerization'
++ subclass of: has_specified_output some 'data item'
+- equivalent to: (assay and (has_specified_input some cytochalasin) and (has_specified_output some 
+      ('data item' and ('is about' some 'actin filament polymerization')))) and (achieves_planned_objective some 'biological feature identification objective')

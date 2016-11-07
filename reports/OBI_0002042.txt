@@ -1,0 +1,14 @@
+http://purl.obolibrary.org/obo/OBI_0002042
+Reviewed: FALSE
+Curation Status: 
+
+  label: carbon-copy chromosome conformation capture assay followed by sequencing assay
+  alternative term: Carbon-copy chromosome conformation capture assay followed by sequencing
+  alternative term: HiC
+  alternative term: HiC assay
+  definition: A carbon-copy chromosome conformation capture assay to analyze the organization of chromosomes in an unbiased, genome-wide manner using high throughput sequening following carbon-copy chromosome conformation capture.
+  definition source: Lieberman-Aiden E, et al. (2009). Comprehensive mapping of long-range interactions reveals folding principles of the human genome. Science 326: 289-293.
+  example of usage: Fudenberg et al., (November 2014). "High order chromatin architecture shapes the landscape of chromosomal alterations in cancer." Nat Biotechol 29(12):1109-13. doi: 10.1038/nbt.2049.
+  term editor: Person: Venkat Malladi, Chris Stoeckert, Jie Zheng
+
+  subclass of: 'Carbon-copy chromosome conformation capture assay'

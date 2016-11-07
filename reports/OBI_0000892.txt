@@ -1,0 +1,37 @@
+http://purl.obolibrary.org/obo/OBI_0000892
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: Southern blot analysis
+  alternative term: Southern blot
+  definition: Southern blot analysis is a an assay used in molecular biology to assert the presence/absence status  of a specific DNA sequence in DNA samples. DNA samples to be assayed are first digested by restriction enzymes, fragments are then resolved by gel electrophoresis following by a blotting ensuring transfer to  nitrocellulose or nylon membrane. Immobilization of DNA fragments to the membrane is achieved by UV crosslinking and/or baking. Probes raised against the specific sequences are then hybridized to the membrane.  Detection of  hybridization signals is carried out by immunofluorescence or radioactivity measurements using photographic films or digital imaging devices such as Phosphor Imager.
+  definition source: OBI & Wikipedia
++ example of usage: PMID: 9452032. Germline mutations detected in the von Hippel-Lindau disease tumor suppressor gene by Southern blot and direct genomic DNA sequencing. Li C, Weber G, Ekman P, Lagercrantz J, Norlen BJ, Akerstrí_m G, Nordenskjí_ld M, Bergerheim US. Hum Mutat. 1998;Suppl 1:S31-3.
+- example of usage: PMID: 9452032. Germline mutations detected in the von Hippel-Lindau disease tumor suppressor gene by Southern blot and direct genomic DNA sequencing. Li C, Weber G, Ekman P, Lagercrantz J, Norlen BJ, Akerström G, Nordenskjöld M, Bergerheim US. Hum Mutat. 1998;Suppl 1:S31-3.
+  editor note: 2010-01-31: Philippe Rocca-Serra:
+    need extra work on 'labeled probe'
+  editor note: 2010-01-31: Philippe Rocca-Serra: 
+    departure from naming convention as the assay is named after Edwin Southern.
+  term editor: Person: Philippe Rocca-Serra
+
++ subclass of: 'analyte assay'
++ subclass of: (has_specified_input some 'high molecular weight DNA extract') and (realizes some ('evaluant role' and ('inheres in' some 'high molecular weight DNA extract')))
++ subclass of: (has_specified_input some 'scattered molecular aggregate' and ('has grain' only 'nucleic acid')') and (realizes some ('analyte role' and ('inheres in' some 'scattered molecular aggregate' and ('has grain' only 'nucleic acid')')))
++ subclass of: has_specified_output some 'measurement datum'
++ subclass of: has_specified_output some site
+- subclass of: achieves_planned_objective some 'assay objective'
+- subclass of: assay
+- subclass of: has_specified_output some 
+          ('measurement datum'
+           and ('is about' some site))
+- subclass of: realizes some 
+          ('analyte role'
+           and ('inheres in' some 
+              ('scattered molecular aggregate'
+               and ('has grain' only 'nucleic acid'))))
+- subclass of: realizes some 
+          ('complementary nucleotide probe role'
+           and ('inheres in' some 'nucleic acid'))
+- subclass of: realizes some 
+          ('evaluant role'
+           and ('inheres in' some 'high molecular weight DNA extract'))

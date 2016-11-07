@@ -1,0 +1,24 @@
+http://purl.obolibrary.org/obo/OBI_0002015
+Reviewed: FALSE
+Curation Status: 
+
+  label: transcription profiling by MPSS assay
+  alternative term: expression MPSS
+  definition: An assay in which the transcriptome of a biological sample is analysed using Massive Parallel Signature Sequencing (MPSS).
+  definition source: http://en.wikipedia.org/wiki/Massively_parallel_signature_sequencing
+  term editor: Person: Chris Stoeckert, Jie Zheng
+
++ subclass of: 'transcription profiling assay'
++ subclass of: (has_specified_input some 'assay bead') and (realizes some (function and ('inheres in' some 'assay bead')))
++ subclass of: achieves_planned_objective some 'transcription profiling indentification objective'
++ subclass of: has_part some 'DNA sequencing, library preparation'
++ subclass of: has_specified_output some 'gene expression'
++ subclass of: has_specified_output some 'information content entity'
+- subclass of: 'has part' some 'DNA sequencing'
+- subclass of: 'has part' some 'library preparation'
+- subclass of: 'has participant' some 'assay bead'
+- subclass of: achieves_planned_objective some 'transcription profiling identification objective'
+- subclass of: assay
+- subclass of: has_specified_output some 
+          ('information content entity'
+           and ('is about' some 'gene expression'))

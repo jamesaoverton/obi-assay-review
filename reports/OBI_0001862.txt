@@ -1,0 +1,19 @@
+http://purl.obolibrary.org/obo/OBI_0001862
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: reduced representation bisulfite sequencing assay
+  alternative term: RRBS
+  alternative term: RRBS assay
+  alternative term: reduced representation bisulfite-seq
+  definition: A bisulfite sequencing assay that identifies genomic methylation patterns by using a bisulfite based protocol that enriches CG-rich parts of the genome.
++ definition source: Meissner et al. Reduced representation bisulfite sequencing for comparative high-resolution DNA methylation analysis. Nucleic Acids Res. 2005; 33(18): 5868äóñ5877. [PMCID: PMC1258174]
+- definition source: Meissner et al. Reduced representation bisulfite sequencing for comparative high-resolution DNA methylation analysis. Nucleic Acids Res. 2005; 33(18): 5868–5877. [PMCID: PMC1258174]
++ example of usage: Meissner et al. Reduced representation bisulfite sequencing for comparative high-resolution DNA methylation analysis. Nucleic Acids Res. 2005; 33(18): 5868äóñ5877. [PMCID: PMC1258174]
+- example of usage: Meissner et al. Reduced representation bisulfite sequencing for comparative high-resolution DNA methylation analysis. Nucleic Acids Res. 2005; 33(18): 5868–5877. [PMCID: PMC1258174]
+  term editor: Person: Venkat Malladi, Chris Stoeckert, Jie Zheng
+
+  subclass of: 'bisulfite sequencing'
++ subclass of: has_part some 'library preparation, specific enzymatic cleavage'
+- subclass of: 'has part' some 'library preparation'
+- subclass of: 'has part' some 'specific enzymatic cleavage'

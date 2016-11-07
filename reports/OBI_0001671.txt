@@ -1,0 +1,23 @@
+http://purl.obolibrary.org/obo/OBI_0001671
+Reviewed: FALSE
+Curation Status: ready for release
+
++ label: electrophoretic mobility shift assay
+- label: electrophoretic mobility shift assay 
+  alternative term: EMSA,gel shift assay, gel mobility shift assay, band shift assay, gel retardation assay
+  definition: is an assay which aims to provide information about Protein-DNA or Protein-RNA interaction and which used gel electrophoresis and relies on the fact the molecular interactions will cause the heterodimer to be retarded on the gel when compared to controls corresponding to protein extract alone and protein extract + neutral nucleic acid.
+  definition source: PMID:6269071
+  example of usage: Electrophoretic mobility shift assay reveals a novel recognition sequence for Setaria italica NAC protein.
+    Puranik S, Kumar K, Srivastava PS, Prasad M.
+    Plant Signal Behav. 2011 Oct;6(10):1588-90. Epub 2011 Oct 1.
+    PMID: 21918373
+  term editor: PERSON:Philippe Rocca-Serra; Marcus Chibucos
+
++ subclass of: '(assay and (has_specified_input some 'RNA extract') and (has_specified_output some ('data item' and ('is about' some 'sequence-specific DNA binding')))) and (achieves_planned_objective some 'assay objective')'
++ subclass of: 'binding assay'
++ subclass of: has_specified_input some 'RNA extract'
++ subclass of: has_specified_input some RNA
++ subclass of: has_specified_output some 'Sequence-specific DNA binding'
++ subclass of: has_specified_output some 'data item'
+- equivalent to: (assay and (has_specified_input some 'RNA extract') and (has_specified_output some 
+      ('data item' and ('is about' some 'sequence-specific DNA binding')))) and (achieves_planned_objective some 'assay objective')

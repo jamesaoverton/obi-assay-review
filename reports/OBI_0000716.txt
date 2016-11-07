@@ -1,0 +1,43 @@
+http://purl.obolibrary.org/obo/OBI_0000716
+Reviewed: FALSE
+Curation Status: ready for release
+
+  label: ChIP-seq assay
+  alternative term: chromatin immunoprecipitation sequencing assay
+  definition: an assay which aims at identifying protein binding sites in genomic DNA and determining how protein may regulate gene transcription by relying on immunoprecipitation of DNA bound protein, creation of a library of corresponding DNA fragments  (either single or paired-end fragments) and subsequent sequencing using parallelized sequencing methods.
+  definition source: adapted from Wikipedia
+  example of usage: PMID: 19275939
+    ChIP-seq: using high-throughput sequencing to discover protein-DNA interactions.
+    Schmidt D, Wilson MD, Spyrou C, Brown GD, Hadfield J, Odom DT.
+    Methods. 2009 Jul;48(3):240-8. Epub 2009 Mar 9.
+  curator note: made some modification based on the discussion on 2011/4/4 obi dev call, using DNA sequencing instead of union of some specific DNA sequencing processes
+  term editor: Philippe Rocca-Serra
+
++ subclass of: 'assay using chromatin immunoprecipitation, epigenetic modification assay, sequencing assay'
++ subclass of: (has_specified_input some 'DNA sequencer') and (realizes some (function and ('inheres in' some 'DNA sequencer')))
++ subclass of: (has_specified_input some 'deoxyribonucleic acid') and (realizes some ('analyte role' and ('inheres in' some 'deoxyribonucleic acid')))
++ subclass of: achieves_planned_objective some 'epigenetic modification identification objective, protein and DNA interaction identification objective'
++ subclass of: has_part some 'DNA sequencing, immunoprecipitation, library preparation'
++ subclass of: has_specified_input some 'DNA  protein complex'
++ subclass of: has_specified_input some 'specimen and ('has part' deoxyribonecleic acid and protein complex)'
++ subclass of: has_specified_output some 'chromatin remodeling or regulation of molecular function, epigenetic or sequence-specific DNA binding or transcription factors'
++ subclass of: has_specified_output some 'information content entity'
+- subclass of: 'has part' some 'DNA sequencing'
+- subclass of: 'has part' some 'library preparation'
+- subclass of: 'has part' some immunoprecipitation
+- subclass of: 'has participant' some 'DNA sequencer'
+- subclass of: achieves_planned_objective some 'epigenetic modification identification objective'
+- subclass of: achieves_planned_objective some 'protein and DNA interaction identification objective'
+- subclass of: assay
+- subclass of: has_specified_input some 
+          (specimen
+           and (('has part' some 'deoxyribonucleic acid')
+           and ('has part' some 'protein complex')))
+- subclass of: has_specified_output some 
+          ('information content entity'
+           and ('is about' some 
+              ('chromatin remodeling' or 'regulation of molecular function, epigenetic' or 'sequence-specific DNA binding' or 'transcription factor binding site')))
+- subclass of: has_specified_output some 'DNA sequence data'
+- subclass of: realizes some 
+          ('analyte role'
+           and ('role of' some 'deoxyribonucleic acid'))

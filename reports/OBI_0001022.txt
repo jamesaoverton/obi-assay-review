@@ -1,0 +1,11 @@
+http://purl.obolibrary.org/obo/OBI_0001022
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: gene dosage assay
+  definition: an assay of changes in phenotype due to increased or decreased
+    dosage of a single allele of a gene.
+  definition source: David Osumi Sutherland
+  term editor: PERSON: Bjoern Peters
+
+  subclass of: assay

@@ -1,0 +1,32 @@
+http://purl.obolibrary.org/obo/OBI_0001915
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: DNA replication timing by array assay
+  alternative term: Repli-chip
+  alternative term: Repli-chip assay
+  definition: An assay in which timing of DNA replication is quantified as a function of genome position using array technology.
+  definition source: Hiranti et al. Global reorganization of replication domains during embryonic stem cell differentiation. PLoS Biol. 2008 October 7;6(10):e245 [PMID:18842067]
+  example of usage: Hiranti et al. Global reorganization of replication domains during embryonic stem cell differentiation. PLoS Biol. 2008 October 7;6(10):e245 [PMID:18842067]
+  term editor: Venkat Malladi, Chris Stoeckert, Jie Zheng
+
+  subclass of: achieves_planned_objective some 'DNA replication identification objective'
+  subclass of: assay
+  subclass of: has_specified_input some 5-bromo-2'-deoxyuridine
++ subclass of: (has_specified_input some 'deoxyribonucleic acid') and (realizes some ('evaluant role' and ('inheres in' some 'deoxyribonucleic acid')))
++ subclass of: (has_specified_input some 'flow cytometer sorter, DNA microarray') and (realizes some (function and ('inheres in' some 'flow cytometer sorter, DNA microarray')))
++ subclass of: has_part some 'immunoprecipitation, library preparation, multiplex ligation-mediated amplification'
++ subclass of: has_specified_input some reagent
++ subclass of: has_specified_output some 'DNA replication'
++ subclass of: has_specified_output some 'measurement datum'
+- subclass of: 'has part' some 'library preparation'
+- subclass of: 'has part' some 'multiplex ligation-mediated amplification'
+- subclass of: 'has part' some immunoprecipitation
+- subclass of: 'has participant' some 'DNA microarray'
+- subclass of: 'has participant' some 'flow cytometer sorter'
+- subclass of: has_specified_output some 
+          ('measurement datum'
+           and ('is about' some 'DNA replication'))
+- subclass of: realizes some 
+          ('evaluant role'
+           and ('role of' some 'deoxyribonucleic acid'))

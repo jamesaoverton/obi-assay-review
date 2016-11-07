@@ -1,0 +1,13 @@
+http://purl.obolibrary.org/obo/OBI_0002083
+Reviewed: FALSE
+Curation Status: pending final vetting
+
+  label: enhancer activity detection by reporter gene assay
+  alternative term: enhancer reporter gene assay
+  definition: A reporter gene assay in which expression of a reporter gene is detected that was inserted under the control of an enhancer of interest.
+  definition source: FaceBase, PMID 24614317
+  example of usage: PMID 19268701: "we experimentally concatenated up to four enhancers from different genes and used a transgenic mouse assay to compare the in vivo activity of these compound elements with that of the single modules"
+  editor note: Tracker item: 781
+  term editor: Paul D. Thomas, Yang Chai
+
+  subclass of: 'reporter gene assay'

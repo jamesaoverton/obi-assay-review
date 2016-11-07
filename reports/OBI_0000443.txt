@@ -1,0 +1,26 @@
+http://purl.obolibrary.org/obo/OBI_0000443
+Reviewed: FALSE
+Curation Status: ready for release
+
+  label: analyte assay
+  definition: An assay with the objective to capture information about the presence, concentration, or amount of an analyte in an evaluant.
+  definition source: PERSON:Bjoern Peters
+    PERSON:Helen Parkinson
+    PERSON:Philippe Rocca-Serra
+    PERSON:Alan Ruttenberg
+    GROUP:OBI Planned process branch
+  example of usage: example of usage: In lab test for blood glucose, the test is the assay, the blood bears evaluant_role and glucose bears the analyte role. The evaluant is considered an input to the assay and the information entity that records the measurement of glucose concentration the output
+  editor note: 2013-09-23: simplify equivalent axiom
+  editor note: Note: is_realization of some analyte role isn't always true, for example when there is none of the analyte in the evaluant. For the moment we are writing it this way, but when the information ontology is further worked out this will be replaced with a condition discussing the measurement.
+  editor note: logical def modified to remove expression below, as some analyte assays report below the level of detection, and therefore not a scalar measurement datum, replaced by measurement datum
+    
+    and 
+    ('has measurement unit label' some 'measurement unit label') and 
+    ('is quality measurement of' some 'molecular concentration'))
+  term editor: PERSON:Bjoern Peters, Helen Parkinson, Philippe Rocca-Serra, Alan Ruttenberg
+
+  subclass of: assay
+  subclass of: has_specified_output some 'measurement datum'
++ subclass of: 'achieves_planned_objective some 'analyte measurement objective''
+- equivalent to: achieves_planned_objective some 'analyte measurement objective'
+- subclass of: realizes some 'analyte role'

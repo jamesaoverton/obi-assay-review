@@ -1,0 +1,28 @@
+http://purl.obolibrary.org/obo/OBI_0001679
+Reviewed: FALSE
+Curation Status: ready for release
+
++ label: yeast 2-hybrid
+- label: yeast 2-hybrid 
+  alternative term: Y2H
++ definition: yeast 2 hybrid screen is an assay meant  to discover proteinäóñprotein interactions and proteinäóñDNA interactions by testing for physical interactions (such as binding) between two proteins or a single protein and a DNA molecule, respectively. The premise behind the test is the activation of downstream reporter gene(s) by the binding of a transcription factor onto an upstream activating sequence (UAS). For two-hybrid screening, the transcription factor is split into two separate fragments, called the binding domain (BD) and activating domain (AD). The BD is the domain responsible for binding to the UAS and the AD is the domain responsible for the activation of transcription.[1][2] The Y2H is thus a protein-fragment complementation assay.
+- definition: yeast 2 hybrid screen is an assay meant  to discover protein–protein interactions and protein–DNA interactions by testing for physical interactions (such as binding) between two proteins or a single protein and a DNA molecule, respectively. The premise behind the test is the activation of downstream reporter gene(s) by the binding of a transcription factor onto an upstream activating sequence (UAS). For two-hybrid screening, the transcription factor is split into two separate fragments, called the binding domain (BD) and activating domain (AD). The BD is the domain responsible for binding to the UAS and the AD is the domain responsible for the activation of transcription.[1][2] The Y2H is thus a protein-fragment complementation assay.
+  definition source: adapted from wikipedia
+  example of usage: Strong FANCA/FANCG but weak FANCA/FANCC interaction in the yeast 2-hybrid system.
+    Reuter T, Herterich S, Bernhard O, Hoehn H, Gross HJ.
+    Blood. 2000 Jan 15;95(2):719-20.
+    PMID: 10627486
+  curator note: add regulatory region DNA binding;GO:0043565;
+  term editor: PERSON:Philippe Rocca-Serra; Marcus Chibucos
+
++ subclass of: 'binding assay'
++ subclass of: achieves_planned_objective some 'protein and DNA interaction identification objective'
++ subclass of: has_specified_input some 'genetically modified material'
++ subclass of: has_specified_output some 'data item'
++ subclass of: has_specified_output some 'protein domain specific binding'
+- subclass of: (assay
+       and (has_specified_input some 'genetically modified material')
+       and (has_specified_output some 
+          ('data item'
+           and ('is about' some 'protein domain specific binding'))))
+       and (achieves_planned_objective some 'protein and DNA interaction identification objective')

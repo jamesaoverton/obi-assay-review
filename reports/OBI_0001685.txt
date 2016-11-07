@@ -1,0 +1,22 @@
+http://purl.obolibrary.org/obo/OBI_0001685
+Reviewed: FALSE
+Curation Status: ready for release
+
++ label: amplification of intermethylated sites (AIMS) assay
+- label: amplification of intermethylated sites (AIMS) assay 
+  alternative term: AIMS assay,intermethylated site amplification 
++ definition: amplification of intermethylated sites (AIMS) is an assay appropriate for genome-wide estimates of DNA methylation and the discovery of specific methylated sequences. AIMS is based on the differential enzymatic digestion of genomic DNA with methylation-sensitive and methylation-insensitive isoschizomers followed by restrained PCR amplification of methylated sequences.
+- definition:  amplification of intermethylated sites (AIMS) is an assay appropriate for genome-wide estimates of DNA methylation and the discovery of specific methylated sequences. AIMS is based on the differential enzymatic digestion of genomic DNA with methylation-sensitive and methylation-insensitive isoschizomers followed by restrained PCR amplification of methylated sequences.
+  definition source: PMID: 18987810
+  example of usage: Analysis of DNA methylation by amplification of intermethylated sites (AIMS).PMID:18987810
+  term editor: PERSON:Philippe Rocca-Serra; Marcus Chibucos
+
++ subclass of: '(assay and (has_specified_input some 'high molecular weight DNA extract') and (has_specified_output some ('data item' and ('is about' some 'regulation of DNA methylation')))) and (achieves_planned_objective some 'epigenetic modification identification objective')'
++ subclass of: 'DNA methylation profiling assay'
++ subclass of: achieves_planned_objective some 'epigenetic modification identification objective'
++ subclass of: has_specified_input some 'high molecular weight DNA extract'
++ subclass of: has_specified_input some DNA
++ subclass of: has_specified_output some 'data item'
++ subclass of: has_specified_output some 'regulation of DNA methylation'
+- equivalent to: (assay and (has_specified_input some 'high molecular weight DNA extract') and (has_specified_output some 
+      ('data item' and ('is about' some 'regulation of DNA methylation')))) and (achieves_planned_objective some 'epigenetic modification identification objective')

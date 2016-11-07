@@ -1,0 +1,18 @@
+http://purl.obolibrary.org/obo/OBI_0600025
+Reviewed: FALSE
+Curation Status: pending final vetting
+
+  label: substance detection
+  definition: any protocol which results in the detection of a specified substance
+  definition source: OBI branch derived
+  example of usage: the detection of phycoerytherin by means of flow cytometry
+  term editor: PERSON:Kevin Clancy
+
+  subclass of: has_specified_input some 'material entity'
+  subclass of: has_specified_output some 'measurement datum'
++ subclass of: (has_specified_input some 'chromatography device, gamma counter, ion detector, flow cytometer analyzer, photodetector, array scanner, spectrophotometer') and (realizes some (function and ('inheres in' some 'chromatography device, gamma counter, ion detector, flow cytometer analyzer, photodetector, array scanner, spectrophotometer')))
++ subclass of: assay
+- subclass of: 'has participant' some 
+          ('chromatography device' or 'gamma counter' or 'ion detector' or 'flow cytometer analyzer' or photodetector or 'array scanner' or spectrophotometer)
+- subclass of: achieves_planned_objective some 'assay objective'
+- subclass of: process

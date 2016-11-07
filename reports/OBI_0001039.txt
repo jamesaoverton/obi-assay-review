@@ -1,0 +1,23 @@
+http://purl.obolibrary.org/obo/OBI_0001039
+Reviewed: FALSE
+Curation Status: ready for release
+
+  label: inline probing RNA structure mapping
+  definition: is a single-nucleotide-resolution ribonucleic acid structure mapping assay which uses intromolecular reactivity to generate data and information at nucleotide resolution scale contributing to the determination of nucleic acid secondary structure
+  definition source: RNA ontology
+  example of usage: PMID:10573122 and PMID: 18369975
+  term editor: Person: Philippe Rocca-Serra
+
+  subclass of: has_specified_input some 'ribonucleic acid'
++ subclass of: 'single-nucleotide-resolution nucleic acid structure mapping assay using chemical probing'
++ subclass of: has_specified_input some RNA
++ subclass of: has_specified_output some 'measurement datum'
++ subclass of: has_specified_output some 'secondary structure of RNA molecule'
+- subclass of: achieves_planned_objective some 'assay objective'
+- subclass of: has_specified_output some 
+          ('measurement datum'
+           and ('is about' some 'secondary structure of RNA molecule'))
+- subclass of: process
+- subclass of: realizes some 
+          ('reagent role'
+           and ('inheres in' some 'ribonucleic acid'))

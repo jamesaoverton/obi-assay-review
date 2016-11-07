@@ -1,0 +1,15 @@
+http://purl.obolibrary.org/obo/OBI_0000812
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: measuring neural activity in the caudate nucleus
+  definition: The process of measuring neural activity  in the caudate nucleus
+  definition source: Jessica Turner, NIF, Dirk Derom, OBI
+  example of usage: An SU micro-electrode was used to measure neural activity in the form of spike trains in the caudate nucleus of monkeys in response to a flashing light stimulus
+  term editor: Helen Parkinson
+
+  subclass of: 'extracellular electrophysiology recording'
+- subclass of: 'occurs in' some 'caudate nucleus'
+- subclass of: realizes some 
+          ('measure function'
+           and ('inheres in' some 'micro electrode'))

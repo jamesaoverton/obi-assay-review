@@ -1,0 +1,39 @@
+http://purl.obolibrary.org/obo/OBI_0000693
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: MeDIP-seq assay
+  alternative term: Methylated DNA immunoprecipitation sequencing assay
+  definition: is an assay which aims at identifying methylated sites in genomic DNA and determining methylation pattern that affect  gene transcription by relying on immunoprecipitation of methylated genomic DNA, creation of a library of corresponding DNA fragments (either single or paired-end fragments) and subsequent sequencing using parallelized sequencing methods.
+  definition source: adapted from wikipedia
++ example of usage: PMID: 18612301. A Bayesian deconvolution strategy for immunoprecipitation-based DNA methylome analysis. Down TA, Rakyan VK, Turner DJ, Flicek P, Li H, Kulesha E, Grí_f S, Johnson N, Herrero J, Tomazou EM, Thorne NP, Bí_ckdahl L, Herberth M, Howe KL, Jackson DK, Miretti MM, Marioni JC, Birney E, Hubbard TJ, Durbin R, Tavarí© S, Beck S. Nat Biotechnol. 2008 Jul;26(7):779-85.
+- example of usage: PMID: 18612301. A Bayesian deconvolution strategy for immunoprecipitation-based DNA methylome analysis. Down TA, Rakyan VK, Turner DJ, Flicek P, Li H, Kulesha E, Gräf S, Johnson N, Herrero J, Tomazou EM, Thorne NP, Bäckdahl L, Herberth M, Howe KL, Jackson DK, Miretti MM, Marioni JC, Birney E, Hubbard TJ, Durbin R, Tavaré S, Beck S. Nat Biotechnol. 2008 Jul;26(7):779-85.
+  term editor: Philippe Rocca-Serra
+
++ subclass of: 'DNA methylation profiling assay, assay using chromatin immunoprecipitation, sequencing assay'
++ subclass of: (has_specified_input some 'deoxyribonucleic acid') and (realizes some ('evaluant role' and ('inheres in' some 'deoxyribonucleic acid')))
++ subclass of: has_part some 'immunoprecipitation, library preparation, Helicos sequencing or SOLiD sequencing or Solexa sequencing or pyrosequencing'
++ subclass of: has_specified_input some 'deoxyribonucleic acid'
++ subclass of: has_specified_input some DNA
++ subclass of: has_specified_output some 'regulation of DNA methylation, primary structure of DNA macromolecule, regulation of DNA methylation'
++ subclass of: has_specified_output some 'sequence data'
+- subclass of: 'has part' some 
+          ('Helicos sequencing' or 'SOLiD sequencing' or 'Solexa sequencing' or pyrosequencing)
+- subclass of: 'has part' some 'library preparation'
+- subclass of: 'has part' some immunoprecipitation
+- subclass of: achieves_planned_objective some 'assay objective'
+- subclass of: assay
+- subclass of: has_specified_input some 
+          ('deoxyribonucleic acid'
+           and ('has role' some 'evaluant role'))
+- subclass of: has_specified_output some 
+          ('sequence data'
+           and ('is about' some 
+              ('primary structure of DNA macromolecule'
+               and ('is about' some 'regulation of DNA methylation')
+               and ('is about' some 
+                  ('deoxyribonucleic acid'
+                   and ('has quality' some 'DNA residue methylation'))))))
+- subclass of: has_specified_output some 
+          ('sequence data'
+           and ('is about' some 'regulation of DNA methylation'))

@@ -1,0 +1,28 @@
+http://purl.obolibrary.org/obo/OBI_0001335
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: microRNA profiling by array assay
+  definition: An assay in which a microRNA array is used to analyse the microRNA component of the transcriptome.
+  definition source: EFO_0000753 microRNA profiling by array
+  term editor: PERSON: James Malone
+
+  subclass of: achieves_planned_objective some 'transcription profiling identification objective'
++ subclass of: 'microRNA profiling assay'
++ subclass of: (has_specified_input some 'DNA microarray') and (realizes some (function and ('inheres in' some 'DNA microarray')))
++ subclass of: (has_specified_input some 'ribonucleic acid') and (realizes some ('analyte role' and ('inheres in' some 'ribonucleic acid')))
++ subclass of: has_specified_input some 'specimen and ('has part' some ribonucleic acid)'
++ subclass of: has_specified_input some RNA
++ subclass of: has_specified_output some 'measured expression level'
++ subclass of: has_specified_output some miRNA
+- subclass of: 'has participant' some 'DNA microarray'
+- subclass of: assay
+- subclass of: has_specified_input some 
+          (specimen
+           and ('has part' some 'ribonucleic acid'))
+- subclass of: has_specified_output some 
+          ('measured expression level'
+           and ('is about' some miRNA))
+- subclass of: realizes some 
+          ('analyte role'
+           and ('role of' some 'ribonucleic acid'))

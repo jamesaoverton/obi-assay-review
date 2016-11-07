@@ -1,0 +1,25 @@
+http://purl.obolibrary.org/obo/OBI_0001393
+Reviewed: FALSE
+Curation Status: metadata complete
+
+  label: comparative genomic hybridization by array assay
+  alternative term: array CGH
+  definition: An assay in which changes in DNA sequence copy number are analysed using a microarray. For example the analysis of LOH in tumor cells vs a non diseased sample or the comparison of clinical isolated of disease causing bacteria.
+  definition source: EFO_0000749: comparative genomic hybridization by array
+  term editor: Person: James Malone
+
+  subclass of: achieves_planned_objective some 'molecular feature identification objective'
+  subclass of: has_specified_output some 'genotype information'
++ subclass of: 'genotyping assay'
++ subclass of: (has_specified_input some 'DNA microarray') and (realizes some (function and ('inheres in' some 'DNA microarray')))
++ subclass of: (has_specified_input some 'deoxyribonucleic acid') and (realizes some ('analyte role' and ('inheres in' some 'deoxyribonucleic acid')))
++ subclass of: has_specified_input some 'specimen and ('has part' some deoxyribonucleic acid)'
++ subclass of: has_specified_input some DNA
+- subclass of: 'has participant' some 'DNA microarray'
+- subclass of: assay
+- subclass of: has_specified_input some 
+          (specimen
+           and ('has part' some 'deoxyribonucleic acid'))
+- subclass of: realizes some 
+          ('analyte role'
+           and ('role of' some 'deoxyribonucleic acid'))
