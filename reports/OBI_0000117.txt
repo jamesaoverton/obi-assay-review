@@ -1,9 +1,11 @@
 http://purl.obolibrary.org/obo/OBI_0000117
-Reviewed: FALSE
-Curation Status: pending final vetting
+Reviewed: TRUE
+Review Comments: Asserted as an assay, minor improvements to defnition, mark as ready for release.
+Curation Status: ready for release
 
   label: Bernoulli trial
-  definition: is an assay where the output data is a datum with one of two values denoted success and failure.
++ definition: an assay where the output data is a datum with one of two values denoting success and failure.
+- definition: is an assay where the output data is a datum with one of two values denoted success and failure.
   definition source: OBI branch derived
   term editor: PlanAndPlannedProcess Branch
 

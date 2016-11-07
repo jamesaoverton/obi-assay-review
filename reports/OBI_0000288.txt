@@ -1,5 +1,6 @@
 http://purl.obolibrary.org/obo/OBI_0000288
-Reviewed: FALSE
+Reviewed: TRUE
+Review Comments: No changes, needs more metadata
 Curation Status: metadata incomplete
 
   label: protein-protein interaction detection

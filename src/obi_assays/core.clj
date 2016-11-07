@@ -194,18 +194,20 @@
   (let [ontid (string/replace (get row "ID") ":" "_") 
         iri   (IRI/create (obo ontid))]
     [ontid (get row "label") 
-     (string/join
-      "\n"
-      (concat
-       [iri
-        (str "Reviewed: " (get row "reviewed"))
-        (str "Curation Status: " (get row "has curation status"))
-        ""]
-       (mapcat
-        (partial report-annotation-difference row iri)
-        (map first (butlast annotation-properties)))
-       [""]
-       (report-logic-difference templates row iri)))]))
+     (->> (concat
+           [iri
+            (str "Reviewed: " (get row "reviewed"))
+            (when-not (string/blank? (get row "review comments"))
+              (str "Review Comments: " (get row "review comments")))
+            (str "Curation Status: " (get row "has curation status"))
+            ""]
+           (mapcat
+            (partial report-annotation-difference row iri)
+            (map first (butlast annotation-properties)))
+           [""]
+           (report-logic-difference templates row iri))
+          (remove nil?)
+          (string/join "\n"))]))
 
 
 ;; ## Table Stuff
@@ -230,7 +232,7 @@
          (drop 2) ; drop headers
          ;(take 10) ; testing
          (map (partial zipmap headers))
-         (remove #(= (get % "reviewed") "TRUE"))
+         ;(remove #(= (get % "reviewed") "TRUE"))
          (map (partial report-differences templates))
          (remove nil?)
          (map (fn [[ontid label report]]

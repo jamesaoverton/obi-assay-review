@@ -1,9 +1,11 @@
 http://purl.obolibrary.org/obo/OBI_0000185
-Reviewed: FALSE
-Curation Status: pending final vetting
+Reviewed: TRUE
+Review Comments: Asserted as an assay, minor improvements to defnition, mark as ready for release.
+Curation Status: ready for release
 
   label: imaging assay
-  definition: An imaging assay is an assay to produce a picture of an entity. definition_source: OBI.
++ definition: an assay to produce a picture of an entity.
+- definition: An imaging assay is an assay to produce a picture of an entity. definition_source: OBI.
   definition source: OBI branch derived
   term editor: PlanAndPlannedProcess Branch
 

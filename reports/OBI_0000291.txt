@@ -1,5 +1,6 @@
 http://purl.obolibrary.org/obo/OBI_0000291
 Reviewed: FALSE
+Review Comments: Got stuck on the output, not sure about equivalent class
 Curation Status: metadata complete
 
   label: transcription factor binding site assay
@@ -16,7 +17,6 @@ Curation Status: metadata complete
 
 + subclass of: 'assay and (has_specified_output some ('information content entity' and ('is about' some 'transcription factor binding site')))'
 + subclass of: 'binding assay'
-+ subclass of: has_specified_output some 'measurement datum  information content entity'
 + subclass of: has_specified_output some 'sequence specific DNA binding  transcription factor binding site'
 - equivalent to: assay and (has_specified_output some 
       ('information content entity' and ('is about' some 'transcription factor binding site')))
